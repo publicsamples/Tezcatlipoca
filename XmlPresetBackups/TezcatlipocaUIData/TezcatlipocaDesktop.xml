@@ -21,9 +21,9 @@
                max="0.0" stepSize="1.0" min="-100.0" processorId="Slot1" parameterId="mix"
                mode="Decibel"/>
   </Component>
-  <Component type="ScriptPanel" id="MODSTO3" x="6" y="529" width="680.0" height="160.0"
-             bgColour="16777215" itemColour="0" itemColour2="0" textColour="16777215"
-             visible="0">
+  <Component type="ScriptPanel" id="MODSTO3" x="6.0" y="529.0" width="680.0"
+             height="160.0" bgColour="16777215" itemColour="0" itemColour2="0"
+             textColour="16777215" visible="0">
     <Component type="ScriptPanel" id="mod1" x="0.0" y="0.0" width="220.0" height="150.0"
                itemColour="4278190080" itemColour2="4278190080" bgColour="4278190080"
                textColour="1091637521" borderSize="4.0" parentComponent="MODSTO3">
@@ -198,7 +198,7 @@
                  text="type" editable="0" processorId="mod6" textColour="3036676095"/>
     </Component>
   </Component>
-  <Component type="ScriptPanel" id="MODS4TO7" x="6" y="529" width="680.0"
+  <Component type="ScriptPanel" id="MODS4TO7" x="6.0" y="529.0" width="680.0"
              height="160.0" bgColour="16777215" itemColour="0" itemColour2="0"
              textColour="16777215">
     <Component type="ScriptPanel" id="mod4" x="0.0" y="0.0" width="220.0" height="150.0"
@@ -379,10 +379,10 @@
   <Component type="ScriptButton" id="MODPAGE" x="692.0" y="548.0" width="30.0"
              height="30.0" itemColour2="4294944512" itemColour="4290875959"
              bgColour="4283119158" textColour="4281870890"/>
-  <Component type="ScriptLabel" id="ScriptLabel238" x="781.0" y="588" width="40"
-             height="30" alignment="left" fontName="Arial Rounded MT Bold"
+  <Component type="ScriptLabel" id="ScriptLabel238" x="781.0" y="588.0" width="40.0"
+             height="30.0" alignment="left" fontName="Arial Rounded MT Bold"
              text="output gain" editable="0" processorId="Slot3" textColour="3036676095"/>
-  <Component type="ScriptLabel" id="ScriptLabel239" x="689.0" y="588" width="40.0"
+  <Component type="ScriptLabel" id="ScriptLabel239" x="689.0" y="588.0" width="40.0"
              height="30.0" alignment="left" fontName="Arial Rounded MT Bold"
              text="mod page" editable="0" processorId="Slot3" textColour="3036676095"/>
   <Component type="ScriptLabel" id="ScriptLabel240" x="869.0" y="586.0" width="70.0"
@@ -1223,8 +1223,8 @@
                height="20.0" parentComponent="SLOT4" alignment="left" textColour="3087007743"
                fontName="Arial Rounded MT Bold" text="4" editable="0"/>
   </Component>
-  <Component type="ScriptLabel" id="ScriptLabel241" x="826.0" y="588" width="40"
-             height="30" alignment="left" fontName="Arial Rounded MT Bold"
+  <Component type="ScriptLabel" id="ScriptLabel241" x="826.0" y="588.0" width="40.0"
+             height="30.0" alignment="left" fontName="Arial Rounded MT Bold"
              text="input signal" editable="0" processorId="Slot3" textColour="3036676095"/>
   <Component type="ScriptLabel" id="ScriptLabel247" x="687.0" y="617.0" width="240.0"
              height="70.0" alignment="left" fontName="Arial Rounded MT Bold"
@@ -1255,7 +1255,7 @@
              height="512.0" itemColour="4278190080" itemColour2="4278190080"
              bgColour="4281147938" textColour="4280818973" visible="0">
     <Component type="ScriptFloatingTile" id="ScriptFloatingTile1" x="20.0" y="10.0"
-               width="420" height="480" parentComponent="presetpanel" ContentType="PresetBrowser"
+               width="420.0" height="480.0" parentComponent="presetpanel" ContentType="PresetBrowser"
                bgColour="4278190080" itemColour="4294967295" itemColour2="4294967295"
                Data="{&#10;  &quot;ShowSaveButton&quot;: true,&#10;  &quot;ShowExpansionsAsColumn&quot;: false,&#10;  &quot;ShowFolderButton&quot;: true,&#10;  &quot;ShowNotes&quot;: true,&#10;  &quot;ShowEditButtons&quot;: true,&#10;  &quot;EditButtonOffset&quot;: 10,&#10;  &quot;ShowAddButton&quot;: true,&#10;  &quot;ShowRenameButton&quot;: true,&#10;  &quot;ShowDeleteButton&quot;: true,&#10;  &quot;ShowFavoriteIcon&quot;: true,&#10;  &quot;ButtonsInsideBorder&quot;: true,&#10;  &quot;NumColumns&quot;: 2,&#10;  &quot;ColumnWidthRatio&quot;: [&#10;    0.3333333333333333,&#10;    0.3333333333333333,&#10;    0.3333333333333333&#10;  ],&#10;  &quot;ListAreaOffset&quot;: [&#10;    0,&#10;    0,&#10;    0,&#10;    0&#10;  ],&#10;  &quot;ColumnRowPadding&quot;: [&#10;    0,&#10;    0,&#10;    0,&#10;    0&#10;  ],&#10;  &quot;SearchBarBounds&quot;: [],&#10;  &quot;MoreButtonBounds&quot;: [],&#10;  &quot;SaveButtonBounds&quot;: [],&#10;  &quot;FavoriteButtonBounds&quot;: []&#10;}"
                itemColour3="4294967295"/>
@@ -1266,7 +1266,7 @@
                popupOnRightClick="0" itemColour="0" textColour="16777215" bgColour="16777215"
                itemColour2="0"/>
   </Component>
-  <Component type="ScriptLabel" id="ScriptLabel242" x="738.0" y="588" width="40"
-             height="30" alignment="left" fontName="Arial Rounded MT Bold"
+  <Component type="ScriptLabel" id="ScriptLabel242" x="738.0" y="588.0" width="40.0"
+             height="30.0" alignment="left" fontName="Arial Rounded MT Bold"
              text="input gain" editable="0" processorId="Slot3" textColour="3036676095"/>
 </ContentProperties>
