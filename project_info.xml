@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ProjectSettings>
+  <Name value="Tezcatlipoca"/>
+  <Version value="0.0.2"/>
+  <Description value=""/>
+  <BundleIdentifier value="com.modularsamples.product"/>
+  <PluginCode value="Mstp"/>
+  <EmbedAudioFiles value="Yes"/>
+  <EmbedImageFiles value="Yes"/>
+  <SupportFullDynamicsHLAC value="No"/>
+  <AdditionalDspLibraries value=""/>
+  <OSXStaticLibs value=""/>
+  <WindowsStaticLibFolder value=""/>
+  <ExtraDefinitionsWindows value=""/>
+  <ExtraDefinitionsOSX value=""/>
+  <ExtraDefinitionsIOS value=""/>
+  <ExtraDefinitionsLinux value=""/>
+  <AppGroupID value=""/>
+  <RedirectSampleFolder value=""/>
+  <AAXCategoryFX value="AAX_ePlugInCategory_Modulation"/>
+  <SupportMonoFX value="1"/>
+  <EnableMidiInputFX value="No"/>
+  <EnableMidiOut value="No"/>
+  <EnableSoundGeneratorsFX value="1"/>
+  <VST3Support value="1"/>
+  <UseRawFrontend value="No"/>
+  <ExpansionType value="Disabled"/>
+  <EncryptionKey value=""/>
+  <LinkExpansionsToProject value="No"/>
+  <ReadOnlyFactoryPresets value="No"/>
+  <ForceStereoOutput value="1"/>
+  <AdminPermissions value="No"/>
+  <EmbedUserPresets value="0"/>
+  <EnableGlobalPreprocessor value="No"/>
+  <UseGlobalAppDataFolderWindows value="No"/>
+  <UseGlobalAppDataFolderMacOS value="No"/>
+</ProjectSettings>
