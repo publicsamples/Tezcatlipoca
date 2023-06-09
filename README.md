@@ -10,5 +10,5 @@ Tezcatlipoca takes an input signal and attempts to perform a crude kind of drum 
 - Syncable sample players
 
 
-![Xolotwd](https://raw.githubusercontent.com/publicsamples/tezcatlipoca/main/tezcatlipoca.png)
+![Xolotwd](https://raw.githubusercontent.com/publicsamples/tezcatlipoca/main/tezcatlipoca.jpg)
 
