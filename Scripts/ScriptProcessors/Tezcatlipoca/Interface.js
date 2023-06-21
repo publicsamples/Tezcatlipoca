@@ -1,13 +1,13 @@
 Content.makeFrontInterface(928, 690);
 
-
+Engine.setLatencySamples(500);
 
 const var mod1 = Synth.getModulator("mod1");
 const var mod2 = Synth.getModulator("mod2");
 const var mod3 = Synth.getModulator("mod3");
 const var mod4 = Synth.getModulator("mod4");
 const var mod5 = Synth.getModulator("mod5");
-
+const var mod6 = Synth.getModulator("mod6");
 
 const var modtype1 = Content.getComponent("modtype1");
 const var ScriptSliderPack1 = Content.getComponent("ScriptSliderPack1");
@@ -86,6 +86,20 @@ inline function onmodtype5Control(component, value)
 
 Content.getComponent("modtype5").setControlCallback(onmodtype5Control);
 
+const var modtype6 = Content.getComponent("modtype6");
+const var ScriptSliderPack6 = Content.getComponent("ScriptSliderPack6");
+const var modtable6 = Content.getComponent("modtable6");
+
+
+
+inline function onmodtype6Control(component, value)
+{
+	modtable6.showControl(1-value); 
+	ScriptSliderPack6.showControl(value);
+	mod6.setAttribute(mod6.type, value);
+};
+
+Content.getComponent("modtype6").setControlCallback(onmodtype6Control);
 
 
 
@@ -132,6 +146,20 @@ ulp.setMouseCallback(function(event)
   }
 });
 
+const var modsyncmode = Content.getComponent("modsyncmode");
+
+
+inline function onmodsyncmodeControl(component, value)
+{
+	mod1.setAttribute(mod1.syncmode, value);
+	mod2.setAttribute(mod2.syncmode, value);
+	mod3.setAttribute(mod3.syncmode, value);
+	mod4.setAttribute(mod4.syncmode, value);
+	mod5.setAttribute(mod5.syncmode, value);
+	mod6.setAttribute(mod6.syncmode, value);
+};
+
+Content.getComponent("modsyncmode").setControlCallback(onmodsyncmodeControl);
 
 
 function onNoteOn()
