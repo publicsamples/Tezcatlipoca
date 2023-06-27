@@ -7,7 +7,7 @@
              locked="1"/>
   <Component type="ScriptPanel" id="MODSTO3" x="6.0" y="529.0" width="680.0"
              height="160.0" bgColour="16777215" itemColour="0" itemColour2="0"
-             textColour="16777215">
+             textColour="16777215" visible="0">
     <Component type="ScriptPanel" id="mod1" x="0.0" y="0.0" width="220.0" height="150.0"
                itemColour="4278190080" itemColour2="4278190080" bgColour="4278190080"
                textColour="1091637521" borderSize="4.0" parentComponent="MODSTO3">
@@ -51,9 +51,9 @@
                  textColour="4280425757" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
                  bgColour="4281673511"/>
       <Component type="ScriptComboBox" id="ScriptComboBox2" x="179.0" y="107.0"
-                 width="30.0" height="20.0" max="7" parentComponent="mod1" processorId="mod1"
+                 width="30.0" height="20.0" max="11" parentComponent="mod1" processorId="mod1"
                  parameterId="keysync" itemColour="2399119104" itemColour2="2399119104"
-                 textColour="4280425757" items="free&#10;mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
+                 textColour="4280425757" items="free&#10;mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;voice 1&#10;voice 2&#10;voice 3&#10;voice 4&#10;"
                  bgColour="4281673511"/>
       <Component type="ScriptSliderPack" id="ScriptSliderPack1" x="15.0" y="26.0"
                  width="190.0" height="65.0" parentComponent="mod1" processorId="mod1"
@@ -108,9 +108,9 @@
                  textColour="4280425757" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
                  bgColour="4281673511"/>
       <Component type="ScriptComboBox" id="ScriptComboBox4" x="179.0" y="107.0"
-                 width="30.0" height="20.0" max="7" parentComponent="mod2" processorId="mod2"
+                 width="30.0" height="20.0" max="11" parentComponent="mod2" processorId="mod2"
                  parameterId="keysync" itemColour="2399119104" itemColour2="2399119104"
-                 textColour="4280425757" items="free&#10;mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
+                 textColour="4280425757" items="free&#10;mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;voice 1&#10;voice 2&#10;voice 3&#10;voice 4&#10;"
                  bgColour="4281673511"/>
       <Component type="ScriptSliderPack" id="ScriptSliderPack2" x="15.0" y="26.0"
                  width="190.0" height="65.0" parentComponent="mod2" processorId="mod2"
@@ -167,9 +167,9 @@
                  textColour="4280425757" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
                  bgColour="4281673511"/>
       <Component type="ScriptComboBox" id="ScriptComboBox6" x="179.0" y="107.0"
-                 width="30.0" height="20.0" max="7" parentComponent="mod3" processorId="mod3"
+                 width="30.0" height="20.0" max="11" parentComponent="mod3" processorId="mod3"
                  parameterId="keysync" itemColour="2399119104" itemColour2="2399119104"
-                 textColour="4280425757" items="free&#10;mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
+                 textColour="4280425757" items="free&#10;mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;voice 1&#10;voice 2&#10;voice 3&#10;voice 4&#10;"
                  bgColour="4281673511"/>
       <Component type="ScriptSliderPack" id="ScriptSliderPack3" x="15.0" y="25.0"
                  width="190.0" height="70.0" parentComponent="mod3" processorId="mod3"
@@ -184,7 +184,7 @@
   </Component>
   <Component type="ScriptPanel" id="MODS4TO7" x="6.0" y="529.0" width="680.0"
              height="160.0" bgColour="16777215" itemColour="0" itemColour2="0"
-             textColour="16777215" visible="0">
+             textColour="16777215">
     <Component type="ScriptPanel" id="mod4" x="0.0" y="0.0" width="220.0" height="150.0"
                itemColour="4278190080" itemColour2="4278190080" bgColour="4278190080"
                textColour="1091637521" borderSize="4.0" parentComponent="MODS4TO7">
@@ -372,278 +372,297 @@
   <Component type="ScriptButton" id="PRESETS" x="806.0" y="610.0" width="30.0"
              height="30.0" itemColour2="2399119104" itemColour="2399119104"
              bgColour="4281345060" textColour="4281541668"/>
-  <Component type="ScriptLabel" id="ScriptLabel247" x="705.0" y="530.0" width="200.0"
+  <Component type="ScriptLabel" id="ScriptLabel247" x="705.0" y="518.0" width="200.0"
              height="50.0" fontName="Arial Rounded MT Bold" text="Tezcatlipoca"
              editable="0" processorId="Slot3" fontSize="35.0" textColour="3036676095"
              alignment="left"/>
-  <Component type="ScriptPanel" id="SLOT1" x="8.0" y="5.0" width="220.0" height="510.0"
-             itemColour="0" itemColour2="0" bgColour="16777215" textColour="2516582399"
-             borderRadius="1.0" borderSize="1.0">
-    <Component type="ScriptButton" id="Button1" x="11.0" y="341.0" width="30.0"
+  <Component type="ScriptPanel" id="SLOT1" x="11.0" y="0.0" width="220.0"
+             height="510.0" itemColour="0" itemColour2="0" bgColour="16777215"
+             textColour="2516582399" borderRadius="1.0" borderSize="1.0">
+    <Component type="ScriptFloatingTile" id="FloatingTile3" x="162.0" y="35.0"
+               ContentType="FilterDisplay" bgColour="4278190080" itemColour="4294944512"
+               itemColour2="2399119104" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Slot1&quot;,&#10;  &quot;Index&quot;: 0,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+               width="50.0" height="50.0" itemColour3="4278190080" parentComponent="SLOT1"/>
+    <Component type="ScriptFloatingTile" id="FloatingTile4" x="161.0" y="176.0"
+               ContentType="AudioAnalyser" bgColour="16777215" itemColour="2399119104"
+               itemColour2="16754432" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Analyser&quot;,&#10;  &quot;Index&quot;: 1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+               width="50.0" height="50.0" itemColour3="4294944512" textColour="4294944512"
+               parentComponent="SLOT1"/>
+    <Component type="ScriptButton" id="Button3" x="11.0" y="341.0" width="30.0"
                height="10.0" itemColour="2399119104" itemColour2="2399119104"
                textColour="4278190080" processorId="Slot1" parameterId="voice1-sync"
                parentComponent="SLOT1"/>
-    <Component type="ScriptLabel" id="ScriptLabel237" x="730.0" y="584.0" width="40.0"
+    <Component type="ScriptLabel" id="ScriptLabel244" x="730.0" y="584.0" width="40.0"
                height="20.0" alignment="left" fontName="Arial Rounded MT Bold"
-               text="input" editable="0" processorId="Slot3" textColour="3036676095"
+               text="input" editable="0" processorId="Slot1" textColour="3036676095"
                parentComponent="SLOT1"/>
-    <Component type="ScriptPanel" id="ScriptPanel2" x="93.0" y="256.0" width="120.0"
+    <Component type="ScriptPanel" id="ScriptPanel4" x="93.0" y="256.0" width="120.0"
                height="100.0" parentComponent="SLOT1" textColour="1912602623"
-               bgColour="16754432" itemColour="0" itemColour2="0" borderSize="1.0">
-      <Component type="ScriptAudioWaveform" id="AudioWaveform1" x="5.0" y="5.0"
-                 width="110.0" height="90.0" processorId="Slot1" parentComponent="ScriptPanel2"
+               bgColour="16754432" itemColour="0" itemColour2="0" borderSize="1.0"
+               processorId="Slot1">
+      <Component type="ScriptAudioWaveform" id="AudioWaveform3" x="5.0" y="5.0"
+                 width="110.0" height="90.0" processorId="Slot1" parentComponent="ScriptPanel4"
                  bgColour="2399119104" itemColour="4278190080" itemColour2="4278190080"
-                 textColour="16777215" showFileName="0" enableRange="0" opaque="0"/>
+                 textColour="16777215" showFileName="0" opaque="0"/>
     </Component>
-    <Component type="ScriptComboBox" id="m2" x="31.0" y="40.0" max="6" parentComponent="SLOT1"
-               width="20.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
-               processorId="Slot1" parameterId="voice1-input-filter-modsource"
-               itemColour="2399119104" itemColour2="2399119104" textColour="4280688158"
-               bgColour="4281147392"/>
-    <Component type="ScriptSlider" id="Knob42" x="4.0" y="40.0" width="30.0"
+    <Component type="ScriptSlider" id="Knob63" x="43.0" y="32.0" width="30.0"
                height="30.0" processorId="Slot1" parameterId="voice1-input-filter-cut"
-               numStrips="206.0" scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.5" parentComponent="SLOT1"/>
-    <Component type="ScriptLabel" id="ScriptLabel48" x="76.0" y="7.0" width="90.0"
+               numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="0.5" parentComponent="SLOT1" suffix=" Hz"/>
+    <Component type="ScriptLabel" id="ScriptLabel113" x="6.0" y="3.0" width="110.0"
                height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="INPUT FILTER" editable="0"/>
-    <Component type="ScriptLabel" id="ScriptLabel49" x="2.0" y="71.0" width="30.0"
+               fontName="Arial Rounded MT Bold" text="INPUT FILTER" editable="0"
+               processorId="Slot1"/>
+    <Component type="ScriptLabel" id="ScriptLabel114" x="40.0" y="59.0" width="30.0"
                height="30.0" parentComponent="SLOT1" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="band 1" editable="0" fontSize="11.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel50" x="169.0" y="7.0" width="20.0"
+               fontName="Arial Rounded MT Bold" text="cut" editable="0" processorId="Slot1"/>
+    <Component type="ScriptLabel" id="ScriptLabel124" x="108.0" y="63.0" width="20.0"
                height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="q" editable="0"/>
-    <Component type="ScriptSlider" id="Knob43" x="190.0" y="7.0" width="25.0"
-               height="25.0" processorId="Slot1" parameterId="voice1-input-filter-res"
-               numStrips="206.0" scaleFactor="0.1000000014901161" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.5" parentComponent="SLOT1" min="0.2000000029802322"
-               max="9.5"/>
-    <Component type="ScriptSlider" id="Knob44" x="33.0" y="71.0" width="20.0"
-               height="20.0" processorId="Slot1" parameterId="voice1-input-filter-mod"
-               numStrips="206.0" scaleFactor="0.09000000357627869" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.0" parentComponent="SLOT1" min="-1.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel54" x="179.0" y="142.0" width="40.0"
+               fontName="Arial Rounded MT Bold" text="q" editable="0" processorId="Slot1"/>
+    <Component type="ScriptSlider" id="Knob67" x="104.0" y="32.0" width="30.0"
+               height="30.0" processorId="Slot1" parameterId="voice1-input-filter-res"
+               numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="4.849999904632568" parentComponent="SLOT1" min="0.2000000029802322"
+               max="8.0"/>
+    <Component type="ScriptSlider" id="Knob69" x="74.0" y="32.0" width="30.0"
+               height="30.0" processorId="Slot1" parameterId="gain centre" numStrips="206.0"
+               scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="0.0" parentComponent="SLOT1" min="-18.0" max="18.0"/>
+    <Component type="ScriptLabel" id="ScriptLabel125" x="178.0" y="137.0" width="40.0"
                height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="rel" editable="0"/>
-    <Component type="ScriptSlider" id="Knob45" x="178.0" y="111.0" width="40.0"
+               fontName="Arial Rounded MT Bold" text="rel" editable="0" processorId="Slot1"/>
+    <Component type="ScriptSlider" id="Knob70" x="179.0" y="110.0" width="30.0"
                height="30.0" processorId="Slot1" parameterId="voice1-input-track-release"
-               numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               numStrips="206.0" scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="50.0" parentComponent="SLOT1" max="250.0"/>
-    <Component type="ScriptSlider" id="Knob56" x="133.0" y="111.0" width="40.0"
-               height="40.0" processorId="Slot1" parameterId="voice1-input-track-attack"
-               numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+    <Component type="ScriptSlider" id="Knob74" x="145.0" y="110.0" width="30.0"
+               height="30.0" processorId="Slot1" parameterId="voice1-input-track-attack"
+               numStrips="206.0" scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="50.0" parentComponent="SLOT1" max="250.0" stepSize="1.0"
                suffix=" ms"/>
-    <Component type="ScriptLabel" id="ScriptLabel55" x="133.0" y="142.0" width="30.0"
+    <Component type="ScriptLabel" id="ScriptLabel138" x="144.0" y="137.0" width="30.0"
                height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="atk" editable="0"/>
-    <Component type="ScriptLabel" id="ScriptLabel56" x="66.0" y="142.0" width="60.0"
+               fontName="Arial Rounded MT Bold" text="atk" editable="0" processorId="Slot1"/>
+    <Component type="ScriptLabel" id="ScriptLabel139" x="99.0" y="137.0" width="50.0"
                height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="threshold" editable="0"/>
-    <Component type="ScriptLabel" id="ScriptLabel57" x="4.0" y="102.0" width="50.0"
-               height="60.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="INPUT FOLLOW" editable="0"/>
-    <Component type="ScriptSlider" id="Knob58" x="80.0" y="111.0" width="40.0"
-               height="40.0" processorId="Slot1" parameterId="voice1-input-track-threshhold"
-               numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               fontName="Arial Rounded MT Bold" text="thresh" editable="0" processorId="Slot1"/>
+    <Component type="ScriptLabel" id="ScriptLabel140" x="100.0" y="86.0" width="90.0"
+               height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="INPUT FOLLOW" editable="0"
+               processorId="Slot1"/>
+    <Component type="ScriptSlider" id="Knob77" x="106.0" y="110.0" width="30.0"
+               height="30.0" processorId="Slot1" parameterId="voice1-input-track-threshhold"
+               numStrips="206.0" scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="-12.0" parentComponent="SLOT1" mode="Decibel"
                min="-100.0" max="0.0" stepSize="0.1000000014901161" suffix=" dB"/>
-    <Component type="ScriptLabel" id="ScriptLabel53" x="170.0" y="208.0" width="50.0"
-               height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="source" editable="0"/>
-    <Component type="ScriptLabel" id="ScriptLabel58" x="138.0" y="208.0" width="40.0"
-               height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="mod" editable="0"/>
-    <Component type="ScriptSlider" id="Knob67" x="139.0" y="176.0" width="35.0"
-               height="40.0" processorId="Slot1" parameterId="voice1-input-signal-mod"
+    <Component type="ScriptLabel" id="ScriptLabel141" x="62.0" y="142.0" width="30.0"
+               height="10.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="mix" editable="0" processorId="Slot1"/>
+    <Component type="ScriptSlider" id="Knob78" x="81.0" y="183.0" width="30.0"
+               height="30.0" processorId="Slot1" parameterId="voice1-input-signal-mod"
                numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="0.0" parentComponent="SLOT1" min="-1.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel60" x="103.0" y="208.0" width="30.0"
+    <Component type="ScriptLabel" id="ScriptLabel142" x="47.0" y="211.0" width="30.0"
                height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="mix" editable="0"/>
-    <Component type="ScriptSlider" id="Knob70" x="103.0" y="176.0" width="35.0"
-               height="40.0" processorId="Slot1" parameterId="voice1-input-signal-mix"
+               fontName="Arial Rounded MT Bold" text="mix" editable="0" processorId="Slot1"/>
+    <Component type="ScriptSlider" id="Knob80" x="47.0" y="183.0" width="30.0"
+               height="30.0" processorId="Slot1" parameterId="voice1-input-signal-mix"
                numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="0.5" parentComponent="SLOT1" suffix=" ms"/>
-    <Component type="ScriptComboBox" id="m4" x="178.0" y="179.0" max="6" parentComponent="SLOT1"
-               width="30.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
+    <Component type="ScriptComboBox" id="m14" x="119.0" y="186.0" max="6" parentComponent="SLOT1"
+               width="20.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
                processorId="Slot1" parameterId="voice1-input-signal-modsource"
                itemColour="2399119104" itemColour2="2399119104" textColour="4280688158"
                bgColour="4281147392"/>
-    <Component type="ScriptLabel" id="ScriptLabel61" x="7.0" y="185.0" width="60.0"
+    <Component type="ScriptLabel" id="ScriptLabel143" x="161.0" y="421.0" width="50.0"
                height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="SIGNAL" editable="0"/>
-    <Component type="ScriptLabel" id="ScriptLabel59" x="161.0" y="421.0" width="50.0"
+               fontName="Arial Rounded MT Bold" text="source" editable="0" processorId="Slot1"/>
+    <Component type="ScriptLabel" id="ScriptLabel144" x="129.0" y="421.0" width="40.0"
                height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="source" editable="0"/>
-    <Component type="ScriptLabel" id="ScriptLabel62" x="129.0" y="421.0" width="40.0"
-               height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="mod" editable="0"/>
-    <Component type="ScriptSlider" id="Knob69" x="133.0" y="387.0" width="40.0"
+               fontName="Arial Rounded MT Bold" text="mod" editable="0" processorId="Slot1"/>
+    <Component type="ScriptSlider" id="Knob81" x="133.0" y="387.0" width="40.0"
                height="40.0" processorId="Slot1" parameterId="voice1-filter-mod"
                numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="0.0" parentComponent="SLOT1" min="-1.0"/>
-    <Component type="ScriptSlider" id="Knob74" x="55.0" y="387.0" width="40.0"
+    <Component type="ScriptSlider" id="Knob82" x="55.0" y="387.0" width="40.0"
                height="40.0" processorId="Slot1" parameterId="voice1-filter-res"
                numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="1.0" parentComponent="SLOT1" min="0.2000000029802322"
                max="9.899999618530273"/>
-    <Component type="ScriptLabel" id="ScriptLabel63" x="54.0" y="421.0" width="30.0"
+    <Component type="ScriptLabel" id="ScriptLabel145" x="54.0" y="421.0" width="30.0"
                height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="res" editable="0"/>
-    <Component type="ScriptLabel" id="ScriptLabel64" x="17.0" y="421.0" width="30.0"
+               fontName="Arial Rounded MT Bold" text="res" editable="0" processorId="Slot1"/>
+    <Component type="ScriptLabel" id="ScriptLabel146" x="17.0" y="421.0" width="30.0"
                height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="cut" editable="0"/>
-    <Component type="ScriptSlider" id="Knob77" x="18.0" y="387.0" width="40.0"
+               fontName="Arial Rounded MT Bold" text="cut" editable="0" processorId="Slot1"/>
+    <Component type="ScriptSlider" id="Knob91" x="18.0" y="387.0" width="40.0"
                height="40.0" processorId="Slot1" parameterId="voice1-filter-cut"
                numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="0.5" parentComponent="SLOT1"/>
-    <Component type="ScriptComboBox" id="m5" x="170.0" y="390.0" max="6" parentComponent="SLOT1"
+    <Component type="ScriptComboBox" id="m15" x="170.0" y="390.0" max="6" parentComponent="SLOT1"
                width="30.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
                processorId="Slot1" parameterId="voice2-input-filter-modsource"
                itemColour="2399119104" itemColour2="2399119104" textColour="4280688158"
                bgColour="4281147392"/>
-    <Component type="ScriptSlider" id="Knob78" x="71.0" y="450.0" width="40.0"
+    <Component type="ScriptSlider" id="Knob93" x="71.0" y="450.0" width="40.0"
                height="40.0" processorId="Slot1" parameterId="voice1-attack"
                numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="1000.0" parentComponent="SLOT1" mode="Time" max="20000.0"
                stepSize="1.0" suffix=" ms"/>
-    <Component type="ScriptLabel" id="ScriptLabel65" x="71.0" y="482.0" width="40.0"
+    <Component type="ScriptLabel" id="ScriptLabel147" x="71.0" y="482.0" width="40.0"
                height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="atk" editable="0"/>
-    <Component type="ScriptLabel" id="ScriptLabel66" x="124.0" y="481.0" width="30.0"
+               fontName="Arial Rounded MT Bold" text="atk" editable="0" processorId="Slot1"/>
+    <Component type="ScriptLabel" id="ScriptLabel148" x="124.0" y="481.0" width="30.0"
                height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="rel" editable="0"/>
-    <Component type="ScriptSlider" id="Knob81" x="123.0" y="450.0" width="40.0"
+               fontName="Arial Rounded MT Bold" text="rel" editable="0" processorId="Slot1"/>
+    <Component type="ScriptSlider" id="Knob94" x="123.0" y="450.0" width="40.0"
                height="40.0" processorId="Slot1" parameterId="voice1-release"
                numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="1000.0" parentComponent="SLOT1" mode="Time" max="20000.0"
                stepSize="1.0" suffix=" ms"/>
-    <Component type="ScriptSlider" id="Knob82" x="173.0" y="450.0" width="40.0"
+    <Component type="ScriptSlider" id="Knob95" x="173.0" y="450.0" width="40.0"
                height="40.0" processorId="Slot1" parameterId="voice1-vol" numStrips="206.0"
                scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="-18.0" parentComponent="SLOT1" mode="Decibel"
                min="-100.0" max="0.0" stepSize="0.1000000014901161" suffix=" dB"/>
-    <Component type="ScriptLabel" id="ScriptLabel67" x="172.0" y="481.0" width="40.0"
+    <Component type="ScriptLabel" id="ScriptLabel149" x="172.0" y="481.0" width="40.0"
                height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="vol" editable="0"/>
-    <Component type="ScriptComboBox" id="m6" x="53.0" y="319.0" max="6" parentComponent="SLOT1"
+               fontName="Arial Rounded MT Bold" text="vol" editable="0" processorId="Slot1"/>
+    <Component type="ScriptComboBox" id="m16" x="53.0" y="319.0" max="6" parentComponent="SLOT1"
                width="30.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
                processorId="Slot1" parameterId="voice1-pitch-modsource" itemColour="2399119104"
                itemColour2="2399119104" textColour="4280688158" bgColour="4281147392"/>
-    <Component type="ScriptSlider" id="Knob83" x="10.0" y="262.0" width="30.0"
+    <Component type="ScriptSlider" id="Knob96" x="10.0" y="262.0" width="30.0"
                height="30.0" processorId="Slot1" parameterId="voice1-pitch-"
                numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="0.5" parentComponent="SLOT1"/>
-    <Component type="ScriptLabel" id="ScriptLabel68" x="5.0" y="294.0" width="40.0"
+    <Component type="ScriptLabel" id="ScriptLabel150" x="5.0" y="294.0" width="40.0"
                height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="pitch" editable="0"/>
-    <Component type="ScriptSlider" id="Knob84" x="55.0" y="262.0" width="40.0"
+               fontName="Arial Rounded MT Bold" text="pitch" editable="0" processorId="Slot1"/>
+    <Component type="ScriptSlider" id="Knob99" x="55.0" y="262.0" width="40.0"
                height="40.0" processorId="Slot1" parameterId="voice1-pitch-mod"
                numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="0.0" parentComponent="SLOT1" min="-1.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel69" x="51.0" y="294.0" width="40.0"
+    <Component type="ScriptLabel" id="ScriptLabel151" x="51.0" y="294.0" width="40.0"
                height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="mod" editable="0"/>
-    <Component type="ScriptLabel" id="ScriptLabel70" x="44.0" y="340.0" width="50.0"
+               fontName="Arial Rounded MT Bold" text="mod" editable="0" processorId="Slot1"/>
+    <Component type="ScriptLabel" id="ScriptLabel152" x="44.0" y="340.0" width="50.0"
                height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="source" editable="0"/>
-    <Component type="ScriptLabel" id="ScriptLabel71" x="28.0" y="232.0" width="50.0"
+               fontName="Arial Rounded MT Bold" text="source" editable="0" processorId="Slot1"/>
+    <Component type="ScriptLabel" id="ScriptLabel153" x="28.0" y="233.0" width="50.0"
                height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="PITCH" editable="0"/>
-    <Component type="ScriptLabel" id="ScriptLabel72" x="123.0" y="232.0" width="70.0"
+               fontName="Arial Rounded MT Bold" text="PITCH" editable="0" processorId="Slot1"/>
+    <Component type="ScriptLabel" id="ScriptLabel154" x="123.0" y="232.0" width="70.0"
                height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="SAMPLE" editable="0"/>
-    <Component type="ScriptLabel" id="ScriptLabel73" x="79.0" y="363.0" width="100.0"
+               fontName="Arial Rounded MT Bold" text="SAMPLE" editable="0" processorId="Slot1"/>
+    <Component type="ScriptLabel" id="ScriptLabel155" x="79.0" y="363.0" width="100.0"
                height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="FILTER" editable="0"/>
-    <Component type="ScriptLabel" id="ScriptLabel74" x="15.0" y="447.0" width="40.0"
+               fontName="Arial Rounded MT Bold" text="FILTER" editable="0" processorId="Slot1"/>
+    <Component type="ScriptLabel" id="ScriptLabel156" x="15.0" y="447.0" width="40.0"
                height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="AMP" editable="0"/>
-    <Component type="ScriptComboBox" id="m8" x="92.0" y="390.0" max="3" parentComponent="SLOT1"
+               fontName="Arial Rounded MT Bold" text="AMP" editable="0" processorId="Slot1"/>
+    <Component type="ScriptComboBox" id="m17" x="92.0" y="390.0" max="3" parentComponent="SLOT1"
                width="30.0" height="20.0" items="LP&#10;HP&#10;BP" processorId="Slot1"
                parameterId="voice1-ftype" itemColour="2399119104" itemColour2="2399119104"
                textColour="4280688158" bgColour="4281147392"/>
-    <Component type="ScriptLabel" id="ScriptLabel76" x="89.0" y="421.0" width="40.0"
+    <Component type="ScriptLabel" id="ScriptLabel157" x="89.0" y="421.0" width="40.0"
                height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="type" editable="0"/>
-    <Component type="ScriptSlider" id="Knob122" x="8.0" y="315.0" width="15.0"
+               fontName="Arial Rounded MT Bold" text="type" editable="0" processorId="Slot1"/>
+    <Component type="ScriptSlider" id="Knob124" x="8.0" y="315.0" width="15.0"
                height="15.0" processorId="Slot1" parameterId="voice1-div" numStrips="206.0"
                scaleFactor="0.07000000029802322" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="8.5" parentComponent="SLOT1" max="16.0" min="1.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel201" x="24.0" y="315.0" width="25.0"
+    <Component type="ScriptLabel" id="ScriptLabel203" x="24.0" y="315.0" width="25.0"
                height="15.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="div" editable="0"/>
-    <Component type="ScriptLabel" id="ScriptLabel203" x="12.0" y="350.0" width="30.0"
+               fontName="Arial Rounded MT Bold" text="div" editable="0" processorId="Slot1"/>
+    <Component type="ScriptLabel" id="ScriptLabel205" x="12.0" y="350.0" width="30.0"
                height="10.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="sync" editable="0"/>
-    <Component type="ScriptLabel" id="ScriptLabel113" x="21.0" y="475.0" width="30.0"
+               fontName="Arial Rounded MT Bold" text="sync" editable="0" processorId="Slot1"/>
+    <Component type="ScriptLabel" id="ScriptLabel158" x="21.0" y="475.0" width="30.0"
                height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="1" editable="0" fontSize="20.0"/>
-    <Component type="ScriptSlider" id="Knob54" x="88.0" y="71.0" width="20.0"
-               height="20.0" processorId="Slot1" parameterId="gainmod" numStrips="206.0"
-               scaleFactor="0.09000000357627869" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.0" parentComponent="SLOT1" min="-1.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel51" x="55.0" y="71.0" width="30.0"
-               height="30.0" parentComponent="SLOT1" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="band 2" editable="0" fontSize="11.0"/>
-    <Component type="ScriptSlider" id="Knob55" x="58.0" y="40.0" width="30.0"
-               height="30.0" processorId="Slot1" parameterId="gain centre" numStrips="206.0"
-               scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.5" parentComponent="SLOT1"/>
-    <Component type="ScriptComboBox" id="m7" x="85.0" y="40.0" max="6" parentComponent="SLOT1"
-               width="20.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
-               processorId="Slot1" parameterId="gainmodsource" itemColour="2399119104"
-               itemColour2="2399119104" textColour="4280688158" bgColour="4281147392"/>
-    <Component type="ScriptSlider" id="Knob59" x="142.0" y="71.0" width="20.0"
-               height="20.0" processorId="Slot1" parameterId="band3mod" numStrips="206.0"
-               scaleFactor="0.09000000357627869" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.0" parentComponent="SLOT1" min="-1.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel52" x="109.0" y="71.0" width="30.0"
-               height="30.0" parentComponent="SLOT1" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="band 3" editable="0" fontSize="11.0"/>
-    <Component type="ScriptSlider" id="Knob60" x="112.0" y="40.0" width="30.0"
-               height="30.0" processorId="Slot1" parameterId="band3" numStrips="206.0"
-               scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.5" parentComponent="SLOT1"/>
-    <Component type="ScriptComboBox" id="m26" x="139.0" y="40.0" max="6" parentComponent="SLOT1"
-               width="20.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
-               processorId="Slot1" parameterId="band3moddest" itemColour="2399119104"
-               itemColour2="2399119104" textColour="4280688158" bgColour="4281147392"/>
-    <Component type="ScriptSlider" id="Knob61" x="194.0" y="71.0" width="20.0"
-               height="20.0" processorId="Slot1" parameterId="band4mod" numStrips="206.0"
-               scaleFactor="0.09000000357627869" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.0" parentComponent="SLOT1" min="-1.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel75" x="163.0" y="71.0" width="30.0"
-               height="30.0" parentComponent="SLOT1" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="band 4" editable="0" fontSize="11.0"/>
-    <Component type="ScriptSlider" id="Knob63" x="166.0" y="40.0" width="30.0"
-               height="30.0" processorId="Slot1" parameterId="babd4" numStrips="206.0"
-               scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.5" parentComponent="SLOT1"/>
-    <Component type="ScriptComboBox" id="m27" x="193.0" y="40.0" max="6" parentComponent="SLOT1"
-               width="20.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
-               processorId="Slot1" parameterId="band4moddesr" itemColour="2399119104"
-               itemColour2="2399119104" textColour="4280688158" bgColour="4281147392"/>
-    <Component type="ScriptSlider" id="Knob80" x="68.0" y="176.0" width="35.0"
-               height="40.0" processorId="Slot1" parameterId="smooth" numStrips="206.0"
+               fontName="Arial Rounded MT Bold" text="1" editable="0" fontSize="20.0"
+               processorId="Slot1"/>
+    <Component type="ScriptSlider" id="Knob100" x="10.0" y="183.0" width="30.0"
+               height="30.0" processorId="Slot1" parameterId="smooth" numStrips="206.0"
                scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="200.0" parentComponent="SLOT1" suffix=" ms" max="20000.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel124" x="63.0" y="208.0" width="40.0"
+    <Component type="ScriptLabel" id="ScriptLabel159" x="6.0" y="63.0" width="40.0"
                height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="smooth" editable="0"/>
-    <Component type="ScriptLabel" id="ScriptLabel125" x="29.0" y="7.0" width="40.0"
+               fontName="Arial Rounded MT Bold" text="input" editable="0" processorId="Slot1"/>
+    <Component type="ScriptSlider" id="Knob101" x="12.0" y="32.0" width="30.0"
+               height="30.0" processorId="Send Effect1" parameterId="Gain" numStrips="206.0"
+               scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="-18.0" parentComponent="SLOT1" mode="Decibel"
+               min="-100.0" max="0.0" stepSize="0.1000000014901161" suffix=" dB"/>
+    <Component type="ScriptLabel" id="ScriptLabel214" x="3.0" y="211.0" width="50.0"
                height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="input" editable="0"/>
-    <Component type="ScriptSlider" id="Knob64" x="5.0" y="7.0" width="25.0"
-               height="25.0" processorId="Slot1" parameterId="mix" numStrips="206.0"
-               scaleFactor="0.1000000014901161" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="-50.0" parentComponent="SLOT1" min="-100.0" max="0.0"
-               mode="Decibel"/>
+               fontName="Arial Rounded MT Bold" text="smooth" editable="0" processorId="Slot1"/>
+    <Component type="ScriptLabel" id="ScriptLabel215" x="3.0" y="137.0" width="40.0"
+               height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="time" editable="0" processorId="Slot1"/>
+    <Component type="ScriptSlider" id="Knob156" x="6.0" y="110.0" width="30.0"
+               height="30.0" processorId="Slot1" parameterId="shtime" numStrips="206.0"
+               scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="9.0" parentComponent="SLOT1" suffix=" ms" max="18.0"
+               mode="TempoSync"/>
+    <Component type="ScriptSlider" id="Knob157" x="36.0" y="110.0" width="30.0"
+               height="30.0" processorId="Slot1" parameterId="shmuti" numStrips="206.0"
+               scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="8.0" parentComponent="SLOT1" suffix=" ms" max="16.0"
+               stepSize="1.0"/>
+    <Component type="ScriptLabel" id="ScriptLabel160" x="35.0" y="137.0" width="30.0"
+               height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="div" editable="0" processorId="Slot1"/>
+    <Component type="ScriptSlider" id="Knob158" x="66.0" y="110.0" width="30.0"
+               height="30.0" processorId="Slot1" parameterId="shwt" numStrips="206.0"
+               scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="0.5" parentComponent="SLOT1"/>
+    <Component type="ScriptLabel" id="ScriptLabel216" x="3.0" y="86.0" width="40.0"
+               height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="S&amp;H" editable="0"
+               processorId="Slot1"/>
+    <Component type="ScriptLabel" id="ScriptLabel161" x="183.0" y="4.0" width="30.0"
+               height="20.0" parentComponent="SLOT1" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="type" editable="0" fontSize="11.0"
+               processorId="Slot1"/>
+    <Component type="ScriptLabel" id="ScriptLabel162" x="71.0" y="64.0" width="40.0"
+               height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="gain" editable="0" processorId="Slot1"/>
+    <Component type="ScriptLabel" id="ScriptLabel163" x="78.0" y="212.0" width="40.0"
+               height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="mod" editable="0" processorId="Slot1"/>
+    <Component type="ScriptLabel" id="ScriptLabel164" x="106.0" y="211.0" width="50.0"
+               height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="source" editable="0" processorId="Slot1"/>
+    <Component type="ScriptLabel" id="ScriptLabel217" x="4.0" y="164.0" width="60.0"
+               height="20.0" parentComponent="SLOT1" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="SIGNAL" editable="0" processorId="Slot1"/>
+    <Component type="ScriptComboBox" id="m18" x="135.0" y="33.0" max="6" parentComponent="SLOT1"
+               width="20.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
+               processorId="Slot1" parameterId="voice1-input-filter-modsource"
+               itemColour="2399119104" itemColour2="2399119104" textColour="4280688158"
+               bgColour="4281147392"/>
+    <Component type="ScriptSlider" id="Knob102" x="134.0" y="55.0" width="30.0"
+               height="30.0" processorId="Slot1" parameterId="voice1-input-filter-mod"
+               numStrips="206.0" scaleFactor="0.1000000014901161" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="0.0" parentComponent="SLOT1" min="-1.0"/>
+    <Component type="ScriptComboBox" id="m29" x="151.0" y="5.0" max="5" parentComponent="SLOT1"
+               width="30.0" height="20.0" items="Low Pass&#10;High Pass&#10;Low Shelf&#10;High Shelf&#10;Peak"
+               processorId="Slot1" parameterId="voice1-input-filter-type" itemColour="2399119104"
+               itemColour2="2399119104" textColour="4280688158" bgColour="4281147392"/>
   </Component>
-  <Component type="ScriptPanel" id="SLOT2" x="239.0" y="5.0" width="220.0"
+  <Component type="ScriptPanel" id="SLOT2" x="240.0" y="0.0" width="220.0"
              height="510.0" itemColour="0" itemColour2="0" bgColour="16777215"
              textColour="2516582399" borderRadius="1.0" borderSize="1.0">
+    <Component type="ScriptFloatingTile" id="FloatingTile1" x="162.0" y="35.0"
+               ContentType="FilterDisplay" bgColour="4278190080" itemColour="4294944512"
+               itemColour2="2399119104" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Slot2&quot;,&#10;  &quot;Index&quot;: 0,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+               width="50.0" height="50.0" itemColour3="4278190080" parentComponent="SLOT2"/>
+    <Component type="ScriptFloatingTile" id="FloatingTile2" x="161.0" y="176.0"
+               ContentType="AudioAnalyser" bgColour="16777215" itemColour="2399119104"
+               itemColour2="16754432" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Analyser1&quot;,&#10;  &quot;Index&quot;: 1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+               width="50.0" height="50.0" itemColour3="4294944512" textColour="4294944512"
+               parentComponent="SLOT2"/>
     <Component type="ScriptButton" id="Button2" x="11.0" y="341.0" width="30.0"
                height="10.0" itemColour="2399119104" itemColour2="2399119104"
                textColour="4278190080" processorId="Slot2" parameterId="voice1-sync"
@@ -659,90 +678,77 @@
       <Component type="ScriptAudioWaveform" id="AudioWaveform2" x="5.0" y="5.0"
                  width="110.0" height="90.0" processorId="Slot2" parentComponent="ScriptPanel3"
                  bgColour="2399119104" itemColour="4278190080" itemColour2="4278190080"
-                 textColour="16777215" showFileName="0" enableRange="0" opaque="0"/>
+                 textColour="16777215" showFileName="0" opaque="0"/>
     </Component>
-    <Component type="ScriptComboBox" id="m3" x="31.0" y="40.0" max="6" parentComponent="SLOT2"
-               width="20.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
-               processorId="Slot2" parameterId="voice1-input-filter-modsource"
-               itemColour="2399119104" itemColour2="2399119104" textColour="4280688158"
-               bgColour="4281147392"/>
-    <Component type="ScriptSlider" id="Knob62" x="4.0" y="40.0" width="30.0"
+    <Component type="ScriptSlider" id="Knob62" x="43.0" y="32.0" width="30.0"
                height="30.0" processorId="Slot2" parameterId="voice1-input-filter-cut"
-               numStrips="206.0" scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.5" parentComponent="SLOT2"/>
-    <Component type="ScriptLabel" id="ScriptLabel77" x="76.0" y="7.0" width="90.0"
+               numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="0.5" parentComponent="SLOT2" suffix=" Hz"/>
+    <Component type="ScriptLabel" id="ScriptLabel77" x="6.0" y="3.0" width="110.0"
                height="20.0" parentComponent="SLOT2" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="INPUT FILTER" editable="0"
                processorId="Slot2"/>
-    <Component type="ScriptLabel" id="ScriptLabel78" x="2.0" y="71.0" width="30.0"
+    <Component type="ScriptLabel" id="ScriptLabel78" x="40.0" y="59.0" width="30.0"
                height="30.0" parentComponent="SLOT2" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="band 1" editable="0" fontSize="11.0"
-               processorId="Slot2"/>
-    <Component type="ScriptLabel" id="ScriptLabel79" x="169.0" y="7.0" width="20.0"
+               fontName="Arial Rounded MT Bold" text="cut" editable="0" processorId="Slot2"/>
+    <Component type="ScriptLabel" id="ScriptLabel79" x="108.0" y="63.0" width="20.0"
                height="20.0" parentComponent="SLOT2" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="q" editable="0" processorId="Slot2"/>
-    <Component type="ScriptSlider" id="Knob65" x="190.0" y="7.0" width="25.0"
-               height="25.0" processorId="Slot2" parameterId="voice1-input-filter-res"
-               numStrips="206.0" scaleFactor="0.1000000014901161" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.5" parentComponent="SLOT2" min="0.2000000029802322"
-               max="9.5"/>
-    <Component type="ScriptSlider" id="Knob66" x="33.0" y="71.0" width="20.0"
-               height="20.0" processorId="Slot2" parameterId="voice1-input-filter-mod"
-               numStrips="206.0" scaleFactor="0.09000000357627869" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.0" parentComponent="SLOT2" min="-1.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel80" x="179.0" y="142.0" width="40.0"
+    <Component type="ScriptSlider" id="Knob65" x="104.0" y="32.0" width="30.0"
+               height="30.0" processorId="Slot2" parameterId="voice1-input-filter-res"
+               numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="4.849999904632568" parentComponent="SLOT2" min="0.2000000029802322"
+               max="8.0"/>
+    <Component type="ScriptSlider" id="Knob66" x="74.0" y="32.0" width="30.0"
+               height="30.0" processorId="Slot2" parameterId="gain centre" numStrips="206.0"
+               scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="0.0" parentComponent="SLOT2" min="-18.0" max="18.0"/>
+    <Component type="ScriptLabel" id="ScriptLabel80" x="178.0" y="137.0" width="40.0"
                height="20.0" parentComponent="SLOT2" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="rel" editable="0" processorId="Slot2"/>
-    <Component type="ScriptSlider" id="Knob68" x="178.0" y="111.0" width="40.0"
+    <Component type="ScriptSlider" id="Knob68" x="179.0" y="110.0" width="30.0"
                height="30.0" processorId="Slot2" parameterId="voice1-input-track-release"
-               numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               numStrips="206.0" scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="50.0" parentComponent="SLOT2" max="250.0"/>
-    <Component type="ScriptSlider" id="Knob71" x="133.0" y="111.0" width="40.0"
-               height="40.0" processorId="Slot2" parameterId="voice1-input-track-attack"
-               numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+    <Component type="ScriptSlider" id="Knob71" x="145.0" y="110.0" width="30.0"
+               height="30.0" processorId="Slot2" parameterId="voice1-input-track-attack"
+               numStrips="206.0" scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="50.0" parentComponent="SLOT2" max="250.0" stepSize="1.0"
                suffix=" ms"/>
-    <Component type="ScriptLabel" id="ScriptLabel81" x="133.0" y="142.0" width="30.0"
+    <Component type="ScriptLabel" id="ScriptLabel81" x="144.0" y="137.0" width="30.0"
                height="20.0" parentComponent="SLOT2" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="atk" editable="0" processorId="Slot2"/>
-    <Component type="ScriptLabel" id="ScriptLabel82" x="66.0" y="142.0" width="60.0"
+    <Component type="ScriptLabel" id="ScriptLabel82" x="99.0" y="137.0" width="50.0"
                height="20.0" parentComponent="SLOT2" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="threshold" editable="0"
-               processorId="Slot2"/>
-    <Component type="ScriptLabel" id="ScriptLabel83" x="4.0" y="102.0" width="50.0"
-               height="60.0" parentComponent="SLOT2" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="thresh" editable="0" processorId="Slot2"/>
+    <Component type="ScriptLabel" id="ScriptLabel83" x="100.0" y="86.0" width="90.0"
+               height="20.0" parentComponent="SLOT2" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="INPUT FOLLOW" editable="0"
                processorId="Slot2"/>
-    <Component type="ScriptSlider" id="Knob72" x="80.0" y="111.0" width="40.0"
-               height="40.0" processorId="Slot2" parameterId="voice1-input-track-threshhold"
-               numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+    <Component type="ScriptSlider" id="Knob72" x="106.0" y="110.0" width="30.0"
+               height="30.0" processorId="Slot2" parameterId="voice1-input-track-threshhold"
+               numStrips="206.0" scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="-12.0" parentComponent="SLOT2" mode="Decibel"
                min="-100.0" max="0.0" stepSize="0.1000000014901161" suffix=" dB"/>
-    <Component type="ScriptLabel" id="ScriptLabel84" x="170.0" y="208.0" width="50.0"
-               height="20.0" parentComponent="SLOT2" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="source" editable="0" processorId="Slot2"/>
-    <Component type="ScriptLabel" id="ScriptLabel85" x="138.0" y="208.0" width="40.0"
-               height="20.0" parentComponent="SLOT2" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="mod" editable="0" processorId="Slot2"/>
-    <Component type="ScriptSlider" id="Knob73" x="139.0" y="176.0" width="35.0"
-               height="40.0" processorId="Slot2" parameterId="voice1-input-signal-mod"
+    <Component type="ScriptLabel" id="ScriptLabel84" x="62.0" y="142.0" width="30.0"
+               height="10.0" parentComponent="SLOT2" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="mix" editable="0" processorId="Slot2"/>
+    <Component type="ScriptSlider" id="Knob73" x="81.0" y="183.0" width="30.0"
+               height="30.0" processorId="Slot2" parameterId="voice1-input-signal-mod"
                numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="0.0" parentComponent="SLOT2" min="-1.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel86" x="103.0" y="208.0" width="30.0"
+    <Component type="ScriptLabel" id="ScriptLabel86" x="47.0" y="211.0" width="30.0"
                height="20.0" parentComponent="SLOT2" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="mix" editable="0" processorId="Slot2"/>
-    <Component type="ScriptSlider" id="Knob75" x="103.0" y="176.0" width="35.0"
-               height="40.0" processorId="Slot2" parameterId="voice1-input-signal-mix"
+    <Component type="ScriptSlider" id="Knob75" x="47.0" y="183.0" width="30.0"
+               height="30.0" processorId="Slot2" parameterId="voice1-input-signal-mix"
                numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="0.5" parentComponent="SLOT2" suffix=" ms"/>
-    <Component type="ScriptComboBox" id="m9" x="178.0" y="179.0" max="6" parentComponent="SLOT2"
-               width="30.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
+    <Component type="ScriptComboBox" id="m9" x="119.0" y="186.0" max="6" parentComponent="SLOT2"
+               width="20.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
                processorId="Slot2" parameterId="voice1-input-signal-modsource"
                itemColour="2399119104" itemColour2="2399119104" textColour="4280688158"
                bgColour="4281147392"/>
-    <Component type="ScriptLabel" id="ScriptLabel114" x="7.0" y="185.0" width="60.0"
-               height="20.0" parentComponent="SLOT2" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="SIGNAL" editable="0" processorId="Slot2"/>
     <Component type="ScriptLabel" id="ScriptLabel115" x="161.0" y="421.0" width="50.0"
                height="20.0" parentComponent="SLOT2" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="source" editable="0" processorId="Slot2"/>
@@ -818,7 +824,7 @@
     <Component type="ScriptLabel" id="ScriptLabel126" x="44.0" y="340.0" width="50.0"
                height="20.0" parentComponent="SLOT2" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="source" editable="0" processorId="Slot2"/>
-    <Component type="ScriptLabel" id="ScriptLabel127" x="28.0" y="232.0" width="50.0"
+    <Component type="ScriptLabel" id="ScriptLabel127" x="28.0" y="233.0" width="50.0"
                height="20.0" parentComponent="SLOT2" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="PITCH" editable="0" processorId="Slot2"/>
     <Component type="ScriptLabel" id="ScriptLabel128" x="123.0" y="232.0" width="70.0"
@@ -851,617 +857,624 @@
                height="20.0" parentComponent="SLOT2" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="2" editable="0" fontSize="20.0"
                processorId="Slot2"/>
-    <Component type="ScriptSlider" id="Knob91" x="88.0" y="71.0" width="20.0"
-               height="20.0" processorId="Slot2" parameterId="gainmod" numStrips="206.0"
-               scaleFactor="0.09000000357627869" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.0" parentComponent="SLOT2" min="-1.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel133" x="55.0" y="71.0" width="30.0"
-               height="30.0" parentComponent="SLOT2" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="band 2" editable="0" fontSize="11.0"
-               processorId="Slot2"/>
-    <Component type="ScriptSlider" id="Knob92" x="58.0" y="40.0" width="30.0"
-               height="30.0" processorId="Slot2" parameterId="gain centre" numStrips="206.0"
-               scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.5" parentComponent="SLOT2"/>
-    <Component type="ScriptComboBox" id="m13" x="85.0" y="40.0" max="6" parentComponent="SLOT2"
-               width="20.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
-               processorId="Slot2" parameterId="gainmodsource" itemColour="2399119104"
-               itemColour2="2399119104" textColour="4280688158" bgColour="4281147392"/>
-    <Component type="ScriptSlider" id="Knob93" x="142.0" y="71.0" width="20.0"
-               height="20.0" processorId="Slot2" parameterId="band3mod" numStrips="206.0"
-               scaleFactor="0.09000000357627869" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.0" parentComponent="SLOT2" min="-1.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel134" x="109.0" y="71.0" width="30.0"
-               height="30.0" parentComponent="SLOT2" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="band 3" editable="0" fontSize="11.0"
-               processorId="Slot2"/>
-    <Component type="ScriptSlider" id="Knob94" x="112.0" y="40.0" width="30.0"
-               height="30.0" processorId="Slot2" parameterId="band3" numStrips="206.0"
-               scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.5" parentComponent="SLOT2"/>
-    <Component type="ScriptComboBox" id="m28" x="139.0" y="40.0" max="6" parentComponent="SLOT2"
-               width="20.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
-               processorId="Slot2" parameterId="band3moddest" itemColour="2399119104"
-               itemColour2="2399119104" textColour="4280688158" bgColour="4281147392"/>
-    <Component type="ScriptSlider" id="Knob95" x="194.0" y="71.0" width="20.0"
-               height="20.0" processorId="Slot2" parameterId="band4mod" numStrips="206.0"
-               scaleFactor="0.09000000357627869" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.0" parentComponent="SLOT2" min="-1.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel135" x="163.0" y="71.0" width="30.0"
-               height="30.0" parentComponent="SLOT2" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="band 4" editable="0" fontSize="11.0"
-               processorId="Slot2"/>
-    <Component type="ScriptSlider" id="Knob96" x="166.0" y="40.0" width="30.0"
-               height="30.0" processorId="Slot2" parameterId="babd4" numStrips="206.0"
-               scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.5" parentComponent="SLOT2"/>
-    <Component type="ScriptComboBox" id="m29" x="193.0" y="40.0" max="6" parentComponent="SLOT2"
-               width="20.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
-               processorId="Slot2" parameterId="band4moddesr" itemColour="2399119104"
-               itemColour2="2399119104" textColour="4280688158" bgColour="4281147392"/>
-    <Component type="ScriptSlider" id="Knob97" x="68.0" y="176.0" width="35.0"
-               height="40.0" processorId="Slot2" parameterId="smooth" numStrips="206.0"
+    <Component type="ScriptSlider" id="Knob97" x="10.0" y="183.0" width="30.0"
+               height="30.0" processorId="Slot2" parameterId="smooth" numStrips="206.0"
                scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="200.0" parentComponent="SLOT2" suffix=" ms" max="20000.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel136" x="63.0" y="208.0" width="40.0"
-               height="20.0" parentComponent="SLOT2" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="smooth" editable="0" processorId="Slot2"/>
-    <Component type="ScriptLabel" id="ScriptLabel137" x="29.0" y="7.0" width="40.0"
+    <Component type="ScriptLabel" id="ScriptLabel137" x="6.0" y="63.0" width="40.0"
                height="20.0" parentComponent="SLOT2" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="input" editable="0" processorId="Slot2"/>
-    <Component type="ScriptSlider" id="Knob98" x="5.0" y="7.0" width="25.0"
-               height="25.0" processorId="Slot2" parameterId="mix" numStrips="206.0"
-               scaleFactor="0.1000000014901161" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="-50.0" parentComponent="SLOT2" min="-100.0" max="0.0"
-               mode="Decibel"/>
+    <Component type="ScriptSlider" id="Knob98" x="12.0" y="32.0" width="30.0"
+               height="30.0" processorId="Send Effect2" parameterId="Gain" numStrips="206.0"
+               scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="-18.0" parentComponent="SLOT2" mode="Decibel"
+               min="-100.0" max="0.0" stepSize="0.1000000014901161" suffix=" dB"/>
+    <Component type="ScriptLabel" id="ScriptLabel210" x="3.0" y="211.0" width="50.0"
+               height="20.0" parentComponent="SLOT2" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="smooth" editable="0" processorId="Slot2"/>
+    <Component type="ScriptLabel" id="ScriptLabel211" x="3.0" y="137.0" width="40.0"
+               height="20.0" parentComponent="SLOT2" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="time" editable="0" processorId="Slot2"/>
+    <Component type="ScriptSlider" id="Knob153" x="6.0" y="110.0" width="30.0"
+               height="30.0" processorId="Slot2" parameterId="shtime" numStrips="206.0"
+               scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="9.0" parentComponent="SLOT2" suffix=" ms" max="18.0"
+               mode="TempoSync"/>
+    <Component type="ScriptSlider" id="Knob154" x="36.0" y="110.0" width="30.0"
+               height="30.0" processorId="Slot2" parameterId="shmuti" numStrips="206.0"
+               scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="8.0" parentComponent="SLOT2" suffix=" ms" max="16.0"
+               stepSize="1.0"/>
+    <Component type="ScriptLabel" id="ScriptLabel136" x="35.0" y="137.0" width="30.0"
+               height="20.0" parentComponent="SLOT2" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="div" editable="0" processorId="Slot2"/>
+    <Component type="ScriptSlider" id="Knob155" x="66.0" y="110.0" width="30.0"
+               height="30.0" processorId="Slot2" parameterId="shwt" numStrips="206.0"
+               scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="0.5" parentComponent="SLOT2"/>
+    <Component type="ScriptLabel" id="ScriptLabel212" x="3.0" y="86.0" width="40.0"
+               height="20.0" parentComponent="SLOT2" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="S&amp;H" editable="0"
+               processorId="Slot2"/>
+    <Component type="ScriptLabel" id="ScriptLabel85" x="183.0" y="4.0" width="30.0"
+               height="20.0" parentComponent="SLOT2" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="type" editable="0" fontSize="11.0"
+               processorId="Slot2"/>
+    <Component type="ScriptLabel" id="ScriptLabel133" x="71.0" y="64.0" width="40.0"
+               height="20.0" parentComponent="SLOT2" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="gain" editable="0" processorId="Slot2"/>
+    <Component type="ScriptLabel" id="ScriptLabel134" x="78.0" y="212.0" width="40.0"
+               height="20.0" parentComponent="SLOT2" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="mod" editable="0" processorId="Slot2"/>
+    <Component type="ScriptLabel" id="ScriptLabel135" x="106.0" y="211.0" width="50.0"
+               height="20.0" parentComponent="SLOT2" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="source" editable="0" processorId="Slot2"/>
+    <Component type="ScriptLabel" id="ScriptLabel213" x="4.0" y="164.0" width="60.0"
+               height="20.0" parentComponent="SLOT2" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="SIGNAL" editable="0" processorId="Slot2"/>
+    <Component type="ScriptComboBox" id="m13" x="135.0" y="33.0" max="6" parentComponent="SLOT2"
+               width="20.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
+               processorId="Slot2" parameterId="voice1-input-filter-modsource"
+               itemColour="2399119104" itemColour2="2399119104" textColour="4280688158"
+               bgColour="4281147392"/>
+    <Component type="ScriptSlider" id="Knob92" x="134.0" y="55.0" width="30.0"
+               height="30.0" processorId="Slot2" parameterId="voice1-input-filter-mod"
+               numStrips="206.0" scaleFactor="0.1000000014901161" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="0.0" parentComponent="SLOT2" min="-1.0"/>
+    <Component type="ScriptComboBox" id="m28" x="151.0" y="5.0" max="5" parentComponent="SLOT2"
+               width="30.0" height="20.0" items="Low Pass&#10;High Pass&#10;Low Shelf&#10;High Shelf&#10;Peak"
+               processorId="Slot2" parameterId="voice1-input-filter-type" itemColour="2399119104"
+               itemColour2="2399119104" textColour="4280688158" bgColour="4281147392"/>
   </Component>
-  <Component type="ScriptPanel" id="SLOT3" x="470.0" y="5.0" width="220.0"
+  <Component type="ScriptPanel" id="SLOT3" x="469.0" y="0.0" width="220.0"
              height="510.0" itemColour="0" itemColour2="0" bgColour="16777215"
              textColour="2516582399" borderRadius="1.0" borderSize="1.0">
-    <Component type="ScriptButton" id="Button3" x="11.0" y="341.0" width="30.0"
+    <Component type="ScriptFloatingTile" id="FloatingTile5" x="162.0" y="35.0"
+               ContentType="FilterDisplay" bgColour="4278190080" itemColour="4294944512"
+               itemColour2="2399119104" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Slot3&quot;,&#10;  &quot;Index&quot;: 0,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+               width="50.0" height="50.0" itemColour3="4278190080" parentComponent="SLOT3"/>
+    <Component type="ScriptFloatingTile" id="FloatingTile6" x="161.0" y="176.0"
+               ContentType="AudioAnalyser" bgColour="16777215" itemColour="2399119104"
+               itemColour2="16754432" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Analyser2&quot;,&#10;  &quot;Index&quot;: 1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+               width="50.0" height="50.0" itemColour3="4294944512" textColour="4294944512"
+               parentComponent="SLOT3"/>
+    <Component type="ScriptButton" id="Button4" x="11.0" y="341.0" width="30.0"
                height="10.0" itemColour="2399119104" itemColour2="2399119104"
                textColour="4278190080" processorId="Slot3" parameterId="voice1-sync"
                parentComponent="SLOT3"/>
-    <Component type="ScriptLabel" id="ScriptLabel244" x="730.0" y="584.0" width="40.0"
+    <Component type="ScriptLabel" id="ScriptLabel245" x="730.0" y="584.0" width="40.0"
                height="20.0" alignment="left" fontName="Arial Rounded MT Bold"
                text="input" editable="0" processorId="Slot3" textColour="3036676095"
                parentComponent="SLOT3"/>
-    <Component type="ScriptPanel" id="ScriptPanel4" x="93.0" y="256.0" width="120.0"
+    <Component type="ScriptPanel" id="ScriptPanel5" x="93.0" y="256.0" width="120.0"
                height="100.0" parentComponent="SLOT3" textColour="1912602623"
                bgColour="16754432" itemColour="0" itemColour2="0" borderSize="1.0"
                processorId="Slot3">
-      <Component type="ScriptAudioWaveform" id="AudioWaveform3" x="5.0" y="5.0"
-                 width="110.0" height="90.0" processorId="Slot3" parentComponent="ScriptPanel4"
+      <Component type="ScriptAudioWaveform" id="AudioWaveform4" x="5.0" y="5.0"
+                 width="110.0" height="90.0" processorId="Slot3" parentComponent="ScriptPanel5"
                  bgColour="2399119104" itemColour="4278190080" itemColour2="4278190080"
-                 textColour="16777215" showFileName="0" enableRange="0" opaque="0"/>
+                 textColour="16777215" showFileName="0" opaque="0"/>
     </Component>
-    <Component type="ScriptComboBox" id="m14" x="31.0" y="40.0" max="6" parentComponent="SLOT3"
-               width="20.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
-               processorId="Slot3" parameterId="voice1-input-filter-modsource"
-               itemColour="2399119104" itemColour2="2399119104" textColour="4280688158"
-               bgColour="4281147392"/>
-    <Component type="ScriptSlider" id="Knob99" x="4.0" y="40.0" width="30.0"
+    <Component type="ScriptSlider" id="Knob64" x="43.0" y="32.0" width="30.0"
                height="30.0" processorId="Slot3" parameterId="voice1-input-filter-cut"
-               numStrips="206.0" scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.5" parentComponent="SLOT3"/>
-    <Component type="ScriptLabel" id="ScriptLabel138" x="76.0" y="7.0" width="90.0"
+               numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="0.5" parentComponent="SLOT3" suffix=" Hz"/>
+    <Component type="ScriptLabel" id="ScriptLabel165" x="6.0" y="3.0" width="110.0"
                height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="INPUT FILTER" editable="0"
                processorId="Slot3"/>
-    <Component type="ScriptLabel" id="ScriptLabel139" x="2.0" y="71.0" width="30.0"
+    <Component type="ScriptLabel" id="ScriptLabel166" x="40.0" y="59.0" width="30.0"
                height="30.0" parentComponent="SLOT3" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="band 1" editable="0" fontSize="11.0"
-               processorId="Slot3"/>
-    <Component type="ScriptLabel" id="ScriptLabel140" x="169.0" y="7.0" width="20.0"
+               fontName="Arial Rounded MT Bold" text="cut" editable="0" processorId="Slot3"/>
+    <Component type="ScriptLabel" id="ScriptLabel167" x="108.0" y="63.0" width="20.0"
                height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="q" editable="0" processorId="Slot3"/>
-    <Component type="ScriptSlider" id="Knob100" x="190.0" y="7.0" width="25.0"
-               height="25.0" processorId="Slot3" parameterId="voice1-input-filter-res"
-               numStrips="206.0" scaleFactor="0.1000000014901161" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.5" parentComponent="SLOT3" min="0.2000000029802322"
-               max="9.5"/>
-    <Component type="ScriptSlider" id="Knob101" x="33.0" y="71.0" width="20.0"
-               height="20.0" processorId="Slot3" parameterId="voice1-input-filter-mod"
-               numStrips="206.0" scaleFactor="0.09000000357627869" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.0" parentComponent="SLOT3" min="-1.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel141" x="179.0" y="142.0" width="40.0"
+    <Component type="ScriptSlider" id="Knob83" x="104.0" y="32.0" width="30.0"
+               height="30.0" processorId="Slot3" parameterId="voice1-input-filter-res"
+               numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="4.849999904632568" parentComponent="SLOT3" min="0.2000000029802322"
+               max="8.0"/>
+    <Component type="ScriptSlider" id="Knob84" x="74.0" y="32.0" width="30.0"
+               height="30.0" processorId="Slot3" parameterId="gain centre" numStrips="206.0"
+               scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="0.0" parentComponent="SLOT3" min="-18.0" max="18.0"/>
+    <Component type="ScriptLabel" id="ScriptLabel168" x="178.0" y="137.0" width="40.0"
                height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="rel" editable="0" processorId="Slot3"/>
-    <Component type="ScriptSlider" id="Knob102" x="178.0" y="111.0" width="40.0"
+    <Component type="ScriptSlider" id="Knob103" x="179.0" y="110.0" width="30.0"
                height="30.0" processorId="Slot3" parameterId="voice1-input-track-release"
-               numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               numStrips="206.0" scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="50.0" parentComponent="SLOT3" max="250.0"/>
-    <Component type="ScriptSlider" id="Knob103" x="133.0" y="111.0" width="40.0"
-               height="40.0" processorId="Slot3" parameterId="voice1-input-track-attack"
-               numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+    <Component type="ScriptSlider" id="Knob104" x="145.0" y="110.0" width="30.0"
+               height="30.0" processorId="Slot3" parameterId="voice1-input-track-attack"
+               numStrips="206.0" scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="50.0" parentComponent="SLOT3" max="250.0" stepSize="1.0"
                suffix=" ms"/>
-    <Component type="ScriptLabel" id="ScriptLabel142" x="133.0" y="142.0" width="30.0"
+    <Component type="ScriptLabel" id="ScriptLabel169" x="144.0" y="137.0" width="30.0"
                height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="atk" editable="0" processorId="Slot3"/>
-    <Component type="ScriptLabel" id="ScriptLabel143" x="66.0" y="142.0" width="60.0"
+    <Component type="ScriptLabel" id="ScriptLabel170" x="99.0" y="137.0" width="50.0"
                height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="threshold" editable="0"
-               processorId="Slot3"/>
-    <Component type="ScriptLabel" id="ScriptLabel144" x="4.0" y="102.0" width="50.0"
-               height="60.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="thresh" editable="0" processorId="Slot3"/>
+    <Component type="ScriptLabel" id="ScriptLabel171" x="100.0" y="86.0" width="90.0"
+               height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="INPUT FOLLOW" editable="0"
                processorId="Slot3"/>
-    <Component type="ScriptSlider" id="Knob104" x="80.0" y="111.0" width="40.0"
-               height="40.0" processorId="Slot3" parameterId="voice1-input-track-threshhold"
-               numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+    <Component type="ScriptSlider" id="Knob105" x="106.0" y="110.0" width="30.0"
+               height="30.0" processorId="Slot3" parameterId="voice1-input-track-threshhold"
+               numStrips="206.0" scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="-12.0" parentComponent="SLOT3" mode="Decibel"
                min="-100.0" max="0.0" stepSize="0.1000000014901161" suffix=" dB"/>
-    <Component type="ScriptLabel" id="ScriptLabel145" x="170.0" y="208.0" width="50.0"
-               height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="source" editable="0" processorId="Slot3"/>
-    <Component type="ScriptLabel" id="ScriptLabel146" x="138.0" y="208.0" width="40.0"
-               height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="mod" editable="0" processorId="Slot3"/>
-    <Component type="ScriptSlider" id="Knob105" x="139.0" y="176.0" width="35.0"
-               height="40.0" processorId="Slot3" parameterId="voice1-input-signal-mod"
+    <Component type="ScriptLabel" id="ScriptLabel172" x="62.0" y="142.0" width="30.0"
+               height="10.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="mix" editable="0" processorId="Slot3"/>
+    <Component type="ScriptSlider" id="Knob106" x="81.0" y="183.0" width="30.0"
+               height="30.0" processorId="Slot3" parameterId="voice1-input-signal-mod"
                numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="0.0" parentComponent="SLOT3" min="-1.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel147" x="103.0" y="208.0" width="30.0"
+    <Component type="ScriptLabel" id="ScriptLabel173" x="47.0" y="211.0" width="30.0"
                height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="mix" editable="0" processorId="Slot3"/>
-    <Component type="ScriptSlider" id="Knob106" x="103.0" y="176.0" width="35.0"
-               height="40.0" processorId="Slot3" parameterId="voice1-input-signal-mix"
+    <Component type="ScriptSlider" id="Knob107" x="47.0" y="183.0" width="30.0"
+               height="30.0" processorId="Slot3" parameterId="voice1-input-signal-mix"
                numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="0.5" parentComponent="SLOT3" suffix=" ms"/>
-    <Component type="ScriptComboBox" id="m15" x="178.0" y="179.0" max="6" parentComponent="SLOT3"
-               width="30.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
+    <Component type="ScriptComboBox" id="m19" x="119.0" y="186.0" max="6" parentComponent="SLOT3"
+               width="20.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
                processorId="Slot3" parameterId="voice1-input-signal-modsource"
                itemColour="2399119104" itemColour2="2399119104" textColour="4280688158"
                bgColour="4281147392"/>
-    <Component type="ScriptLabel" id="ScriptLabel148" x="7.0" y="185.0" width="60.0"
-               height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="SIGNAL" editable="0" processorId="Slot3"/>
-    <Component type="ScriptLabel" id="ScriptLabel149" x="161.0" y="421.0" width="50.0"
+    <Component type="ScriptLabel" id="ScriptLabel174" x="161.0" y="421.0" width="50.0"
                height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="source" editable="0" processorId="Slot3"/>
-    <Component type="ScriptLabel" id="ScriptLabel150" x="129.0" y="421.0" width="40.0"
+    <Component type="ScriptLabel" id="ScriptLabel175" x="129.0" y="421.0" width="40.0"
                height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="mod" editable="0" processorId="Slot3"/>
-    <Component type="ScriptSlider" id="Knob107" x="133.0" y="387.0" width="40.0"
+    <Component type="ScriptSlider" id="Knob108" x="133.0" y="387.0" width="40.0"
                height="40.0" processorId="Slot3" parameterId="voice1-filter-mod"
                numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="0.0" parentComponent="SLOT3" min="-1.0"/>
-    <Component type="ScriptSlider" id="Knob108" x="55.0" y="387.0" width="40.0"
+    <Component type="ScriptSlider" id="Knob109" x="55.0" y="387.0" width="40.0"
                height="40.0" processorId="Slot3" parameterId="voice1-filter-res"
                numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="1.0" parentComponent="SLOT3" min="0.2000000029802322"
                max="9.899999618530273"/>
-    <Component type="ScriptLabel" id="ScriptLabel151" x="54.0" y="421.0" width="30.0"
+    <Component type="ScriptLabel" id="ScriptLabel176" x="54.0" y="421.0" width="30.0"
                height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="res" editable="0" processorId="Slot3"/>
-    <Component type="ScriptLabel" id="ScriptLabel152" x="17.0" y="421.0" width="30.0"
+    <Component type="ScriptLabel" id="ScriptLabel177" x="17.0" y="421.0" width="30.0"
                height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="cut" editable="0" processorId="Slot3"/>
-    <Component type="ScriptSlider" id="Knob109" x="18.0" y="387.0" width="40.0"
+    <Component type="ScriptSlider" id="Knob110" x="18.0" y="387.0" width="40.0"
                height="40.0" processorId="Slot3" parameterId="voice1-filter-cut"
                numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="0.5" parentComponent="SLOT3"/>
-    <Component type="ScriptComboBox" id="m16" x="170.0" y="390.0" max="6" parentComponent="SLOT3"
+    <Component type="ScriptComboBox" id="m20" x="170.0" y="390.0" max="6" parentComponent="SLOT3"
                width="30.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
                processorId="Slot3" parameterId="voice2-input-filter-modsource"
                itemColour="2399119104" itemColour2="2399119104" textColour="4280688158"
                bgColour="4281147392"/>
-    <Component type="ScriptSlider" id="Knob110" x="71.0" y="450.0" width="40.0"
+    <Component type="ScriptSlider" id="Knob111" x="71.0" y="450.0" width="40.0"
                height="40.0" processorId="Slot3" parameterId="voice1-attack"
                numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="1000.0" parentComponent="SLOT3" mode="Time" max="20000.0"
                stepSize="1.0" suffix=" ms"/>
-    <Component type="ScriptLabel" id="ScriptLabel153" x="71.0" y="482.0" width="40.0"
+    <Component type="ScriptLabel" id="ScriptLabel178" x="71.0" y="482.0" width="40.0"
                height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="atk" editable="0" processorId="Slot3"/>
-    <Component type="ScriptLabel" id="ScriptLabel154" x="124.0" y="481.0" width="30.0"
+    <Component type="ScriptLabel" id="ScriptLabel179" x="124.0" y="481.0" width="30.0"
                height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="rel" editable="0" processorId="Slot3"/>
-    <Component type="ScriptSlider" id="Knob111" x="123.0" y="450.0" width="40.0"
+    <Component type="ScriptSlider" id="Knob112" x="123.0" y="450.0" width="40.0"
                height="40.0" processorId="Slot3" parameterId="voice1-release"
                numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="1000.0" parentComponent="SLOT3" mode="Time" max="20000.0"
                stepSize="1.0" suffix=" ms"/>
-    <Component type="ScriptSlider" id="Knob112" x="173.0" y="450.0" width="40.0"
+    <Component type="ScriptSlider" id="Knob113" x="173.0" y="450.0" width="40.0"
                height="40.0" processorId="Slot3" parameterId="voice1-vol" numStrips="206.0"
                scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="-18.0" parentComponent="SLOT3" mode="Decibel"
                min="-100.0" max="0.0" stepSize="0.1000000014901161" suffix=" dB"/>
-    <Component type="ScriptLabel" id="ScriptLabel155" x="172.0" y="481.0" width="40.0"
+    <Component type="ScriptLabel" id="ScriptLabel180" x="172.0" y="481.0" width="40.0"
                height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="vol" editable="0" processorId="Slot3"/>
-    <Component type="ScriptComboBox" id="m17" x="53.0" y="319.0" max="6" parentComponent="SLOT3"
+    <Component type="ScriptComboBox" id="m21" x="53.0" y="319.0" max="6" parentComponent="SLOT3"
                width="30.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
                processorId="Slot3" parameterId="voice1-pitch-modsource" itemColour="2399119104"
                itemColour2="2399119104" textColour="4280688158" bgColour="4281147392"/>
-    <Component type="ScriptSlider" id="Knob113" x="10.0" y="262.0" width="30.0"
+    <Component type="ScriptSlider" id="Knob114" x="10.0" y="262.0" width="30.0"
                height="30.0" processorId="Slot3" parameterId="voice1-pitch-"
                numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="0.5" parentComponent="SLOT3"/>
-    <Component type="ScriptLabel" id="ScriptLabel156" x="5.0" y="294.0" width="40.0"
+    <Component type="ScriptLabel" id="ScriptLabel181" x="5.0" y="294.0" width="40.0"
                height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="pitch" editable="0" processorId="Slot3"/>
-    <Component type="ScriptSlider" id="Knob114" x="55.0" y="262.0" width="40.0"
+    <Component type="ScriptSlider" id="Knob115" x="55.0" y="262.0" width="40.0"
                height="40.0" processorId="Slot3" parameterId="voice1-pitch-mod"
                numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="0.0" parentComponent="SLOT3" min="-1.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel157" x="51.0" y="294.0" width="40.0"
+    <Component type="ScriptLabel" id="ScriptLabel182" x="51.0" y="294.0" width="40.0"
                height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="mod" editable="0" processorId="Slot3"/>
-    <Component type="ScriptLabel" id="ScriptLabel158" x="44.0" y="340.0" width="50.0"
+    <Component type="ScriptLabel" id="ScriptLabel183" x="44.0" y="340.0" width="50.0"
                height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="source" editable="0" processorId="Slot3"/>
-    <Component type="ScriptLabel" id="ScriptLabel159" x="28.0" y="232.0" width="50.0"
+    <Component type="ScriptLabel" id="ScriptLabel184" x="28.0" y="233.0" width="50.0"
                height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="PITCH" editable="0" processorId="Slot3"/>
-    <Component type="ScriptLabel" id="ScriptLabel160" x="123.0" y="232.0" width="70.0"
+    <Component type="ScriptLabel" id="ScriptLabel185" x="123.0" y="232.0" width="70.0"
                height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="SAMPLE" editable="0" processorId="Slot3"/>
-    <Component type="ScriptLabel" id="ScriptLabel161" x="79.0" y="363.0" width="100.0"
+    <Component type="ScriptLabel" id="ScriptLabel186" x="79.0" y="363.0" width="100.0"
                height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="FILTER" editable="0" processorId="Slot3"/>
-    <Component type="ScriptLabel" id="ScriptLabel162" x="15.0" y="447.0" width="40.0"
+    <Component type="ScriptLabel" id="ScriptLabel187" x="15.0" y="447.0" width="40.0"
                height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="AMP" editable="0" processorId="Slot3"/>
-    <Component type="ScriptComboBox" id="m18" x="92.0" y="390.0" max="3" parentComponent="SLOT3"
+    <Component type="ScriptComboBox" id="m22" x="92.0" y="390.0" max="3" parentComponent="SLOT3"
                width="30.0" height="20.0" items="LP&#10;HP&#10;BP" processorId="Slot3"
                parameterId="voice1-ftype" itemColour="2399119104" itemColour2="2399119104"
                textColour="4280688158" bgColour="4281147392"/>
-    <Component type="ScriptLabel" id="ScriptLabel163" x="89.0" y="421.0" width="40.0"
+    <Component type="ScriptLabel" id="ScriptLabel188" x="89.0" y="421.0" width="40.0"
                height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="type" editable="0" processorId="Slot3"/>
-    <Component type="ScriptSlider" id="Knob124" x="8.0" y="315.0" width="15.0"
+    <Component type="ScriptSlider" id="Knob125" x="8.0" y="315.0" width="15.0"
                height="15.0" processorId="Slot3" parameterId="voice1-div" numStrips="206.0"
                scaleFactor="0.07000000029802322" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="8.5" parentComponent="SLOT3" max="16.0" min="1.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel205" x="24.0" y="315.0" width="25.0"
+    <Component type="ScriptLabel" id="ScriptLabel206" x="24.0" y="315.0" width="25.0"
                height="15.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="div" editable="0" processorId="Slot3"/>
-    <Component type="ScriptLabel" id="ScriptLabel206" x="12.0" y="350.0" width="30.0"
+    <Component type="ScriptLabel" id="ScriptLabel207" x="12.0" y="350.0" width="30.0"
                height="10.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="sync" editable="0" processorId="Slot3"/>
-    <Component type="ScriptLabel" id="ScriptLabel164" x="21.0" y="475.0" width="30.0"
+    <Component type="ScriptLabel" id="ScriptLabel189" x="21.0" y="475.0" width="30.0"
                height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="3" editable="0" fontSize="20.0"
                processorId="Slot3"/>
-    <Component type="ScriptSlider" id="Knob115" x="88.0" y="71.0" width="20.0"
-               height="20.0" processorId="Slot3" parameterId="gainmod" numStrips="206.0"
-               scaleFactor="0.09000000357627869" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.0" parentComponent="SLOT3" min="-1.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel165" x="55.0" y="71.0" width="30.0"
-               height="30.0" parentComponent="SLOT3" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="band 2" editable="0" fontSize="11.0"
-               processorId="Slot3"/>
-    <Component type="ScriptSlider" id="Knob116" x="58.0" y="40.0" width="30.0"
-               height="30.0" processorId="Slot3" parameterId="gain centre" numStrips="206.0"
-               scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.5" parentComponent="SLOT3"/>
-    <Component type="ScriptComboBox" id="m19" x="85.0" y="40.0" max="6" parentComponent="SLOT3"
-               width="20.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
-               processorId="Slot3" parameterId="gainmodsource" itemColour="2399119104"
-               itemColour2="2399119104" textColour="4280688158" bgColour="4281147392"/>
-    <Component type="ScriptSlider" id="Knob117" x="142.0" y="71.0" width="20.0"
-               height="20.0" processorId="Slot3" parameterId="band3mod" numStrips="206.0"
-               scaleFactor="0.09000000357627869" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.0" parentComponent="SLOT3" min="-1.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel166" x="109.0" y="71.0" width="30.0"
-               height="30.0" parentComponent="SLOT3" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="band 3" editable="0" fontSize="11.0"
-               processorId="Slot3"/>
-    <Component type="ScriptSlider" id="Knob118" x="112.0" y="40.0" width="30.0"
-               height="30.0" processorId="Slot3" parameterId="band3" numStrips="206.0"
-               scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.5" parentComponent="SLOT3"/>
-    <Component type="ScriptComboBox" id="m30" x="139.0" y="40.0" max="6" parentComponent="SLOT3"
-               width="20.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
-               processorId="Slot3" parameterId="band3moddest" itemColour="2399119104"
-               itemColour2="2399119104" textColour="4280688158" bgColour="4281147392"/>
-    <Component type="ScriptSlider" id="Knob119" x="194.0" y="71.0" width="20.0"
-               height="20.0" processorId="Slot3" parameterId="band4mod" numStrips="206.0"
-               scaleFactor="0.09000000357627869" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.0" parentComponent="SLOT3" min="-1.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel167" x="163.0" y="71.0" width="30.0"
-               height="30.0" parentComponent="SLOT3" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="band 4" editable="0" fontSize="11.0"
-               processorId="Slot3"/>
-    <Component type="ScriptSlider" id="Knob120" x="166.0" y="40.0" width="30.0"
-               height="30.0" processorId="Slot3" parameterId="babd4" numStrips="206.0"
-               scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.5" parentComponent="SLOT3"/>
-    <Component type="ScriptComboBox" id="m31" x="193.0" y="40.0" max="6" parentComponent="SLOT3"
-               width="20.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
-               processorId="Slot3" parameterId="band4moddesr" itemColour="2399119104"
-               itemColour2="2399119104" textColour="4280688158" bgColour="4281147392"/>
-    <Component type="ScriptSlider" id="Knob121" x="68.0" y="176.0" width="35.0"
-               height="40.0" processorId="Slot3" parameterId="smooth" numStrips="206.0"
+    <Component type="ScriptSlider" id="Knob116" x="10.0" y="183.0" width="30.0"
+               height="30.0" processorId="Slot3" parameterId="smooth" numStrips="206.0"
                scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="200.0" parentComponent="SLOT3" suffix=" ms" max="20000.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel168" x="63.0" y="208.0" width="40.0"
-               height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="smooth" editable="0" processorId="Slot3"/>
-    <Component type="ScriptLabel" id="ScriptLabel169" x="29.0" y="7.0" width="40.0"
+    <Component type="ScriptLabel" id="ScriptLabel190" x="6.0" y="63.0" width="40.0"
                height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="input" editable="0" processorId="Slot3"/>
-    <Component type="ScriptSlider" id="Knob125" x="5.0" y="7.0" width="25.0"
-               height="25.0" processorId="Slot3" parameterId="mix" numStrips="206.0"
-               scaleFactor="0.1000000014901161" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="-50.0" parentComponent="SLOT3" min="-100.0" max="0.0"
-               mode="Decibel"/>
+    <Component type="ScriptSlider" id="Knob117" x="12.0" y="32.0" width="30.0"
+               height="30.0" processorId="Send Effect3" parameterId="Gain" numStrips="206.0"
+               scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="-18.0" parentComponent="SLOT3" mode="Decibel"
+               min="-100.0" max="0.0" stepSize="0.1000000014901161" suffix=" dB"/>
+    <Component type="ScriptLabel" id="ScriptLabel218" x="3.0" y="211.0" width="50.0"
+               height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="smooth" editable="0" processorId="Slot3"/>
+    <Component type="ScriptLabel" id="ScriptLabel219" x="3.0" y="137.0" width="40.0"
+               height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="time" editable="0" processorId="Slot3"/>
+    <Component type="ScriptSlider" id="Knob159" x="6.0" y="110.0" width="30.0"
+               height="30.0" processorId="Slot3" parameterId="shtime" numStrips="206.0"
+               scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="9.0" parentComponent="SLOT3" suffix=" ms" max="18.0"
+               mode="TempoSync"/>
+    <Component type="ScriptSlider" id="Knob160" x="36.0" y="110.0" width="30.0"
+               height="30.0" processorId="Slot3" parameterId="shmuti" numStrips="206.0"
+               scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="8.0" parentComponent="SLOT3" suffix=" ms" max="16.0"
+               stepSize="1.0"/>
+    <Component type="ScriptLabel" id="ScriptLabel191" x="35.0" y="137.0" width="30.0"
+               height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="div" editable="0" processorId="Slot3"/>
+    <Component type="ScriptSlider" id="Knob161" x="66.0" y="110.0" width="30.0"
+               height="30.0" processorId="Slot3" parameterId="shwt" numStrips="206.0"
+               scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="0.5" parentComponent="SLOT3"/>
+    <Component type="ScriptLabel" id="ScriptLabel220" x="3.0" y="86.0" width="40.0"
+               height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="S&amp;H" editable="0"
+               processorId="Slot3"/>
+    <Component type="ScriptLabel" id="ScriptLabel192" x="183.0" y="4.0" width="30.0"
+               height="20.0" parentComponent="SLOT3" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="type" editable="0" fontSize="11.0"
+               processorId="Slot3"/>
+    <Component type="ScriptLabel" id="ScriptLabel193" x="71.0" y="64.0" width="40.0"
+               height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="gain" editable="0" processorId="Slot3"/>
+    <Component type="ScriptLabel" id="ScriptLabel194" x="78.0" y="212.0" width="40.0"
+               height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="mod" editable="0" processorId="Slot3"/>
+    <Component type="ScriptLabel" id="ScriptLabel195" x="106.0" y="211.0" width="50.0"
+               height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="source" editable="0" processorId="Slot3"/>
+    <Component type="ScriptLabel" id="ScriptLabel221" x="4.0" y="164.0" width="60.0"
+               height="20.0" parentComponent="SLOT3" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="SIGNAL" editable="0" processorId="Slot3"/>
+    <Component type="ScriptComboBox" id="m23" x="135.0" y="33.0" max="6" parentComponent="SLOT3"
+               width="20.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
+               processorId="Slot3" parameterId="voice1-input-filter-modsource"
+               itemColour="2399119104" itemColour2="2399119104" textColour="4280688158"
+               bgColour="4281147392"/>
+    <Component type="ScriptSlider" id="Knob118" x="134.0" y="55.0" width="30.0"
+               height="30.0" processorId="Slot3" parameterId="voice1-input-filter-mod"
+               numStrips="206.0" scaleFactor="0.1000000014901161" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="0.0" parentComponent="SLOT3" min="-1.0"/>
+    <Component type="ScriptComboBox" id="m30" x="151.0" y="5.0" max="5" parentComponent="SLOT3"
+               width="30.0" height="20.0" items="Low Pass&#10;High Pass&#10;Low Shelf&#10;High Shelf&#10;Peak"
+               processorId="Slot3" parameterId="voice1-input-filter-type" itemColour="2399119104"
+               itemColour2="2399119104" textColour="4280688158" bgColour="4281147392"/>
   </Component>
-  <Component type="ScriptPanel" id="SLOT4" x="701.0" y="5.0" width="220.0"
+  <Component type="ScriptPanel" id="SLOT4" x="698.0" y="0.0" width="220.0"
              height="510.0" itemColour="0" itemColour2="0" bgColour="16777215"
              textColour="2516582399" borderRadius="1.0" borderSize="1.0">
-    <Component type="ScriptButton" id="Button4" x="11.0" y="341.0" width="30.0"
+    <Component type="ScriptFloatingTile" id="FloatingTile7" x="162.0" y="35.0"
+               ContentType="FilterDisplay" bgColour="4278190080" itemColour="4294944512"
+               itemColour2="2399119104" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Slot4&quot;,&#10;  &quot;Index&quot;: 0,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+               width="50.0" height="50.0" itemColour3="4278190080" parentComponent="SLOT4"/>
+    <Component type="ScriptFloatingTile" id="FloatingTile8" x="161.0" y="176.0"
+               ContentType="AudioAnalyser" bgColour="16777215" itemColour="2399119104"
+               itemColour2="16754432" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Analyser3&quot;,&#10;  &quot;Index&quot;: 1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+               width="50.0" height="50.0" itemColour3="4294944512" textColour="4294944512"
+               parentComponent="SLOT4"/>
+    <Component type="ScriptButton" id="Button5" x="11.0" y="341.0" width="30.0"
                height="10.0" itemColour="2399119104" itemColour2="2399119104"
                textColour="4278190080" processorId="Slot4" parameterId="voice1-sync"
                parentComponent="SLOT4"/>
-    <Component type="ScriptLabel" id="ScriptLabel245" x="730.0" y="584.0" width="40.0"
+    <Component type="ScriptLabel" id="ScriptLabel248" x="730.0" y="584.0" width="40.0"
                height="20.0" alignment="left" fontName="Arial Rounded MT Bold"
                text="input" editable="0" processorId="Slot4" textColour="3036676095"
                parentComponent="SLOT4"/>
-    <Component type="ScriptPanel" id="ScriptPanel5" x="93.0" y="256.0" width="120.0"
+    <Component type="ScriptPanel" id="ScriptPanel6" x="93.0" y="256.0" width="120.0"
                height="100.0" parentComponent="SLOT4" textColour="1912602623"
                bgColour="16754432" itemColour="0" itemColour2="0" borderSize="1.0"
                processorId="Slot4">
-      <Component type="ScriptAudioWaveform" id="AudioWaveform4" x="5.0" y="5.0"
-                 width="110.0" height="90.0" processorId="Slot4" parentComponent="ScriptPanel5"
+      <Component type="ScriptAudioWaveform" id="AudioWaveform5" x="5.0" y="5.0"
+                 width="110.0" height="90.0" processorId="Slot4" parentComponent="ScriptPanel6"
                  bgColour="2399119104" itemColour="4278190080" itemColour2="4278190080"
-                 textColour="16777215" showFileName="0" enableRange="0" opaque="0"/>
+                 textColour="16777215" showFileName="0" opaque="0"/>
     </Component>
-    <Component type="ScriptComboBox" id="m20" x="31.0" y="40.0" max="6" parentComponent="SLOT4"
-               width="20.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
-               processorId="Slot4" parameterId="voice1-input-filter-modsource"
-               itemColour="2399119104" itemColour2="2399119104" textColour="4280688158"
-               bgColour="4281147392"/>
-    <Component type="ScriptSlider" id="Knob126" x="4.0" y="40.0" width="30.0"
+    <Component type="ScriptSlider" id="Knob119" x="43.0" y="32.0" width="30.0"
                height="30.0" processorId="Slot4" parameterId="voice1-input-filter-cut"
-               numStrips="206.0" scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.5" parentComponent="SLOT4"/>
-    <Component type="ScriptLabel" id="ScriptLabel170" x="76.0" y="7.0" width="90.0"
+               numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="0.5" parentComponent="SLOT4" suffix=" Hz"/>
+    <Component type="ScriptLabel" id="ScriptLabel196" x="6.0" y="3.0" width="110.0"
                height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="INPUT FILTER" editable="0"
                processorId="Slot4"/>
-    <Component type="ScriptLabel" id="ScriptLabel171" x="2.0" y="71.0" width="30.0"
+    <Component type="ScriptLabel" id="ScriptLabel197" x="40.0" y="59.0" width="30.0"
                height="30.0" parentComponent="SLOT4" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="band 1" editable="0" fontSize="11.0"
-               processorId="Slot4"/>
-    <Component type="ScriptLabel" id="ScriptLabel172" x="169.0" y="7.0" width="20.0"
+               fontName="Arial Rounded MT Bold" text="cut" editable="0" processorId="Slot4"/>
+    <Component type="ScriptLabel" id="ScriptLabel198" x="108.0" y="63.0" width="20.0"
                height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="q" editable="0" processorId="Slot4"/>
-    <Component type="ScriptSlider" id="Knob127" x="190.0" y="7.0" width="25.0"
-               height="25.0" processorId="Slot4" parameterId="voice1-input-filter-res"
-               numStrips="206.0" scaleFactor="0.1000000014901161" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.5" parentComponent="SLOT4" min="0.2000000029802322"
-               max="9.5"/>
-    <Component type="ScriptSlider" id="Knob128" x="33.0" y="71.0" width="20.0"
-               height="20.0" processorId="Slot4" parameterId="voice1-input-filter-mod"
-               numStrips="206.0" scaleFactor="0.09000000357627869" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.0" parentComponent="SLOT4" min="-1.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel173" x="179.0" y="142.0" width="40.0"
+    <Component type="ScriptSlider" id="Knob120" x="104.0" y="32.0" width="30.0"
+               height="30.0" processorId="Slot4" parameterId="voice1-input-filter-res"
+               numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="4.849999904632568" parentComponent="SLOT4" min="0.2000000029802322"
+               max="8.0"/>
+    <Component type="ScriptSlider" id="Knob121" x="74.0" y="32.0" width="30.0"
+               height="30.0" processorId="Slot4" parameterId="gain centre" numStrips="206.0"
+               scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="0.0" parentComponent="SLOT4" min="-18.0" max="18.0"/>
+    <Component type="ScriptLabel" id="ScriptLabel199" x="178.0" y="137.0" width="40.0"
                height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="rel" editable="0" processorId="Slot4"/>
-    <Component type="ScriptSlider" id="Knob129" x="178.0" y="111.0" width="40.0"
+    <Component type="ScriptSlider" id="Knob122" x="179.0" y="110.0" width="30.0"
                height="30.0" processorId="Slot4" parameterId="voice1-input-track-release"
-               numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               numStrips="206.0" scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="50.0" parentComponent="SLOT4" max="250.0"/>
-    <Component type="ScriptSlider" id="Knob130" x="133.0" y="111.0" width="40.0"
-               height="40.0" processorId="Slot4" parameterId="voice1-input-track-attack"
-               numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+    <Component type="ScriptSlider" id="Knob126" x="145.0" y="110.0" width="30.0"
+               height="30.0" processorId="Slot4" parameterId="voice1-input-track-attack"
+               numStrips="206.0" scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="50.0" parentComponent="SLOT4" max="250.0" stepSize="1.0"
                suffix=" ms"/>
-    <Component type="ScriptLabel" id="ScriptLabel174" x="133.0" y="142.0" width="30.0"
+    <Component type="ScriptLabel" id="ScriptLabel200" x="144.0" y="137.0" width="30.0"
                height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="atk" editable="0" processorId="Slot4"/>
-    <Component type="ScriptLabel" id="ScriptLabel175" x="66.0" y="142.0" width="60.0"
+    <Component type="ScriptLabel" id="ScriptLabel201" x="99.0" y="137.0" width="50.0"
                height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="threshold" editable="0"
-               processorId="Slot4"/>
-    <Component type="ScriptLabel" id="ScriptLabel176" x="4.0" y="102.0" width="50.0"
-               height="60.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="thresh" editable="0" processorId="Slot4"/>
+    <Component type="ScriptLabel" id="ScriptLabel208" x="100.0" y="86.0" width="90.0"
+               height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="INPUT FOLLOW" editable="0"
                processorId="Slot4"/>
-    <Component type="ScriptSlider" id="Knob131" x="80.0" y="111.0" width="40.0"
-               height="40.0" processorId="Slot4" parameterId="voice1-input-track-threshhold"
-               numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+    <Component type="ScriptSlider" id="Knob127" x="106.0" y="110.0" width="30.0"
+               height="30.0" processorId="Slot4" parameterId="voice1-input-track-threshhold"
+               numStrips="206.0" scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="-12.0" parentComponent="SLOT4" mode="Decibel"
                min="-100.0" max="0.0" stepSize="0.1000000014901161" suffix=" dB"/>
-    <Component type="ScriptLabel" id="ScriptLabel177" x="170.0" y="208.0" width="50.0"
-               height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="source" editable="0" processorId="Slot4"/>
-    <Component type="ScriptLabel" id="ScriptLabel178" x="138.0" y="208.0" width="40.0"
-               height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="mod" editable="0" processorId="Slot4"/>
-    <Component type="ScriptSlider" id="Knob132" x="139.0" y="176.0" width="35.0"
-               height="40.0" processorId="Slot4" parameterId="voice1-input-signal-mod"
+    <Component type="ScriptLabel" id="ScriptLabel209" x="62.0" y="142.0" width="30.0"
+               height="10.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="mix" editable="0" processorId="Slot4"/>
+    <Component type="ScriptSlider" id="Knob128" x="81.0" y="183.0" width="30.0"
+               height="30.0" processorId="Slot4" parameterId="voice1-input-signal-mod"
                numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="0.0" parentComponent="SLOT4" min="-1.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel179" x="103.0" y="208.0" width="30.0"
+    <Component type="ScriptLabel" id="ScriptLabel222" x="47.0" y="211.0" width="30.0"
                height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="mix" editable="0" processorId="Slot4"/>
-    <Component type="ScriptSlider" id="Knob133" x="103.0" y="176.0" width="35.0"
-               height="40.0" processorId="Slot4" parameterId="voice1-input-signal-mix"
+    <Component type="ScriptSlider" id="Knob129" x="47.0" y="183.0" width="30.0"
+               height="30.0" processorId="Slot4" parameterId="voice1-input-signal-mix"
                numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="0.5" parentComponent="SLOT4" suffix=" ms"/>
-    <Component type="ScriptComboBox" id="m21" x="178.0" y="179.0" max="6" parentComponent="SLOT4"
-               width="30.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
+    <Component type="ScriptComboBox" id="m24" x="119.0" y="186.0" max="6" parentComponent="SLOT4"
+               width="20.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
                processorId="Slot4" parameterId="voice1-input-signal-modsource"
                itemColour="2399119104" itemColour2="2399119104" textColour="4280688158"
                bgColour="4281147392"/>
-    <Component type="ScriptLabel" id="ScriptLabel180" x="7.0" y="185.0" width="60.0"
-               height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="SIGNAL" editable="0" processorId="Slot4"/>
-    <Component type="ScriptLabel" id="ScriptLabel181" x="161.0" y="421.0" width="50.0"
+    <Component type="ScriptLabel" id="ScriptLabel223" x="161.0" y="421.0" width="50.0"
                height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="source" editable="0" processorId="Slot4"/>
-    <Component type="ScriptLabel" id="ScriptLabel182" x="129.0" y="421.0" width="40.0"
+    <Component type="ScriptLabel" id="ScriptLabel224" x="129.0" y="421.0" width="40.0"
                height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="mod" editable="0" processorId="Slot4"/>
-    <Component type="ScriptSlider" id="Knob134" x="133.0" y="387.0" width="40.0"
+    <Component type="ScriptSlider" id="Knob130" x="133.0" y="387.0" width="40.0"
                height="40.0" processorId="Slot4" parameterId="voice1-filter-mod"
                numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="0.0" parentComponent="SLOT4" min="-1.0"/>
-    <Component type="ScriptSlider" id="Knob135" x="55.0" y="387.0" width="40.0"
+    <Component type="ScriptSlider" id="Knob131" x="55.0" y="387.0" width="40.0"
                height="40.0" processorId="Slot4" parameterId="voice1-filter-res"
                numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="1.0" parentComponent="SLOT4" min="0.2000000029802322"
                max="9.899999618530273"/>
-    <Component type="ScriptLabel" id="ScriptLabel183" x="54.0" y="421.0" width="30.0"
+    <Component type="ScriptLabel" id="ScriptLabel225" x="54.0" y="421.0" width="30.0"
                height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="res" editable="0" processorId="Slot4"/>
-    <Component type="ScriptLabel" id="ScriptLabel184" x="17.0" y="421.0" width="30.0"
+    <Component type="ScriptLabel" id="ScriptLabel226" x="17.0" y="421.0" width="30.0"
                height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="cut" editable="0" processorId="Slot4"/>
-    <Component type="ScriptSlider" id="Knob136" x="18.0" y="387.0" width="40.0"
+    <Component type="ScriptSlider" id="Knob132" x="18.0" y="387.0" width="40.0"
                height="40.0" processorId="Slot4" parameterId="voice1-filter-cut"
                numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="0.5" parentComponent="SLOT4"/>
-    <Component type="ScriptComboBox" id="m22" x="170.0" y="390.0" max="6" parentComponent="SLOT4"
+    <Component type="ScriptComboBox" id="m25" x="170.0" y="390.0" max="6" parentComponent="SLOT4"
                width="30.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
                processorId="Slot4" parameterId="voice2-input-filter-modsource"
                itemColour="2399119104" itemColour2="2399119104" textColour="4280688158"
                bgColour="4281147392"/>
-    <Component type="ScriptSlider" id="Knob137" x="71.0" y="450.0" width="40.0"
+    <Component type="ScriptSlider" id="Knob133" x="71.0" y="450.0" width="40.0"
                height="40.0" processorId="Slot4" parameterId="voice1-attack"
                numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="1000.0" parentComponent="SLOT4" mode="Time" max="20000.0"
                stepSize="1.0" suffix=" ms"/>
-    <Component type="ScriptLabel" id="ScriptLabel185" x="71.0" y="482.0" width="40.0"
+    <Component type="ScriptLabel" id="ScriptLabel227" x="71.0" y="482.0" width="40.0"
                height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="atk" editable="0" processorId="Slot4"/>
-    <Component type="ScriptLabel" id="ScriptLabel186" x="124.0" y="481.0" width="30.0"
+    <Component type="ScriptLabel" id="ScriptLabel228" x="124.0" y="481.0" width="30.0"
                height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="rel" editable="0" processorId="Slot4"/>
-    <Component type="ScriptSlider" id="Knob138" x="123.0" y="450.0" width="40.0"
+    <Component type="ScriptSlider" id="Knob134" x="123.0" y="450.0" width="40.0"
                height="40.0" processorId="Slot4" parameterId="voice1-release"
                numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="1000.0" parentComponent="SLOT4" mode="Time" max="20000.0"
                stepSize="1.0" suffix=" ms"/>
-    <Component type="ScriptSlider" id="Knob139" x="173.0" y="450.0" width="40.0"
+    <Component type="ScriptSlider" id="Knob135" x="173.0" y="450.0" width="40.0"
                height="40.0" processorId="Slot4" parameterId="voice1-vol" numStrips="206.0"
                scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="-18.0" parentComponent="SLOT4" mode="Decibel"
                min="-100.0" max="0.0" stepSize="0.1000000014901161" suffix=" dB"/>
-    <Component type="ScriptLabel" id="ScriptLabel187" x="172.0" y="481.0" width="40.0"
+    <Component type="ScriptLabel" id="ScriptLabel229" x="172.0" y="481.0" width="40.0"
                height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="vol" editable="0" processorId="Slot4"/>
-    <Component type="ScriptComboBox" id="m23" x="53.0" y="319.0" max="6" parentComponent="SLOT4"
+    <Component type="ScriptComboBox" id="m26" x="53.0" y="319.0" max="6" parentComponent="SLOT4"
                width="30.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
                processorId="Slot4" parameterId="voice1-pitch-modsource" itemColour="2399119104"
                itemColour2="2399119104" textColour="4280688158" bgColour="4281147392"/>
-    <Component type="ScriptSlider" id="Knob140" x="10.0" y="262.0" width="30.0"
+    <Component type="ScriptSlider" id="Knob136" x="10.0" y="262.0" width="30.0"
                height="30.0" processorId="Slot4" parameterId="voice1-pitch-"
                numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="0.5" parentComponent="SLOT4"/>
-    <Component type="ScriptLabel" id="ScriptLabel188" x="5.0" y="294.0" width="40.0"
+    <Component type="ScriptLabel" id="ScriptLabel230" x="5.0" y="294.0" width="40.0"
                height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="pitch" editable="0" processorId="Slot4"/>
-    <Component type="ScriptSlider" id="Knob141" x="55.0" y="262.0" width="40.0"
+    <Component type="ScriptSlider" id="Knob137" x="55.0" y="262.0" width="40.0"
                height="40.0" processorId="Slot4" parameterId="voice1-pitch-mod"
                numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="0.0" parentComponent="SLOT4" min="-1.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel189" x="51.0" y="294.0" width="40.0"
+    <Component type="ScriptLabel" id="ScriptLabel231" x="51.0" y="294.0" width="40.0"
                height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="mod" editable="0" processorId="Slot4"/>
-    <Component type="ScriptLabel" id="ScriptLabel190" x="44.0" y="340.0" width="50.0"
+    <Component type="ScriptLabel" id="ScriptLabel232" x="44.0" y="340.0" width="50.0"
                height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="source" editable="0" processorId="Slot4"/>
-    <Component type="ScriptLabel" id="ScriptLabel191" x="28.0" y="232.0" width="50.0"
+    <Component type="ScriptLabel" id="ScriptLabel233" x="28.0" y="233.0" width="50.0"
                height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="PITCH" editable="0" processorId="Slot4"/>
-    <Component type="ScriptLabel" id="ScriptLabel192" x="123.0" y="232.0" width="70.0"
+    <Component type="ScriptLabel" id="ScriptLabel234" x="123.0" y="232.0" width="70.0"
                height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="SAMPLE" editable="0" processorId="Slot4"/>
-    <Component type="ScriptLabel" id="ScriptLabel193" x="79.0" y="363.0" width="100.0"
+    <Component type="ScriptLabel" id="ScriptLabel235" x="79.0" y="363.0" width="100.0"
                height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="FILTER" editable="0" processorId="Slot4"/>
-    <Component type="ScriptLabel" id="ScriptLabel194" x="15.0" y="447.0" width="40.0"
+    <Component type="ScriptLabel" id="ScriptLabel236" x="15.0" y="447.0" width="40.0"
                height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="AMP" editable="0" processorId="Slot4"/>
-    <Component type="ScriptComboBox" id="m24" x="92.0" y="390.0" max="3" parentComponent="SLOT4"
+    <Component type="ScriptComboBox" id="m27" x="92.0" y="390.0" max="3" parentComponent="SLOT4"
                width="30.0" height="20.0" items="LP&#10;HP&#10;BP" processorId="Slot4"
                parameterId="voice1-ftype" itemColour="2399119104" itemColour2="2399119104"
                textColour="4280688158" bgColour="4281147392"/>
-    <Component type="ScriptLabel" id="ScriptLabel195" x="89.0" y="421.0" width="40.0"
+    <Component type="ScriptLabel" id="ScriptLabel237" x="89.0" y="421.0" width="40.0"
                height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="type" editable="0" processorId="Slot4"/>
-    <Component type="ScriptSlider" id="Knob142" x="8.0" y="315.0" width="15.0"
+    <Component type="ScriptSlider" id="Knob138" x="8.0" y="315.0" width="15.0"
                height="15.0" processorId="Slot4" parameterId="voice1-div" numStrips="206.0"
                scaleFactor="0.07000000029802322" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="8.5" parentComponent="SLOT4" max="16.0" min="1.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel207" x="24.0" y="315.0" width="25.0"
+    <Component type="ScriptLabel" id="ScriptLabel238" x="24.0" y="315.0" width="25.0"
                height="15.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="div" editable="0" processorId="Slot4"/>
-    <Component type="ScriptLabel" id="ScriptLabel208" x="12.0" y="350.0" width="30.0"
+    <Component type="ScriptLabel" id="ScriptLabel249" x="12.0" y="350.0" width="30.0"
                height="10.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="sync" editable="0" processorId="Slot4"/>
-    <Component type="ScriptLabel" id="ScriptLabel196" x="21.0" y="475.0" width="30.0"
+    <Component type="ScriptLabel" id="ScriptLabel250" x="21.0" y="475.0" width="30.0"
                height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="4" editable="0" fontSize="20.0"
                processorId="Slot4"/>
-    <Component type="ScriptSlider" id="Knob143" x="88.0" y="71.0" width="20.0"
-               height="20.0" processorId="Slot4" parameterId="gainmod" numStrips="206.0"
-               scaleFactor="0.09000000357627869" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.0" parentComponent="SLOT4" min="-1.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel197" x="55.0" y="71.0" width="30.0"
-               height="30.0" parentComponent="SLOT4" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="band 2" editable="0" fontSize="11.0"
-               processorId="Slot4"/>
-    <Component type="ScriptSlider" id="Knob144" x="58.0" y="40.0" width="30.0"
-               height="30.0" processorId="Slot4" parameterId="gain centre" numStrips="206.0"
-               scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.5" parentComponent="SLOT4"/>
-    <Component type="ScriptComboBox" id="m25" x="85.0" y="40.0" max="6" parentComponent="SLOT4"
-               width="20.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
-               processorId="Slot4" parameterId="gainmodsource" itemColour="2399119104"
-               itemColour2="2399119104" textColour="4280688158" bgColour="4281147392"/>
-    <Component type="ScriptSlider" id="Knob145" x="142.0" y="71.0" width="20.0"
-               height="20.0" processorId="Slot4" parameterId="band3mod" numStrips="206.0"
-               scaleFactor="0.09000000357627869" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.0" parentComponent="SLOT4" min="-1.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel198" x="109.0" y="71.0" width="30.0"
-               height="30.0" parentComponent="SLOT4" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="band 3" editable="0" fontSize="11.0"
-               processorId="Slot4"/>
-    <Component type="ScriptSlider" id="Knob146" x="112.0" y="40.0" width="30.0"
-               height="30.0" processorId="Slot4" parameterId="band3" numStrips="206.0"
-               scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.5" parentComponent="SLOT4"/>
-    <Component type="ScriptComboBox" id="m32" x="139.0" y="40.0" max="6" parentComponent="SLOT4"
-               width="20.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
-               processorId="Slot4" parameterId="band3moddest" itemColour="2399119104"
-               itemColour2="2399119104" textColour="4280688158" bgColour="4281147392"/>
-    <Component type="ScriptSlider" id="Knob147" x="194.0" y="71.0" width="20.0"
-               height="20.0" processorId="Slot4" parameterId="band4mod" numStrips="206.0"
-               scaleFactor="0.09000000357627869" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.0" parentComponent="SLOT4" min="-1.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel199" x="163.0" y="71.0" width="30.0"
-               height="30.0" parentComponent="SLOT4" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="band 4" editable="0" fontSize="11.0"
-               processorId="Slot4"/>
-    <Component type="ScriptSlider" id="Knob148" x="166.0" y="40.0" width="30.0"
-               height="30.0" processorId="Slot4" parameterId="babd4" numStrips="206.0"
-               scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="0.5" parentComponent="SLOT4"/>
-    <Component type="ScriptComboBox" id="m33" x="193.0" y="40.0" max="6" parentComponent="SLOT4"
-               width="20.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
-               processorId="Slot4" parameterId="band4moddesr" itemColour="2399119104"
-               itemColour2="2399119104" textColour="4280688158" bgColour="4281147392"/>
-    <Component type="ScriptSlider" id="Knob149" x="68.0" y="176.0" width="35.0"
-               height="40.0" processorId="Slot4" parameterId="smooth" numStrips="206.0"
+    <Component type="ScriptSlider" id="Knob139" x="10.0" y="183.0" width="30.0"
+               height="30.0" processorId="Slot4" parameterId="smooth" numStrips="206.0"
                scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
                middlePosition="200.0" parentComponent="SLOT4" suffix=" ms" max="20000.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel200" x="63.0" y="208.0" width="40.0"
-               height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
-               fontName="Arial Rounded MT Bold" text="smooth" editable="0" processorId="Slot4"/>
-    <Component type="ScriptLabel" id="ScriptLabel209" x="29.0" y="7.0" width="40.0"
+    <Component type="ScriptLabel" id="ScriptLabel251" x="6.0" y="63.0" width="40.0"
                height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
                fontName="Arial Rounded MT Bold" text="input" editable="0" processorId="Slot4"/>
-    <Component type="ScriptSlider" id="Knob150" x="5.0" y="7.0" width="25.0"
-               height="25.0" processorId="Slot4" parameterId="mix" numStrips="206.0"
-               scaleFactor="0.1000000014901161" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
-               middlePosition="-50.0" parentComponent="SLOT4" min="-100.0" max="0.0"
-               mode="Decibel"/>
+    <Component type="ScriptSlider" id="Knob140" x="12.0" y="32.0" width="30.0"
+               height="30.0" processorId="Send Effect4" parameterId="Gain" numStrips="206.0"
+               scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="-18.0" parentComponent="SLOT4" mode="Decibel"
+               min="-100.0" max="0.0" stepSize="0.1000000014901161" suffix=" dB"/>
+    <Component type="ScriptLabel" id="ScriptLabel252" x="3.0" y="211.0" width="50.0"
+               height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="smooth" editable="0" processorId="Slot4"/>
+    <Component type="ScriptLabel" id="ScriptLabel253" x="3.0" y="137.0" width="40.0"
+               height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="time" editable="0" processorId="Slot4"/>
+    <Component type="ScriptSlider" id="Knob162" x="6.0" y="110.0" width="30.0"
+               height="30.0" processorId="Slot4" parameterId="shtime" numStrips="206.0"
+               scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="9.0" parentComponent="SLOT4" suffix=" ms" max="18.0"
+               mode="TempoSync"/>
+    <Component type="ScriptSlider" id="Knob163" x="36.0" y="110.0" width="30.0"
+               height="30.0" processorId="Slot4" parameterId="shmuti" numStrips="206.0"
+               scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="8.0" parentComponent="SLOT4" suffix=" ms" max="16.0"
+               stepSize="1.0"/>
+    <Component type="ScriptLabel" id="ScriptLabel254" x="35.0" y="137.0" width="30.0"
+               height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="div" editable="0" processorId="Slot4"/>
+    <Component type="ScriptSlider" id="Knob164" x="66.0" y="110.0" width="30.0"
+               height="30.0" processorId="Slot4" parameterId="shwt" numStrips="206.0"
+               scaleFactor="0.1099999994039536" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="0.5" parentComponent="SLOT4"/>
+    <Component type="ScriptLabel" id="ScriptLabel255" x="3.0" y="86.0" width="40.0"
+               height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="S&amp;H" editable="0"
+               processorId="Slot4"/>
+    <Component type="ScriptLabel" id="ScriptLabel256" x="183.0" y="4.0" width="30.0"
+               height="20.0" parentComponent="SLOT4" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="type" editable="0" fontSize="11.0"
+               processorId="Slot4"/>
+    <Component type="ScriptLabel" id="ScriptLabel257" x="71.0" y="64.0" width="40.0"
+               height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="gain" editable="0" processorId="Slot4"/>
+    <Component type="ScriptLabel" id="ScriptLabel258" x="78.0" y="212.0" width="40.0"
+               height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="mod" editable="0" processorId="Slot4"/>
+    <Component type="ScriptLabel" id="ScriptLabel259" x="106.0" y="211.0" width="50.0"
+               height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="source" editable="0" processorId="Slot4"/>
+    <Component type="ScriptLabel" id="ScriptLabel260" x="4.0" y="164.0" width="60.0"
+               height="20.0" parentComponent="SLOT4" alignment="left" textColour="3036676095"
+               fontName="Arial Rounded MT Bold" text="SIGNAL" editable="0" processorId="Slot4"/>
+    <Component type="ScriptComboBox" id="m31" x="135.0" y="33.0" max="6" parentComponent="SLOT4"
+               width="20.0" height="20.0" items="mod 1&#10;mod 2&#10;mod 3&#10;mod 4&#10;mod 5&#10;mod 6&#10;"
+               processorId="Slot4" parameterId="voice1-input-filter-modsource"
+               itemColour="2399119104" itemColour2="2399119104" textColour="4280688158"
+               bgColour="4281147392"/>
+    <Component type="ScriptSlider" id="Knob141" x="134.0" y="55.0" width="30.0"
+               height="30.0" processorId="Slot4" parameterId="voice1-input-filter-mod"
+               numStrips="206.0" scaleFactor="0.1000000014901161" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+               middlePosition="0.0" parentComponent="SLOT4" min="-1.0"/>
+    <Component type="ScriptComboBox" id="m32" x="151.0" y="5.0" max="5" parentComponent="SLOT4"
+               width="30.0" height="20.0" items="Low Pass&#10;High Pass&#10;Low Shelf&#10;High Shelf&#10;Peak"
+               processorId="Slot4" parameterId="voice1-input-filter-type" itemColour="2399119104"
+               itemColour2="2399119104" textColour="4280688158" bgColour="4281147392"/>
   </Component>
   <Component type="ScriptPanel" id="presetpanel" x="6.0" y="6.0" width="685.0"
              height="512.0" itemColour="4278190080" itemColour2="4278190080"
@@ -1478,12 +1491,12 @@
                popupOnRightClick="0" itemColour="0" textColour="16777215" bgColour="16777215"
                itemColour2="0"/>
   </Component>
-  <Component type="ScriptSlider" id="Knob151" x="759.0" y="609.0" width="40.0"
-             height="40.0" processorId="Script FX1" parameterId="inputgain"
+  <Component type="ScriptSlider" id="Knob151" x="708.0" y="566.0" width="30.0"
+             height="30.0" processorId="Script FX1" parameterId="inputgain"
              numStrips="206.0" scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
              middlePosition="-18.0" mode="Decibel" min="-100.0" max="0.0"
              stepSize="0.1000000014901161" suffix=" dB"/>
-  <Component type="ScriptLabel" id="ScriptLabel241" x="753.0" y="649.0" width="40.0"
+  <Component type="ScriptLabel" id="ScriptLabel241" x="734.0" y="565.0" width="40.0"
              height="30.0" alignment="left" fontName="Arial Rounded MT Bold"
              text="input level" editable="0" processorId="Slot3" textColour="3036676095"/>
   <Component type="ScriptButton" id="modsyncmode" x="857.0" y="610.0" width="30.0"
@@ -1492,4 +1505,12 @@
   <Component type="ScriptLabel" id="ScriptLabel242" x="851.0" y="646.0" width="50.0"
              height="40.0" alignment="left" fontName="Arial Rounded MT Bold"
              text="Transport Sync" editable="0" processorId="Slot3" textColour="3036676095"/>
+  <Component type="ScriptLabel" id="ScriptLabel246" x="803.0" y="565.0" width="60.0"
+             height="30.0" alignment="left" fontName="Arial Rounded MT Bold"
+             text="Original Signal" editable="0" processorId="Slot3" textColour="3036676095"/>
+  <Component type="ScriptSlider" id="Knob152" x="777.0" y="567.0" width="30.0"
+             height="30.0" processorId="Script FX2" parameterId="signal" numStrips="206.0"
+             scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
+             middlePosition="-18.0" mode="Decibel" min="-100.0" max="0.0"
+             stepSize="0.1000000014901161" suffix=" dB"/>
 </ContentProperties>

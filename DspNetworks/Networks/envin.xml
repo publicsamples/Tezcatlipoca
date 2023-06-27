@@ -30,7 +30,7 @@
               <Node ID="gain" FactoryPath="core.gain" Bypassed="0">
                 <Parameters>
                   <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
-                             SkewFactor="5.422270774841309" ID="Gain" Value="-100.0"/>
+                             SkewFactor="5.422270774841309" ID="Gain" Value="0.0"/>
                   <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
                              SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
                   <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
@@ -42,15 +42,6 @@
           </Node>
           <Node ID="chain59" FactoryPath="container.chain" Bypassed="0">
             <Nodes>
-              <Node ID="global_send" FactoryPath="routing.global_send" Bypassed="0"
-                    NodeColour="4287973554">
-                <Properties>
-                  <Property ID="Connection" Value="send1"/>
-                </Properties>
-                <Parameters>
-                  <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
-                </Parameters>
-              </Node>
               <Node ID="gain1" FactoryPath="core.gain" Bypassed="0">
                 <Parameters>
                   <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
@@ -70,10 +61,9 @@
     </Nodes>
     <Parameters>
       <Parameter ID="inputgain" MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
-                 SkewFactor="5.422270774841309" Value="-8.299998633563533">
+                 SkewFactor="5.422270774841309" Value="-9.899998657405391">
         <Connections>
           <Connection NodeId="gain1" ParameterId="Gain"/>
-          <Connection NodeId="global_send" ParameterId="Value"/>
         </Connections>
       </Parameter>
     </Parameters>
