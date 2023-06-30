@@ -1,4 +1,4 @@
-Content.makeFrontInterface(928, 690);
+Content.makeFrontInterface(821, 626);
 
 Engine.setLatencySamples(500);
 
@@ -8,6 +8,8 @@ const var mod3 = Synth.getModulator("mod3");
 const var mod4 = Synth.getModulator("mod4");
 const var mod5 = Synth.getModulator("mod5");
 const var mod6 = Synth.getModulator("mod6");
+const var mod7 = Synth.getModulator("mod7");
+const var mod8 = Synth.getModulator("mod8");
 
 const var modtype1 = Content.getComponent("modtype1");
 const var ScriptSliderPack1 = Content.getComponent("ScriptSliderPack1");
@@ -101,6 +103,34 @@ inline function onmodtype6Control(component, value)
 
 Content.getComponent("modtype6").setControlCallback(onmodtype6Control);
 
+const var modtype7 = Content.getComponent("modtype7");
+const var ScriptSliderPack7 = Content.getComponent("ScriptSliderPack7");
+const var modtable7 = Content.getComponent("modtable7");
+
+
+inline function onmodtype7Control(component, value)
+{
+	modtable7.showControl(1-value); 
+	ScriptSliderPack7.showControl(value);
+	mod7.setAttribute(mod7.type, value);
+};
+
+Content.getComponent("modtype7").setControlCallback(onmodtype7Control);
+
+const var modtype8 = Content.getComponent("modtype8");
+const var ScriptSliderPack8 = Content.getComponent("ScriptSliderPack8");
+const var modtable8 = Content.getComponent("modtable8");
+
+
+
+inline function onmodtype8Control(component, value)
+{
+	modtable8.showControl(1-value); 
+	ScriptSliderPack8.showControl(value);
+	mod8.setAttribute(mod8.type, value);
+};
+
+Content.getComponent("modtype8").setControlCallback(onmodtype8Control);
 
 
 const var MODSTO3 = Content.getComponent("MODSTO3");
@@ -157,9 +187,32 @@ inline function onmodsyncmodeControl(component, value)
 	mod4.setAttribute(mod4.syncmode, value);
 	mod5.setAttribute(mod5.syncmode, value);
 	mod6.setAttribute(mod6.syncmode, value);
+	mod7.setAttribute(mod7.syncmode, value);
+	mod8.setAttribute(mod8.syncmode, value);
 };
 
 Content.getComponent("modsyncmode").setControlCallback(onmodsyncmodeControl);
+
+const var voice = Content.getComponent("voice");
+
+const var voices = [];
+
+voices[0] = Content.getComponent("SLOT1");
+voices[1] = Content.getComponent("SLOT2");
+voices[2] = Content.getComponent("SLOT3");
+voices[3] = Content.getComponent("SLOT4");
+
+
+inline function onvoiceControl(component, value)
+{
+	for (i = 0; i < voices.length; i++)
+        voices[i].fadeComponent(value - 1 == i, 500);
+};
+
+Content.getComponent("voice").setControlCallback(onvoiceControl);
+
+
+
 
 
 function onNoteOn()

@@ -6,9 +6,9 @@
       <Node FactoryPath="container.chain" ID="follow" Bypassed="0">
         <Nodes>
           <Node ID="global_cable" FactoryPath="routing.global_cable" Bypassed="0"
-                NodeColour="4282795698">
+                NodeColour="4282928306">
             <Properties>
-              <Property ID="Connection" Value="3"/>
+              <Property ID="Connection" Value="a3"/>
             </Properties>
             <ModulationTargets>
               <Connection NodeId="add" ParameterId="Value"/>

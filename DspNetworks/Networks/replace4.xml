@@ -150,7 +150,7 @@
               </Node>
               <Node ID="pma4" FactoryPath="control.pma" Bypassed="0">
                 <ModulationTargets>
-                  <Connection NodeId="ramp1" ParameterId="LoopStart"/>
+                  <Connection NodeId="limiter" ParameterId="Threshhold"/>
                 </ModulationTargets>
                 <Parameters>
                   <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
@@ -327,7 +327,7 @@
                                     </ComplexData>
                                     <Parameters>
                                       <Parameter MinValue="0.0" MaxValue="10000.0" ID="PeriodTime" Automated="1"/>
-                                      <Parameter MinValue="0.0" MaxValue="1.0" ID="LoopStart" Automated="1"/>
+                                      <Parameter MinValue="0.0" MaxValue="1.0" ID="LoopStart" Value="1.0"/>
                                       <Parameter MinValue="0.0" MaxValue="1.0" ID="Gate" Automated="1" StepSize="1"/>
                                     </Parameters>
                                     <ModulationTargets>
@@ -374,7 +374,7 @@
                                     <ComplexData>
                                       <AudioFiles>
                                         <AudioFile Index="0" EmbeddedData="/Users/rick/Library/Application Support/modularsamples/OG2/AudioFiles/One shots/MF19.wav"
-                                                   MinValue="0" MaxValue="195072"/>
+                                                   MinValue="0" MaxValue="0"/>
                                       </AudioFiles>
                                     </ComplexData>
                                     <Parameters>
@@ -519,10 +519,10 @@
           <Connection NodeId="global_mod" ParameterId="Index"/>
         </Connections>
       </Parameter>
-      <Parameter ID="voice1-input-track-threshhold" MinValue="-100.0" MaxValue="0.0"
-                 Value="-6.899998612701907" StepSize="0.1000000014901161" SkewFactor="5.422270774841309">
+      <Parameter ID="voice1-input-track-threshhold" MinValue="0.0" MaxValue="1.0"
+                 Value="-6.899998612701907">
         <Connections>
-          <Connection NodeId="limiter" ParameterId="Threshhold"/>
+          <Connection NodeId="pma4" ParameterId="Add"/>
         </Connections>
       </Parameter>
       <Parameter ID="voice1-input-track-attack" MinValue="0.0" MaxValue="250.0"
@@ -632,9 +632,7 @@
         </Connections>
       </Parameter>
       <Parameter ID="loop" MinValue="0.0" MaxValue="1.0" Value="1.0">
-        <Connections>
-          <Connection NodeId="pma4" ParameterId="Add"/>
-        </Connections>
+        <Connections/>
       </Parameter>
       <Parameter ID="loopmod" MinValue="-1.0" MaxValue="1.0" Value="0.01609375000000002">
         <Connections>

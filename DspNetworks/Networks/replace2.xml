@@ -150,7 +150,7 @@
               </Node>
               <Node ID="pma4" FactoryPath="control.pma" Bypassed="0">
                 <ModulationTargets>
-                  <Connection NodeId="ramp1" ParameterId="LoopStart"/>
+                  <Connection NodeId="limiter" ParameterId="Threshhold"/>
                 </ModulationTargets>
                 <Parameters>
                   <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
@@ -327,7 +327,7 @@
                                     </ComplexData>
                                     <Parameters>
                                       <Parameter MinValue="0.0" MaxValue="10000.0" ID="PeriodTime" Automated="1"/>
-                                      <Parameter MinValue="0.0" MaxValue="1.0" ID="LoopStart" Automated="1"/>
+                                      <Parameter MinValue="0.0" MaxValue="1.0" ID="LoopStart" Value="0.965453125"/>
                                       <Parameter MinValue="0.0" MaxValue="1.0" ID="Gate" Automated="1" StepSize="1"/>
                                     </Parameters>
                                     <ModulationTargets>
@@ -342,7 +342,7 @@
                                       <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
                                       <Parameter MinValue="0.0" MaxValue="1.0" ID="Minimum" Value="0.0"/>
                                       <Parameter MinValue="0.0" MaxValue="1.0" ID="Maximum" Value="1.0"/>
-                                      <Parameter MinValue="0.1000000014901161" MaxValue="10.0" SkewFactor="0.2890648245811462"
+                                      <Parameter MinValue="0.1" MaxValue="10.0" SkewFactor="0.2890648245811462"
                                                  ID="Skew" Automated="1"/>
                                       <Parameter MinValue="0.0" MaxValue="1.0" ID="Step" Value="0.0"/>
                                       <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Polarity" Value="0.0"/>
@@ -374,7 +374,7 @@
                                     <ComplexData>
                                       <AudioFiles>
                                         <AudioFile Index="0" EmbeddedData="/Users/rick/Library/Application Support/modularsamples/OG2/AudioFiles/One shots/MF19.wav"
-                                                   MinValue="0" MaxValue="55552"/>
+                                                   MinValue="0" MaxValue="0"/>
                                       </AudioFiles>
                                     </ComplexData>
                                     <Parameters>
@@ -519,10 +519,10 @@
           <Connection NodeId="global_mod" ParameterId="Index"/>
         </Connections>
       </Parameter>
-      <Parameter ID="voice1-input-track-threshhold" MinValue="-100.0" MaxValue="0.0"
-                 Value="-6.899998612701907" StepSize="0.1000000014901161" SkewFactor="5.422270774841309">
+      <Parameter ID="voice1-input-track-threshhold" MinValue="0.0" MaxValue="1.0"
+                 Value="-6.899998612701907">
         <Connections>
-          <Connection NodeId="limiter" ParameterId="Threshhold"/>
+          <Connection NodeId="pma4" ParameterId="Add"/>
         </Connections>
       </Parameter>
       <Parameter ID="voice1-input-track-attack" MinValue="0.0" MaxValue="250.0"
@@ -537,12 +537,12 @@
           <Connection NodeId="limiter" ParameterId="Release"/>
         </Connections>
       </Parameter>
-      <Parameter ID="voice1-input-signal-mix" MinValue="0.0" MaxValue="1.0" Value="1.0">
+      <Parameter ID="voice1-input-signal-mix" MinValue="0.0" MaxValue="1.0" Value="0.0">
         <Connections>
           <Connection NodeId="pma2" ParameterId="Add"/>
         </Connections>
       </Parameter>
-      <Parameter ID="voice1-input-signal-mod" MinValue="-1.0" MaxValue="1.0" Value="1.0">
+      <Parameter ID="voice1-input-signal-mod" MinValue="-1.0" MaxValue="1.0" Value="-0.003843750000000146">
         <Connections>
           <Connection NodeId="pma2" ParameterId="Multiply"/>
         </Connections>
@@ -631,23 +631,18 @@
           <Connection NodeId="tempo_sync" ParameterId="Multiplier"/>
         </Connections>
       </Parameter>
-      <Parameter ID="loop" MinValue="0.0" MaxValue="1.0" Value="1.0">
-        <Connections>
-          <Connection NodeId="pma4" ParameterId="Add"/>
-        </Connections>
-      </Parameter>
-      <Parameter ID="loopmod" MinValue="-1.0" MaxValue="1.0" Value="0.01609375000000002">
+      <Parameter ID="threshmod" MinValue="-1.0" MaxValue="1.0" Value="0.01609375000000002">
         <Connections>
           <Connection NodeId="pma4" ParameterId="Multiply"/>
         </Connections>
       </Parameter>
-      <Parameter ID="loopmodsource" MinValue="0.0" MaxValue="16.0" Value="3.5"
+      <Parameter ID="threshmodsource" MinValue="0.0" MaxValue="16.0" Value="3.5"
                  StepSize="0.1">
         <Connections>
           <Connection NodeId="global_mod4" ParameterId="Index"/>
         </Connections>
       </Parameter>
-      <Parameter ID="skew" MinValue="0.1000000014901161" MaxValue="10.0" Value="1.040825223031855"
+      <Parameter ID="skew" MinValue="0.1" MaxValue="10.0" Value="0.9999999864870749"
                  SkewFactor="0.2890648245811462">
         <Connections>
           <Connection NodeId="minmax" ParameterId="Skew"/>
