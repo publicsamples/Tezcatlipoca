@@ -45,7 +45,7 @@
             <Control type="ScriptComboBox" id="m17" value="1.0"/>
             <Control type="ScriptSlider" id="Knob93" value="0.0"/>
             <Control type="ScriptSlider" id="Knob94" value="20000.0"/>
-            <Control type="ScriptSlider" id="Knob95" value="-19.99999809265137"/>
+            <Control type="ScriptSlider" id="Knob95" value="-15.79999828338623"/>
             <Control type="ScriptComboBox" id="m40" value="1.0"/>
             <Control type="ScriptSlider" id="Knob171" value="-0.25"/>
             <Control type="ScriptSlider" id="Knob172" value="0.6200000047683716"/>
@@ -141,7 +141,7 @@
             <Control type="ScriptComboBox" id="m37" value="1.0"/>
             <Control type="ScriptSlider" id="Knob163" value="0.0"/>
             <Control type="ScriptSlider" id="Knob164" value="1786.0"/>
-            <Control type="ScriptSlider" id="Knob165" value="-100.0"/>
+            <Control type="ScriptSlider" id="Knob165" value="-19.99999809265137"/>
             <Control type="ScriptTable" id="modtable1" value="0.0" data=""/>
             <Control type="ScriptSlider" id="Knob30" value="0.0"/>
             <Control type="ScriptSlider" id="Knob31" value="4.0"/>
@@ -175,7 +175,7 @@
             <Control type="ScriptSliderPack" id="ScriptSliderPack4" value="0.0" data="64....f+....9C...3O...f+....9C...3O...f+....9C...3O...f+....9C...3O...f+....9C...3O...f+."/>
             <Control type="ScriptButton" id="modtype4" value="0.0"/>
             <Control type="ScriptTable" id="modtable5" value="0.0" data=""/>
-            <Control type="ScriptSlider" id="Knob45" value="0.5"/>
+            <Control type="ScriptSlider" id="Knob45" value="0.1500000059604645"/>
             <Control type="ScriptSlider" id="Knob46" value="0.0"/>
             <Control type="ScriptSlider" id="Knob47" value="0.0"/>
             <Control type="ScriptComboBox" id="ScriptComboBox11" value="1.0"/>
@@ -183,37 +183,37 @@
             <Control type="ScriptSliderPack" id="ScriptSliderPack5" value="0.0" data="64....f+....9C...3O...f+....9C...3O...f+....9C...3O...f+....9C...3O...f+....9C...3O...f+."/>
             <Control type="ScriptButton" id="modtype5" value="0.0"/>
             <Control type="ScriptTable" id="modtable6" value="0.0" data=""/>
-            <Control type="ScriptSlider" id="Knob51" value="0.5"/>
+            <Control type="ScriptSlider" id="Knob51" value="0.0"/>
             <Control type="ScriptSlider" id="Knob52" value="0.0"/>
             <Control type="ScriptSlider" id="Knob53" value="0.0"/>
             <Control type="ScriptComboBox" id="ScriptComboBox15" value="1.0"/>
             <Control type="ScriptComboBox" id="ScriptComboBox16" value="1.0"/>
-            <Control type="ScriptSliderPack" id="ScriptSliderPack6" value="0.0" data="64....f+....9C...3O...f+....9C...3O...f+....9C...3O...f+....9C...3O...f+....9C...3O...f+."/>
-            <Control type="ScriptButton" id="modtype6" value="0.0"/>
+            <Control type="ScriptSliderPack" id="ScriptSliderPack6" value="10" data="64....f+7Qgq8ilYl0O35QQ+b8nv7i8nvwOw0iB+7Qgq6CWOJrOZlYl97Qgq4ilYlgOrGEt8jBWO1yiBWWOJb8H8."/>
+            <Control type="ScriptButton" id="modtype6" value="1.0"/>
             <Control type="ScriptTable" id="modtable7" value="0.0" data=""/>
-            <Control type="ScriptSlider" id="Knob54" value="0.5"/>
-            <Control type="ScriptSlider" id="Knob55" value="0.0"/>
+            <Control type="ScriptSlider" id="Knob54" value="0.0"/>
+            <Control type="ScriptSlider" id="Knob55" value="10.0"/>
             <Control type="ScriptSlider" id="Knob56" value="0.0"/>
             <Control type="ScriptComboBox" id="ScriptComboBox17" value="1.0"/>
             <Control type="ScriptComboBox" id="ScriptComboBox18" value="1.0"/>
             <Control type="ScriptSliderPack" id="ScriptSliderPack7" value="0.0" data="64....f+....9C...3O...f+....9C...3O...f+....9C...3O...f+....9C...3O...f+....9C...3O...f+."/>
             <Control type="ScriptButton" id="modtype7" value="0.0"/>
             <Control type="ScriptTable" id="modtable8" value="0.0" data=""/>
-            <Control type="ScriptSlider" id="Knob57" value="0.5"/>
-            <Control type="ScriptSlider" id="Knob58" value="0.0"/>
+            <Control type="ScriptSlider" id="Knob57" value="0.0"/>
+            <Control type="ScriptSlider" id="Knob58" value="6.0"/>
             <Control type="ScriptSlider" id="Knob59" value="0.0"/>
             <Control type="ScriptComboBox" id="ScriptComboBox19" value="1.0"/>
             <Control type="ScriptComboBox" id="ScriptComboBox20" value="1.0"/>
-            <Control type="ScriptSliderPack" id="ScriptSliderPack8" value="0.0" data="64....f+....9C...3O...f+....9C...3O...f+....9C...3O...f+....9C...3O...f+....9C...3O...f+."/>
-            <Control type="ScriptButton" id="modtype8" value="0.0"/>
+            <Control type="ScriptSliderPack" id="ScriptSliderPack8" value="13" data="64....f+....9C...3O...f+rGEt8i8nv0OMyLS+fT357yv0ixO8nvE+fqGE7iYlYtOT35w9nv0i5C...nOov0i8."/>
+            <Control type="ScriptButton" id="modtype8" value="1.0"/>
             <Control type="ScriptSlider" id="Knob97" value="-100.0"/>
             <Control type="ScriptSlider" id="Knob98" value="-100.0"/>
-            <Control type="ScriptSlider" id="Knob105" value="-0.8999985456466675"/>
-            <Control type="ScriptSlider" id="Knob106" value="-23.29999923706055"/>
+            <Control type="ScriptSlider" id="Knob105" value="-100.0"/>
+            <Control type="ScriptSlider" id="Knob106" value="-100.0"/>
             <Control type="ScriptSlider" id="Knob107" value="-100.0"/>
-            <Control type="ScriptSlider" id="Knob108" value="0.0"/>
+            <Control type="ScriptSlider" id="Knob108" value="-100.0"/>
             <Control type="ScriptSlider" id="Knob109" value="-100.0"/>
-            <Control type="ScriptSlider" id="Knob110" value="0.0"/>
+            <Control type="ScriptSlider" id="Knob110" value="-100.0"/>
             <Control type="ScriptComboBox" id="m43" value="9.0"/>
             <Control type="ScriptSlider" id="Knob112" value="1.0"/>
             <Control type="ScriptSlider" id="Knob113" value="1.0"/>
@@ -547,8 +547,8 @@
                 <ContentProperties DeviceType="Desktop"/>
               </UIData>
             </Processor>
-            <Processor Type="SendFX" ID="Send Effect5" Bypassed="0" Gain="-23.29999923706055"
-                       ChannelOffset="0.0" SendIndex="9.0">
+            <Processor Type="SendFX" ID="Send Effect5" Bypassed="0" Gain="-100.0" ChannelOffset="0.0"
+                       SendIndex="9.0">
               <ChildProcessors>
                 <Processor Type="ModulatorChain" ID="Send Modulation" Bypassed="0" Intensity="1.0">
                   <ChildProcessors/>
@@ -556,8 +556,8 @@
               </ChildProcessors>
               <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
             </Processor>
-            <Processor Type="SendFX" ID="Send Effect6" Bypassed="0" Gain="-0.899998664855957"
-                       ChannelOffset="0.0" SendIndex="10.0">
+            <Processor Type="SendFX" ID="Send Effect6" Bypassed="0" Gain="-100.0" ChannelOffset="0.0"
+                       SendIndex="10.0">
               <ChildProcessors>
                 <Processor Type="ModulatorChain" ID="Send Modulation" Bypassed="0" Intensity="1.0">
                   <ChildProcessors/>
@@ -596,7 +596,7 @@
                 <ContentProperties DeviceType="Desktop"/>
               </UIData>
             </Processor>
-            <Processor Type="SendFX" ID="Send Effect7" Bypassed="0" Gain="0.0" ChannelOffset="0.0"
+            <Processor Type="SendFX" ID="Send Effect7" Bypassed="0" Gain="-100.0" ChannelOffset="0.0"
                        SendIndex="9.0">
               <ChildProcessors>
                 <Processor Type="ModulatorChain" ID="Send Modulation" Bypassed="0" Intensity="1.0">
@@ -645,7 +645,7 @@
                 <ContentProperties DeviceType="Desktop"/>
               </UIData>
             </Processor>
-            <Processor Type="SendFX" ID="Send Effect9" Bypassed="0" Gain="0.0" ChannelOffset="0.0"
+            <Processor Type="SendFX" ID="Send Effect9" Bypassed="0" Gain="-100.0" ChannelOffset="0.0"
                        SendIndex="9.0">
               <ChildProcessors>
                 <Processor Type="ModulatorChain" ID="Send Modulation" Bypassed="0" Intensity="1.0">

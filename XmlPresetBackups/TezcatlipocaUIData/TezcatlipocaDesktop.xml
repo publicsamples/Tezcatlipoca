@@ -1678,7 +1678,8 @@
                    text="tempo" editable="0" textColour="3036676095" processorId="mod6"/>
         <Component type="ScriptTable" id="modtable6" x="12.0" y="24.0" width="190.0"
                    height="55.0" processorId="mod6" parentComponent="mod6" bgColour="16777215"
-                   itemColour="2399119104" customColours="1" itemColour2="1024528657"/>
+                   itemColour="2399119104" customColours="1" itemColour2="1024528657"
+                   visible="0"/>
         <Component type="ScriptSlider" id="Knob51" x="14.0" y="87.0" width="30.0"
                    height="30.0" processorId="mod6" parameterId="tempo" middlePosition="0.5"
                    parentComponent="mod6" numStrips="206.0" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
@@ -1707,8 +1708,7 @@
                    bgColour="4281673511"/>
         <Component type="ScriptSliderPack" id="ScriptSliderPack6" x="12.0" y="24.0"
                    width="190.0" height="55.0" parentComponent="mod6" processorId="mod6"
-                   itemColour="2399119104" itemColour2="16754432" textColour="16777215"
-                   visible="0"/>
+                   itemColour="2399119104" itemColour2="16754432" textColour="16777215"/>
         <Component type="ScriptButton" id="modtype6" x="175.0" y="6.0" width="30.0"
                    height="12.0" parentComponent="mod6" itemColour="2399119104"
                    itemColour2="2399119104" textColour="4278190080" processorId="mod6"/>
@@ -1794,7 +1794,8 @@
                    text="tempo" editable="0" textColour="3036676095" processorId="mod8"/>
         <Component type="ScriptTable" id="modtable8" x="15.0" y="24.0" width="190.0"
                    height="55.0" processorId="mod8" parentComponent="mod8" bgColour="16777215"
-                   itemColour="2399119104" customColours="1" itemColour2="1024528657"/>
+                   itemColour="2399119104" customColours="1" itemColour2="1024528657"
+                   visible="0"/>
         <Component type="ScriptSlider" id="Knob57" x="17.0" y="87.0" width="30.0"
                    height="30.0" processorId="mod8" parameterId="tempo" middlePosition="0.5"
                    parentComponent="mod8" numStrips="206.0" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"
@@ -1823,8 +1824,7 @@
                    bgColour="4281673511"/>
         <Component type="ScriptSliderPack" id="ScriptSliderPack8" x="15.0" y="24.0"
                    width="190.0" height="55.0" parentComponent="mod8" processorId="mod8"
-                   itemColour="2399119104" itemColour2="16754432" textColour="16777215"
-                   visible="0"/>
+                   itemColour="2399119104" itemColour2="16754432" textColour="16777215"/>
         <Component type="ScriptButton" id="modtype8" x="178.0" y="6.0" width="30.0"
                    height="12.0" parentComponent="mod8" itemColour="2399119104"
                    itemColour2="2399119104" textColour="4278190080" processorId="mod8"/>
@@ -1955,9 +1955,10 @@
                  text="Voice 4" editable="0" processorId="Slot3" textColour="3036676095"
                  parentComponent="mixPanel1"/>
       <Component type="ScriptSlider" id="Knob4" x="194.0" y="53.0" filmstripImage="{PROJECT_FOLDER}SL11.png"
-                 numStrips="200.0" width="40.0" height="80.0" middlePosition="0.5"
-                 saveInPreset="0" processorId="Script FX2" parentComponent="mixPanel1"
-                 scaleFactor="0.800000011920929" parameterId="send4" defaultValue="0.5"/>
+                 numStrips="200.0" width="40.0" height="80.0" middlePosition="-18.0"
+                 saveInPreset="0" processorId="" parentComponent="mixPanel1" scaleFactor="0.800000011920929"
+                 mode="Decibel" min="-100.0" max="0.0" stepSize="0.1000000014901161"
+                 suffix=" dB" linkedTo="Knob165"/>
       <Component type="ScriptSlider" id="Knob110" x="202.0" y="162.0" width="30.0"
                  height="30.0" processorId="Send Effect9" parameterId="Gain" numStrips="206.0"
                  scaleFactor="0.119999997317791" filmstripImage="{PROJECT_FOLDER}bigyellowwithfire6.png"

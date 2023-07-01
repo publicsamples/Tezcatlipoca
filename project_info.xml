@@ -35,4 +35,6 @@
   <EnableGlobalPreprocessor value="No"/>
   <UseGlobalAppDataFolderWindows value="No"/>
   <UseGlobalAppDataFolderMacOS value="No"/>
+  <VST3Category value=""/>
+  <DefaultUserPreset value=""/>
 </ProjectSettings>
