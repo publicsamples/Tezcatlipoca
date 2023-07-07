@@ -61,7 +61,7 @@
     </Nodes>
     <Parameters>
       <Parameter ID="inputgain" MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
-                 SkewFactor="5.422270774841309" Value="0.0">
+                 SkewFactor="5.422270774841309" Value="-8.199998632073417">
         <Connections>
           <Connection NodeId="gain1" ParameterId="Gain"/>
         </Connections>

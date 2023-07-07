@@ -339,9 +339,9 @@
                                                 <Parameters/>
                                               </Node>
                                               <Node ID="global_cable2" FactoryPath="routing.global_cable" Bypassed="0"
-                                                    NodeColour="4282863026">
+                                                    NodeColour="4282862770">
                                                 <Properties>
-                                                  <Property ID="Connection" Value="a1"/>
+                                                  <Property ID="Connection" Value="a2"/>
                                                 </Properties>
                                                 <Parameters>
                                                   <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
@@ -574,29 +574,6 @@
             <Parameters/>
           </Node>
         </Nodes>
-        <Parameters/>
-      </Node>
-      <Node ID="chain5" FactoryPath="container.chain" Bypassed="0">
-        <Nodes>
-          <Node ID="global_send" FactoryPath="routing.global_send" Bypassed="0"
-                NodeColour="4283937352">
-            <Properties>
-              <Property ID="Connection" Value="Slot"/>
-            </Properties>
-            <Parameters>
-              <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
-            </Parameters>
-          </Node>
-          <Node ID="clear2" FactoryPath="math.clear" Bypassed="1">
-            <Parameters>
-              <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
-            </Parameters>
-          </Node>
-        </Nodes>
-        <Parameters/>
-      </Node>
-      <Node ID="split3" FactoryPath="container.split" Bypassed="1">
-        <Nodes/>
         <Parameters/>
       </Node>
     </Nodes>

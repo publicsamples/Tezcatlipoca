@@ -456,7 +456,7 @@
                                     <ComplexData>
                                       <AudioFiles>
                                         <AudioFile Index="0" EmbeddedData="/Users/rick/Library/Application Support/modularsamples/OG2/AudioFiles/One shots/MF19.wav"
-                                                   MinValue="0" MaxValue="76800"/>
+                                                   MinValue="0" MaxValue="0"/>
                                       </AudioFiles>
                                     </ComplexData>
                                     <Parameters>
@@ -574,29 +574,6 @@
             <Parameters/>
           </Node>
         </Nodes>
-        <Parameters/>
-      </Node>
-      <Node ID="chain5" FactoryPath="container.chain" Bypassed="0">
-        <Nodes>
-          <Node ID="global_send" FactoryPath="routing.global_send" Bypassed="0"
-                NodeColour="4283937352">
-            <Properties>
-              <Property ID="Connection" Value="Slot"/>
-            </Properties>
-            <Parameters>
-              <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
-            </Parameters>
-          </Node>
-          <Node ID="clear2" FactoryPath="math.clear" Bypassed="1">
-            <Parameters>
-              <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
-            </Parameters>
-          </Node>
-        </Nodes>
-        <Parameters/>
-      </Node>
-      <Node ID="split3" FactoryPath="container.split" Bypassed="1">
-        <Nodes/>
         <Parameters/>
       </Node>
     </Nodes>
