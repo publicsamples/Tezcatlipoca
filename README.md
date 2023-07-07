@@ -6,9 +6,9 @@ Tezcatlipoca takes an input signal and attempts to perform a crude kind of drum 
 
 
 - 4 experimental drum replacement channels
-- 6 complex modulators
+- 9 complex modulators
 - Syncable sample players
 
 
-![Xolotwd](https://raw.githubusercontent.com/publicsamples/tezcatlipoca/main/tezcatlipoca.jpg)
+![Tezcatlipoca](https://raw.githubusercontent.com/publicsamples/tezcatlipoca/main/tezcatlipoca.jpg)
 
