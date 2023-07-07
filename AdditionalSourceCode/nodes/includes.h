@@ -7,12 +7,45 @@
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
+// Include third party header files ----------------
+
+#include "filterBank.h"
+
 // Include compiled network files ------------------
 
+#include "ain2_networkdata.h"
+#include "ain3_networkdata.h"
+#include "ain4_networkdata.h"
+#include "analyize_in_networkdata.h"
+#include "clear_networkdata.h"
+#include "cloneEQ_networkdata.h"
+#include "dd_networkdata.h"
+#include "delay_networkdata.h"
+#include "delverb_networkdata.h"
+#include "DspNetwork_networkdata.h"
+#include "eeeqqq_networkdata.h"
+#include "end1_networkdata.h"
 #include "envin_networkdata.h"
+#include "eqtest_networkdata.h"
+#include "follow2_networkdata.h"
+#include "follow3_networkdata.h"
+#include "follow4_networkdata.h"
+#include "follow_networkdata.h"
+#include "geq.h"
 #include "mod_networkdata.h"
+#include "osc1_networkdata.h"
+#include "osc2_networkdata.h"
+#include "pin_networkdata.h"
 #include "postfollow_networkdata.h"
+#include "replace1_networkdata.h"
+#include "replace2_networkdata.h"
+#include "replace3_networkdata.h"
+#include "replace4_networkdata.h"
 #include "replace_networkdata.h"
+#include "tes2_networkdata.h"
+#include "verbsend_networkdata.h"
+#include "WeirdDelay_networkdata.h"
+#include "wg_networkdata.h"
 
 #if (defined (_WIN32) || defined (_WIN64))
 #pragma warning( pop )

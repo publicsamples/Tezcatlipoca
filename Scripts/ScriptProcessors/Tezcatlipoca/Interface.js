@@ -1,4 +1,4 @@
-Content.makeFrontInterface(821, 626);
+Content.makeFrontInterface(770, 466);
 
 Engine.setLatencySamples(500);
 
@@ -10,6 +10,7 @@ const var mod5 = Synth.getModulator("mod5");
 const var mod6 = Synth.getModulator("mod6");
 const var mod7 = Synth.getModulator("mod7");
 const var mod8 = Synth.getModulator("mod8");
+const var mod9 = Synth.getModulator("mod9");
 
 const var modtype1 = Content.getComponent("modtype1");
 const var ScriptSliderPack1 = Content.getComponent("ScriptSliderPack1");
@@ -132,21 +133,38 @@ inline function onmodtype8Control(component, value)
 
 Content.getComponent("modtype8").setControlCallback(onmodtype8Control);
 
+const var modtype9 = Content.getComponent("modtype9");
+const var ScriptSliderPack9 = Content.getComponent("ScriptSliderPack9");
+const var modtable9 = Content.getComponent("modtable9");
 
-const var MODSTO3 = Content.getComponent("MODSTO3");
-const var MODS4TO7 = Content.getComponent("MODS4TO7");
-const var MODPAGE = Content.getComponent("MODPAGE");
+
+
+inline function onmodtype9Control(component, value)
+{
+	modtable9.showControl(1-value); 
+	ScriptSliderPack9.showControl(value);
+	mod9.setAttribute(mod9.type, value);
+};
+
+Content.getComponent("modtype9").setControlCallback(onmodtype9Control);
+
+
+const var mods = [];
+
+mods[0] = Content.getComponent("MODSTO3");
+mods[1] = Content.getComponent("MODS4TO7");
+mods[2] = Content.getComponent("MODS4TO9");
 
 
 
 inline function onMODPAGEControl(component, value)
 {
-		MODSTO3.showControl(1-value); 
-	MODS4TO7.showControl(value);
+		
+	for (i = 0; i < mods.length; i++)
+        mods[i].fadeComponent(value - 1 == i, 500);
 };
 
 Content.getComponent("MODPAGE").setControlCallback(onMODPAGEControl);
-
 
 const var PRESETS = Content.getComponent("PRESETS");
 const var presetpanel = Content.getComponent("presetpanel");
@@ -189,6 +207,7 @@ inline function onmodsyncmodeControl(component, value)
 	mod6.setAttribute(mod6.syncmode, value);
 	mod7.setAttribute(mod7.syncmode, value);
 	mod8.setAttribute(mod8.syncmode, value);
+	mod9.setAttribute(mod9.syncmode, value);
 };
 
 Content.getComponent("modsyncmode").setControlCallback(onmodsyncmodeControl);
@@ -212,9 +231,7 @@ inline function onvoiceControl(component, value)
 Content.getComponent("voice").setControlCallback(onvoiceControl);
 
 
-
-
-
+//include("input.js");
 function onNoteOn()
 {
 	

@@ -31,24 +31,6 @@
                 <Nodes>
                   <Node ID="chain" FactoryPath="container.chain" Bypassed="0">
                     <Nodes>
-                      <Node ID="global_receive5" FactoryPath="routing.global_receive" Bypassed="0"
-                            NodeColour="4282885554">
-                        <Properties>
-                          <Property ID="Connection" Value="delayout"/>
-                        </Properties>
-                        <Parameters>
-                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
-                        </Parameters>
-                      </Node>
-                      <Node ID="global_receive7" FactoryPath="routing.global_receive" Bypassed="0"
-                            NodeColour="4289883207">
-                        <Properties>
-                          <Property ID="Connection" Value="vrbout"/>
-                        </Properties>
-                        <Parameters>
-                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
-                        </Parameters>
-                      </Node>
                       <Node ID="global_receive" FactoryPath="routing.global_receive" Bypassed="0"
                             NodeColour="4283937352">
                         <Properties>
@@ -63,24 +45,6 @@
                   </Node>
                   <Node ID="chain1" FactoryPath="container.chain" Bypassed="0">
                     <Nodes>
-                      <Node ID="global_receive6" FactoryPath="routing.global_receive" Bypassed="0"
-                            NodeColour="4285903431">
-                        <Properties>
-                          <Property ID="Connection" Value="delout2"/>
-                        </Properties>
-                        <Parameters>
-                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
-                        </Parameters>
-                      </Node>
-                      <Node ID="global_receive10" FactoryPath="routing.global_receive" Bypassed="0"
-                            NodeColour="4289901127">
-                        <Properties>
-                          <Property ID="Connection" Value="verbout2"/>
-                        </Properties>
-                        <Parameters>
-                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
-                        </Parameters>
-                      </Node>
                       <Node ID="global_receive3" FactoryPath="routing.global_receive" Bypassed="0"
                             NodeColour="4288891058">
                         <Properties>
@@ -95,24 +59,6 @@
                   </Node>
                   <Node ID="chain2" FactoryPath="container.chain" Bypassed="0">
                     <Nodes>
-                      <Node ID="global_receive8" FactoryPath="routing.global_receive" Bypassed="0"
-                            NodeColour="4285903431">
-                        <Properties>
-                          <Property ID="Connection" Value="delout3"/>
-                        </Properties>
-                        <Parameters>
-                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
-                        </Parameters>
-                      </Node>
-                      <Node ID="global_receive11" FactoryPath="routing.global_receive" Bypassed="0"
-                            NodeColour="4289901127">
-                        <Properties>
-                          <Property ID="Connection" Value="verbout3"/>
-                        </Properties>
-                        <Parameters>
-                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
-                        </Parameters>
-                      </Node>
                       <Node ID="global_receive2" FactoryPath="routing.global_receive" Bypassed="0"
                             NodeColour="4288890802">
                         <Properties>
@@ -127,24 +73,6 @@
                   </Node>
                   <Node ID="chain3" FactoryPath="container.chain" Bypassed="0">
                     <Nodes>
-                      <Node ID="global_receive9" FactoryPath="routing.global_receive" Bypassed="0"
-                            NodeColour="4285903431">
-                        <Properties>
-                          <Property ID="Connection" Value="delout4"/>
-                        </Properties>
-                        <Parameters>
-                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
-                        </Parameters>
-                      </Node>
-                      <Node ID="global_receive12" FactoryPath="routing.global_receive" Bypassed="0"
-                            NodeColour="4289874000">
-                        <Properties>
-                          <Property ID="Connection" Value="vout4"/>
-                        </Properties>
-                        <Parameters>
-                          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="1.0"/>
-                        </Parameters>
-                      </Node>
                       <Node ID="global_receive1" FactoryPath="routing.global_receive" Bypassed="0"
                             NodeColour="4288825522">
                         <Properties>
@@ -179,13 +107,13 @@
     </Nodes>
     <Parameters>
       <Parameter ID="outputgain" MinValue="-100.0" MaxValue="6.0" StepSize="0.1000000014901161"
-                 SkewFactor="5.422270774841309" Value="-5.499998591840281">
+                 SkewFactor="5.422270774841309" Value="-4.099998570978656">
         <Connections>
           <Connection NodeId="gain1" ParameterId="Gain"/>
         </Connections>
       </Parameter>
-      <Parameter ID="signal" MinValue="-100.0" MaxValue="0.0" Value="-100.0" StepSize="0.1000000014901161"
-                 SkewFactor="5.422270774841309">
+      <Parameter ID="signal" MinValue="-100.0" MaxValue="0.0" Value="-33.99999901652338"
+                 StepSize="0.1000000014901161" SkewFactor="5.422270774841309">
         <Connections>
           <Connection NodeId="gain" ParameterId="Gain"/>
         </Connections>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Network ID="ain2" Version="0.0.0">
+<Network ID="ain2" Version="0.0.0" AllowPolyphonic="1">
   <Node FactoryPath="container.chain" ID="ain2" Bypassed="0">
     <Nodes>
       <Node FactoryPath="container.chain" ID="analyize_in" Bypassed="0">

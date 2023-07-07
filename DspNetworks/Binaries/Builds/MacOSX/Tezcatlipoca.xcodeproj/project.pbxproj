@@ -360,10 +360,11 @@
 					"$(SRCROOT)/../../JuceLibraryCode",
 					"/Users/rick/Downloads/HISE-develop",
 					"/Users/rick/Downloads/HISE-develop/JUCE/modules",
+					"/Users/rick/Downloads/HISE-develop/tools/faust/include",
 					"$(inherited)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../JuceLibraryCode /Users/rick/Downloads/HISE-develop /Users/rick/Downloads/HISE-develop/JUCE/modules";
+				MTL_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../JuceLibraryCode /Users/rick/Downloads/HISE-develop /Users/rick/Downloads/HISE-develop/JUCE/modules /Users/rick/Downloads/HISE-develop/tools/faust/include";
 				OTHER_CFLAGS = "-Wno-reorder -Wno-inconsistent-missing-override -fno-aligned-allocation";
 				OTHER_CPLUSPLUSFLAGS = "-Wno-reorder -Wno-inconsistent-missing-override -fno-aligned-allocation";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Tezcatlipoca;
@@ -408,11 +409,12 @@
 					"$(SRCROOT)/../../JuceLibraryCode",
 					"/Users/rick/Downloads/HISE-develop",
 					"/Users/rick/Downloads/HISE-develop/JUCE/modules",
+					"/Users/rick/Downloads/HISE-develop/tools/faust/include",
 					"$(inherited)",
 				);
 				LLVM_LTO = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../JuceLibraryCode /Users/rick/Downloads/HISE-develop /Users/rick/Downloads/HISE-develop/JUCE/modules";
+				MTL_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../JuceLibraryCode /Users/rick/Downloads/HISE-develop /Users/rick/Downloads/HISE-develop/JUCE/modules /Users/rick/Downloads/HISE-develop/tools/faust/include";
 				OTHER_CFLAGS = "-Wno-reorder -Wno-inconsistent-missing-override -fno-aligned-allocation";
 				OTHER_CPLUSPLUSFLAGS = "-Wno-reorder -Wno-inconsistent-missing-override -fno-aligned-allocation";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Tezcatlipoca;
@@ -457,10 +459,11 @@
 					"$(SRCROOT)/../../JuceLibraryCode",
 					"/Users/rick/Downloads/HISE-develop",
 					"/Users/rick/Downloads/HISE-develop/JUCE/modules",
+					"/Users/rick/Downloads/HISE-develop/tools/faust/include",
 					"$(inherited)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../JuceLibraryCode /Users/rick/Downloads/HISE-develop /Users/rick/Downloads/HISE-develop/JUCE/modules";
+				MTL_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../JuceLibraryCode /Users/rick/Downloads/HISE-develop /Users/rick/Downloads/HISE-develop/JUCE/modules /Users/rick/Downloads/HISE-develop/tools/faust/include";
 				OTHER_CFLAGS = "-Wno-reorder -Wno-inconsistent-missing-override -fno-aligned-allocation";
 				OTHER_CPLUSPLUSFLAGS = "-Wno-reorder -Wno-inconsistent-missing-override -fno-aligned-allocation";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Tezcatlipoca;

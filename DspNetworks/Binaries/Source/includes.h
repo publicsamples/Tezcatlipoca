@@ -7,8 +7,17 @@
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
+// Include third party header files ----------------
+
+#include "filterBank.h"
+
+// Include compiled network files ------------------
+
+#include "geq.h"
+
 #if (defined (_WIN32) || defined (_WIN64))
 #pragma warning( pop )
 #else
 #pragma clang diagnostic pop
 #endif
+

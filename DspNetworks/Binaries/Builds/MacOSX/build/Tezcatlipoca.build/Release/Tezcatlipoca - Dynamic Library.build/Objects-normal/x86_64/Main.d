@@ -1,7 +1,7 @@
 dependencies: \
-  /Users/rick/Music/Audio\ Music\ Apps/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/Source/Main.cpp \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/DspNetworks/Binaries/Source/Main.cpp \
   /Users/rick/Downloads/HISE-develop/hi_dsp_library/hi_dsp_library.h \
-  /Users/rick/Music/Audio\ Music\ Apps/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/AppConfig.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/AppConfig.h \
   /Users/rick/Downloads/HISE-develop/hi_dsp_library/../hi_tools/hi_tools.h \
   /Users/rick/Downloads/HISE-develop/hi_dsp_library/../hi_tools/../JUCE/modules/juce_core/juce_core.h \
   /Users/rick/Downloads/HISE-develop/hi_dsp_library/../hi_tools/../JUCE/modules/juce_core/system/juce_TargetPlatform.h \
@@ -653,8 +653,21 @@ dependencies: \
   /Users/rick/Downloads/HISE-develop/hi_dsp_library/dsp_nodes/FXNodes_impl.h \
   /Users/rick/Downloads/HISE-develop/hi_dsp_library/dsp_library/HiseLibraryHeader.h \
   /Users/rick/Downloads/HISE-develop/hi_faust/hi_faust.h \
-  /Users/rick/Music/Audio\ Music\ Apps/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/Source/includes.h \
-  /Users/rick/Music/Audio\ Music\ Apps/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/JuceHeader.h \
+  /Users/rick/Downloads/HISE-develop/hi_faust/../hi_faust_types/hi_faust_types.h \
+  /Users/rick/Downloads/HISE-develop/hi_faust/../hi_faust_types/faust_wrap/dsp/dsp.h \
+  /Users/rick/Downloads/HISE-develop/tools/faust/include/faust/export.h \
+  /Users/rick/Downloads/HISE-develop/hi_faust/../hi_faust_types/faust_wrap/gui/UI.h \
+  /Users/rick/Downloads/HISE-develop/hi_faust/../hi_faust_types/faust_wrap/gui/meta.h \
+  /Users/rick/Downloads/HISE-develop/hi_faust/../hi_dsp_library/hi_dsp_library.h \
+  /Users/rick/Downloads/HISE-develop/hi_faust/FaustUI.h \
+  /Users/rick/Downloads/HISE-develop/hi_faust/FaustWrapper.h \
+  /Users/rick/Downloads/HISE-develop/hi_faust/FaustStaticWrapper.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/DspNetworks/Binaries/Source/includes.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/DspNetworks/Binaries/Source/filterBank.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/DspNetworks/Binaries/Source/../../ThirdParty/filterBank.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/DspNetworks/Binaries/Source/../../ThirdParty/src/filterBank.cpp \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/DspNetworks/Binaries/Source/geq.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/JuceHeader.h \
   /Users/rick/Downloads/HISE-develop/hi_faust_types/hi_faust_types.h \
   /Users/rick/Downloads/HISE-develop/hi_tools/hi_tools.h \
   /Users/rick/Downloads/HISE-develop/JUCE/modules/juce_dsp/juce_dsp.h

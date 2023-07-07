@@ -7,6 +7,42 @@
         <Nodes>
           <Node ID="split" FactoryPath="container.split" Bypassed="0">
             <Nodes>
+              <Node ID="chain" FactoryPath="container.chain" Bypassed="0">
+                <Nodes>
+                  <Node ID="xfader" FactoryPath="control.xfader" Bypassed="0">
+                    <Properties>
+                      <Property ID="NumParameters" Value="2"/>
+                      <Property ID="Mode" Value="Linear"/>
+                    </Properties>
+                    <SwitchTargets>
+                      <SwitchTarget>
+                        <Connections>
+                          <Connection NodeId="gain" ParameterId="Gain"/>
+                        </Connections>
+                      </SwitchTarget>
+                      <SwitchTarget>
+                        <Connections>
+                          <Connection NodeId="gain1" ParameterId="Gain"/>
+                        </Connections>
+                      </SwitchTarget>
+                    </SwitchTargets>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
+                    </Parameters>
+                  </Node>
+                  <Node ID="gain" FactoryPath="core.gain" Bypassed="0">
+                    <Parameters>
+                      <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                 SkewFactor="5.422270774841309" ID="Gain" Automated="1"/>
+                      <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                                 SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
+                      <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                                 SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
               <Node ID="chain2" FactoryPath="container.chain" Bypassed="0">
                 <Nodes>
                   <Node ID="fix64_block" FactoryPath="container.fix64_block" Bypassed="0">
@@ -98,58 +134,16 @@
         </Nodes>
         <Parameters/>
       </Node>
-      <Node ID="split1" FactoryPath="container.split" Bypassed="0">
-        <Nodes>
-          <Node ID="global_send" FactoryPath="routing.global_send" Bypassed="0"
-                NodeColour="4282885554">
-            <Properties>
-              <Property ID="Connection" Value="delayout"/>
-            </Properties>
-            <Parameters>
-              <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
-            </Parameters>
-          </Node>
-          <Node ID="global_send3" FactoryPath="routing.global_send" Bypassed="0"
-                NodeColour="4285903431">
-            <Properties>
-              <Property ID="Connection" Value="delout2"/>
-            </Properties>
-            <Parameters>
-              <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
-            </Parameters>
-          </Node>
-          <Node ID="global_send2" FactoryPath="routing.global_send" Bypassed="0"
-                NodeColour="4285903431">
-            <Properties>
-              <Property ID="Connection" Value="delout3"/>
-            </Properties>
-            <Parameters>
-              <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
-            </Parameters>
-          </Node>
-          <Node ID="global_send1" FactoryPath="routing.global_send" Bypassed="0"
-                NodeColour="4285903431">
-            <Properties>
-              <Property ID="Connection" Value="delout4"/>
-            </Properties>
-            <Parameters>
-              <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
-            </Parameters>
-          </Node>
-        </Nodes>
-        <Parameters/>
-      </Node>
     </Nodes>
     <Parameters>
-      <Parameter ID="delytime" MinValue="0.0" MaxValue="1.0" Value="0.9819664916992187">
+      <Parameter ID="delytime" MinValue="0.0" MaxValue="1.0" Value="1.0">
         <Connections>
           <Connection NodeId="pma2" ParameterId="Add"/>
         </Connections>
       </Parameter>
-      <Parameter ID="dmix" MinValue="-100.0" MaxValue="0.0" Value="-2.199998542666449"
-                 StepSize="0.1000000014901161" SkewFactor="5.422270774841309">
+      <Parameter ID="dmix" MinValue="0.0" MaxValue="1.0" Value="0.0">
         <Connections>
-          <Connection NodeId="gain1" ParameterId="Gain"/>
+          <Connection NodeId="xfader" ParameterId="Value"/>
         </Connections>
       </Parameter>
       <Parameter ID="dfeed" MinValue="0.0" MaxValue="1.0" Value="0.3616117431640627">
@@ -173,24 +167,16 @@
         </Connections>
       </Parameter>
       <Parameter ID="send1" MinValue="0.0" MaxValue="1.0" Value="1.0">
-        <Connections>
-          <Connection NodeId="global_send" ParameterId="Value"/>
-        </Connections>
+        <Connections/>
       </Parameter>
       <Parameter ID="send2" MinValue="0.0" MaxValue="1.0" Value="1.0">
-        <Connections>
-          <Connection NodeId="global_send3" ParameterId="Value"/>
-        </Connections>
+        <Connections/>
       </Parameter>
       <Parameter ID="send3" MinValue="0.0" MaxValue="1.0" Value="1.0">
-        <Connections>
-          <Connection NodeId="global_send2" ParameterId="Value"/>
-        </Connections>
+        <Connections/>
       </Parameter>
       <Parameter ID="send4" MinValue="0.0" MaxValue="1.0" Value="1.0">
-        <Connections>
-          <Connection NodeId="global_send1" ParameterId="Value"/>
-        </Connections>
+        <Connections/>
       </Parameter>
     </Parameters>
   </Node>

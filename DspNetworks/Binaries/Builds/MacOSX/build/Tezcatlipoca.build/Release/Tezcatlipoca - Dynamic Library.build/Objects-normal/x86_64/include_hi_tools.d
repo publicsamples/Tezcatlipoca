@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/rick/Music/Audio\ Music\ Apps/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/include_hi_tools.mm \
-  /Users/rick/Music/Audio\ Music\ Apps/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/AppConfig.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/include_hi_tools.mm \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/AppConfig.h \
   /Users/rick/Downloads/HISE-develop/hi_tools/hi_tools.mm \
   /Users/rick/Downloads/HISE-develop/hi_tools/hi_tools.cpp \
   /Users/rick/Downloads/HISE-develop/hi_tools/hi_tools.h \

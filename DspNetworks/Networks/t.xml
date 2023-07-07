@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Network ID="t" Version="0.0.0">
+  <Node FactoryPath="container.chain" ID="t" Bypassed="0">
+    <Nodes>
+      <Node ID="freq_split6" FactoryPath="container.split" ShowParameters="1"
+            Bypassed="0">
+        <Parameters>
+          <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045584686382"
+                     ID="Band 1" Value="20.0">
+            <Connections>
+              <Connection NodeId="lr1_1" ParameterId="Frequency"/>
+              <Connection NodeId="lr2_1" ParameterId="Frequency"/>
+              <Connection NodeId="lr3_1" ParameterId="Frequency"/>
+              <Connection NodeId="lr4_1" ParameterId="Frequency"/>
+              <Connection NodeId="lr5_1" ParameterId="Frequency"/>
+            </Connections>
+          </Parameter>
+          <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045584686382"
+                     ID="Band 2" Value="1271.289174489974">
+            <Connections>
+              <Connection NodeId="lr1_2" ParameterId="Frequency"/>
+              <Connection NodeId="lr2_2" ParameterId="Frequency"/>
+              <Connection NodeId="lr3_2" ParameterId="Frequency"/>
+              <Connection NodeId="lr4_2" ParameterId="Frequency"/>
+              <Connection NodeId="lr5_2" ParameterId="Frequency"/>
+            </Connections>
+          </Parameter>
+          <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045584686382"
+                     ID="Band 3" Value="1556.76864932774">
+            <Connections>
+              <Connection NodeId="lr1_3" ParameterId="Frequency"/>
+              <Connection NodeId="lr2_3" ParameterId="Frequency"/>
+              <Connection NodeId="lr3_3" ParameterId="Frequency"/>
+              <Connection NodeId="lr4_3" ParameterId="Frequency"/>
+              <Connection NodeId="lr5_3" ParameterId="Frequency"/>
+            </Connections>
+          </Parameter>
+          <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045584686382"
+                     ID="Band 4" Value="20.0">
+            <Connections>
+              <Connection NodeId="lr1_4" ParameterId="Frequency"/>
+              <Connection NodeId="lr2_4" ParameterId="Frequency"/>
+              <Connection NodeId="lr3_4" ParameterId="Frequency"/>
+              <Connection NodeId="lr4_4" ParameterId="Frequency"/>
+              <Connection NodeId="lr5_4" ParameterId="Frequency"/>
+            </Connections>
+          </Parameter>
+        </Parameters>
+        <Nodes>
+          <Node ID="band1" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="lr1_1" FactoryPath="jdsp.jlinkwitzriley" NodeColour="4284971929"
+                    Bypassed="0">
+                <ComplexData>
+                  <Filters>
+                    <Filter Index="-1" EmbeddedData=""/>
+                  </Filters>
+                </ComplexData>
+                <Parameters>
+                  <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                             ID="Frequency" Value="20.0"/>
+                  <Parameter MinValue="0.0" MaxValue="2.0" StepSize="1.0" ID="Type" Value="0.0"/>
+                </Parameters>
+              </Node>
+              <Node ID="lr1_2" FactoryPath="jdsp.jlinkwitzriley" NodeColour="4284971929"
+                    Bypassed="0">
+                <ComplexData>
+                  <Filters>
+                    <Filter Index="-1" EmbeddedData=""/>
+                  </Filters>
+                </ComplexData>
+                <Parameters>
+                  <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                             ID="Frequency" Value="2000.0"/>
+                  <Parameter MinValue="0.0" MaxValue="2.0" StepSize="1.0" ID="Type" Value="2.0"/>
+                </Parameters>
+              </Node>
+              <Node ID="lr1_3" FactoryPath="jdsp.jlinkwitzriley" NodeColour="4284971929"
+                    Bypassed="0">
+                <ComplexData>
+                  <Filters>
+                    <Filter Index="-1" EmbeddedData=""/>
+                  </Filters>
+                </ComplexData>
+                <Parameters>
+                  <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                             ID="Frequency" Value="2000.0"/>
+                  <Parameter MinValue="0.0" MaxValue="2.0" StepSize="1.0" ID="Type" Value="2.0"/>
+                </Parameters>
+              </Node>
+              <Node ID="lr1_4" FactoryPath="jdsp.jlinkwitzriley" NodeColour="4284971929"
+                    Bypassed="0">
+                <ComplexData>
+                  <Filters>
+                    <Filter Index="-1" EmbeddedData=""/>
+                  </Filters>
+                </ComplexData>
+                <Parameters>
+                  <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                             ID="Frequency" Value="2000.0"/>
+                  <Parameter MinValue="0.0" MaxValue="2.0" StepSize="1.0" ID="Type" Value="2.0"/>
+                </Parameters>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="band2" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="lr2_1" FactoryPath="jdsp.jlinkwitzriley" NodeColour="4285241703"
+                    Folded="1" Bypassed="0">
+                <ComplexData>
+                  <Filters>
+                    <Filter Index="-1" EmbeddedData=""/>
+                  </Filters>
+                </ComplexData>
+                <Parameters>
+                  <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                             ID="Frequency" Value="2000.0"/>
+                  <Parameter MinValue="0.0" MaxValue="2.0" StepSize="1.0" ID="Type" Value="1.0"/>
+                </Parameters>
+              </Node>
+              <Node ID="lr2_2" FactoryPath="jdsp.jlinkwitzriley" NodeColour="4285241703"
+                    Folded="1" Bypassed="0">
+                <ComplexData>
+                  <Filters>
+                    <Filter Index="-1" EmbeddedData=""/>
+                  </Filters>
+                </ComplexData>
+                <Parameters>
+                  <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                             ID="Frequency" Value="2000.0"/>
+                  <Parameter MinValue="0.0" MaxValue="2.0" StepSize="1.0" ID="Type" Value="0.0"/>
+                </Parameters>
+              </Node>
+              <Node ID="lr2_3" FactoryPath="jdsp.jlinkwitzriley" NodeColour="4285241703"
+                    Folded="1" Bypassed="0">
+                <ComplexData>
+                  <Filters>
+                    <Filter Index="-1" EmbeddedData=""/>
+                  </Filters>
+                </ComplexData>
+                <Parameters>
+                  <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                             ID="Frequency" Value="2000.0"/>
+                  <Parameter MinValue="0.0" MaxValue="2.0" StepSize="1.0" ID="Type" Value="2.0"/>
+                </Parameters>
+              </Node>
+              <Node ID="lr2_4" FactoryPath="jdsp.jlinkwitzriley" NodeColour="4285241703"
+                    Folded="1" Bypassed="0">
+                <ComplexData>
+                  <Filters>
+                    <Filter Index="-1" EmbeddedData=""/>
+                  </Filters>
+                </ComplexData>
+                <Parameters>
+                  <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                             ID="Frequency" Value="2000.0"/>
+                  <Parameter MinValue="0.0" MaxValue="2.0" StepSize="1.0" ID="Type" Value="2.0"/>
+                </Parameters>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="band3" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="lr3_1" FactoryPath="jdsp.jlinkwitzriley" NodeColour="4288248679"
+                    Folded="1" Bypassed="0">
+                <ComplexData>
+                  <Filters>
+                    <Filter Index="-1" EmbeddedData=""/>
+                  </Filters>
+                </ComplexData>
+                <Parameters>
+                  <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                             ID="Frequency" Value="2000.0"/>
+                  <Parameter MinValue="0.0" MaxValue="2.0" StepSize="1.0" ID="Type" Value="2.0"/>
+                </Parameters>
+              </Node>
+              <Node ID="lr3_2" FactoryPath="jdsp.jlinkwitzriley" NodeColour="4288248679"
+                    Folded="1" Bypassed="0">
+                <ComplexData>
+                  <Filters>
+                    <Filter Index="-1" EmbeddedData=""/>
+                  </Filters>
+                </ComplexData>
+                <Parameters>
+                  <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                             ID="Frequency" Value="2000.0"/>
+                  <Parameter MinValue="0.0" MaxValue="2.0" StepSize="1.0" ID="Type" Value="1.0"/>
+                </Parameters>
+              </Node>
+              <Node ID="lr3_3" FactoryPath="jdsp.jlinkwitzriley" NodeColour="4288248679"
+                    Folded="1" Bypassed="0">
+                <ComplexData>
+                  <Filters>
+                    <Filter Index="-1" EmbeddedData=""/>
+                  </Filters>
+                </ComplexData>
+                <Parameters>
+                  <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                             ID="Frequency" Value="2000.0"/>
+                  <Parameter MinValue="0.0" MaxValue="2.0" StepSize="1.0" ID="Type" Value="0.0"/>
+                </Parameters>
+              </Node>
+              <Node ID="lr3_4" FactoryPath="jdsp.jlinkwitzriley" NodeColour="4288248679"
+                    Folded="1" Bypassed="0">
+                <ComplexData>
+                  <Filters>
+                    <Filter Index="-1" EmbeddedData=""/>
+                  </Filters>
+                </ComplexData>
+                <Parameters>
+                  <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                             ID="Frequency" Value="2000.0"/>
+                  <Parameter MinValue="0.0" MaxValue="2.0" StepSize="1.0" ID="Type" Value="2.0"/>
+                </Parameters>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="band4" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="lr4_1" FactoryPath="jdsp.jlinkwitzriley" NodeColour="4284979592"
+                    Folded="1" Bypassed="0">
+                <ComplexData>
+                  <Filters>
+                    <Filter Index="-1" EmbeddedData=""/>
+                  </Filters>
+                </ComplexData>
+                <Parameters>
+                  <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                             ID="Frequency" Value="2000.0"/>
+                  <Parameter MinValue="0.0" MaxValue="2.0" StepSize="1.0" ID="Type" Value="2.0"/>
+                </Parameters>
+              </Node>
+              <Node ID="lr4_2" FactoryPath="jdsp.jlinkwitzriley" NodeColour="4284979592"
+                    Folded="1" Bypassed="0">
+                <ComplexData>
+                  <Filters>
+                    <Filter Index="-1" EmbeddedData=""/>
+                  </Filters>
+                </ComplexData>
+                <Parameters>
+                  <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                             ID="Frequency" Value="2000.0"/>
+                  <Parameter MinValue="0.0" MaxValue="2.0" StepSize="1.0" ID="Type" Value="2.0"/>
+                </Parameters>
+              </Node>
+              <Node ID="lr4_3" FactoryPath="jdsp.jlinkwitzriley" NodeColour="4284979592"
+                    Folded="1" Bypassed="0">
+                <ComplexData>
+                  <Filters>
+                    <Filter Index="-1" EmbeddedData=""/>
+                  </Filters>
+                </ComplexData>
+                <Parameters>
+                  <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                             ID="Frequency" Value="2000.0"/>
+                  <Parameter MinValue="0.0" MaxValue="2.0" StepSize="1.0" ID="Type" Value="1.0"/>
+                </Parameters>
+              </Node>
+              <Node ID="lr4_4" FactoryPath="jdsp.jlinkwitzriley" NodeColour="4284979592"
+                    Folded="1" Bypassed="0">
+                <ComplexData>
+                  <Filters>
+                    <Filter Index="-1" EmbeddedData=""/>
+                  </Filters>
+                </ComplexData>
+                <Parameters>
+                  <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                             ID="Frequency" Value="2000.0"/>
+                  <Parameter MinValue="0.0" MaxValue="2.0" StepSize="1.0" ID="Type" Value="0.0"/>
+                </Parameters>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="band5" FactoryPath="container.chain" Bypassed="0">
+            <Nodes>
+              <Node ID="lr5_1" FactoryPath="jdsp.jlinkwitzriley" NodeColour="4285228953"
+                    Folded="1" Bypassed="0">
+                <ComplexData>
+                  <Filters>
+                    <Filter Index="-1" EmbeddedData=""/>
+                  </Filters>
+                </ComplexData>
+                <Parameters>
+                  <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                             ID="Frequency" Value="2000.0"/>
+                  <Parameter MinValue="0.0" MaxValue="2.0" StepSize="1.0" ID="Type" Value="2.0"/>
+                </Parameters>
+              </Node>
+              <Node ID="lr5_2" FactoryPath="jdsp.jlinkwitzriley" NodeColour="4285228953"
+                    Folded="1" Bypassed="0">
+                <ComplexData>
+                  <Filters>
+                    <Filter Index="-1" EmbeddedData=""/>
+                  </Filters>
+                </ComplexData>
+                <Parameters>
+                  <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                             ID="Frequency" Value="2000.0"/>
+                  <Parameter MinValue="0.0" MaxValue="2.0" StepSize="1.0" ID="Type" Value="2.0"/>
+                </Parameters>
+              </Node>
+              <Node ID="lr5_3" FactoryPath="jdsp.jlinkwitzriley" NodeColour="4285228953"
+                    Folded="1" Bypassed="0">
+                <ComplexData>
+                  <Filters>
+                    <Filter Index="-1" EmbeddedData=""/>
+                  </Filters>
+                </ComplexData>
+                <Parameters>
+                  <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                             ID="Frequency" Value="2000.0"/>
+                  <Parameter MinValue="0.0" MaxValue="2.0" StepSize="1.0" ID="Type" Value="2.0"/>
+                </Parameters>
+              </Node>
+              <Node ID="lr5_4" FactoryPath="jdsp.jlinkwitzriley" NodeColour="4285228953"
+                    Folded="1" Bypassed="0">
+                <ComplexData>
+                  <Filters>
+                    <Filter Index="-1" EmbeddedData=""/>
+                  </Filters>
+                </ComplexData>
+                <Parameters>
+                  <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                             ID="Frequency" Value="2000.0"/>
+                  <Parameter MinValue="0.0" MaxValue="2.0" StepSize="1.0" ID="Type" Value="1.0"/>
+                </Parameters>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+        </Nodes>
+      </Node>
+    </Nodes>
+    <Parameters/>
+  </Node>
+</Network>

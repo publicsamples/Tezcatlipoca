@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/rick/Music/Audio\ Music\ Apps/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/include_juce_data_structures.mm \
-  /Users/rick/Music/Audio\ Music\ Apps/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/AppConfig.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/include_juce_data_structures.mm \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/AppConfig.h \
   /Users/rick/Downloads/HISE-develop/JUCE/modules/juce_data_structures/juce_data_structures.mm \
   /Users/rick/Downloads/HISE-develop/JUCE/modules/juce_data_structures/juce_data_structures.cpp \
   /Users/rick/Downloads/HISE-develop/JUCE/modules/juce_data_structures/juce_data_structures.h \

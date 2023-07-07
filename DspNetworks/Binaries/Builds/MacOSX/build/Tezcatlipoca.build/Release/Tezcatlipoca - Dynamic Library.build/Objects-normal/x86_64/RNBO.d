@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/rick/Music/Audio\ Music\ Apps/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/Source/RNBO.cpp
+  /Users/rick/Documents/GitHub/Tezcatlipoca/DspNetworks/Binaries/Source/RNBO.cpp
