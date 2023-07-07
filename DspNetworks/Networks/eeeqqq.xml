@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Network ID="eeeqqq" Version="0.0.0">
-  <Node FactoryPath="container.chain" ID="eeeqqq" Bypassed="0">
+  <Node FactoryPath="container.chain" ID="eeeqqq" Bypassed="0" ShowParameters="1">
     <Nodes>
       <Node ID="freq_split8" FactoryPath="container.split" ShowParameters="1"
             Bypassed="0">
         <Parameters>
           <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045584686382"
-                     ID="Band 1" Value="258.9313839729644">
+                     ID="Band 1" Value="21.16796333332439">
             <Connections>
               <Connection NodeId="svf" ParameterId="Frequency"/>
               <Connection NodeId="svf1" ParameterId="Frequency"/>
@@ -17,7 +17,7 @@
             </Connections>
           </Parameter>
           <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045584686382"
-                     ID="Band 2" Value="20.0">
+                     ID="Band 2">
             <Connections>
               <Connection NodeId="allpass" ParameterId="Frequency"/>
               <Connection NodeId="svf2" ParameterId="Frequency"/>
@@ -27,7 +27,7 @@
             </Connections>
           </Parameter>
           <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045584686382"
-                     ID="Band 3" Value="20.39476882887602">
+                     ID="Band 3" Automated="1">
             <Connections>
               <Connection NodeId="allpass5" ParameterId="Frequency"/>
               <Connection NodeId="allpass6" ParameterId="Frequency"/>
@@ -37,7 +37,7 @@
             </Connections>
           </Parameter>
           <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045584686382"
-                     ID="Band 4" Value="1300.768202236106">
+                     ID="Band 4" Automated="1">
             <Connections>
               <Connection NodeId="allpass4" ParameterId="Frequency"/>
               <Connection NodeId="allpass7" ParameterId="Frequency"/>
@@ -46,7 +46,8 @@
               <Connection NodeId="svf4" ParameterId="Frequency"/>
             </Connections>
           </Parameter>
-          <Parameter ID="q" MinValue="0.0" MaxValue="1.0" Value="0.6094353027343751">
+          <Parameter ID="q" MinValue="0.300000011920929" MaxValue="9.899999618530273"
+                     Automated="1" SkewFactor="0.2647178173065186">
             <Connections>
               <Connection NodeId="svf" ParameterId="Q"/>
               <Connection NodeId="allpass" ParameterId="Q"/>
@@ -460,6 +461,28 @@
         </Nodes>
       </Node>
     </Nodes>
-    <Parameters/>
+    <Parameters>
+      <Parameter ID="1" MinValue="0.0" MaxValue="1.0" Value="0.4464368896484375">
+        <Connections/>
+      </Parameter>
+      <Parameter ID="2" MinValue="0.0" MaxValue="1.0" Value="0.677323486328125">
+        <Connections/>
+      </Parameter>
+      <Parameter ID="3" MinValue="0.0" MaxValue="1.0" Value="1.0">
+        <Connections>
+          <Connection NodeId="freq_split8" ParameterId="Band 3"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="4" MinValue="0.0" MaxValue="1.0" Value="0.6099218749999999">
+        <Connections>
+          <Connection NodeId="freq_split8" ParameterId="Band 4"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="q" MinValue="0.0" MaxValue="1.0" Value="0.856390625">
+        <Connections>
+          <Connection NodeId="freq_split8" ParameterId="q"/>
+        </Connections>
+      </Parameter>
+    </Parameters>
   </Node>
 </Network>
