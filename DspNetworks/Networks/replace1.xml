@@ -816,7 +816,7 @@
                                     <ComplexData>
                                       <AudioFiles>
                                         <AudioFile Index="0" EmbeddedData="/Users/rick/Library/Application Support/modularsamples/OG2/AudioFiles/One shots/MF19.wav"
-                                                   MinValue="0" MaxValue="27648"/>
+                                                   MinValue="0" MaxValue="0"/>
                                       </AudioFiles>
                                     </ComplexData>
                                     <Parameters>

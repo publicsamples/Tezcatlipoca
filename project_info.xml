@@ -2,7 +2,7 @@
 
 <ProjectSettings>
   <Name value="Tezcatlipoca"/>
-  <Version value="0.2.1"/>
+  <Version value="0.3.0"/>
   <Description value=""/>
   <BundleIdentifier value="com.modularsamples.product"/>
   <PluginCode value="Mstp"/>

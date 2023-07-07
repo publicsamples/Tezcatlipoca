@@ -32,8 +32,8 @@
             <Control type="ScriptSlider" id="Knob104" value="1.0"/>
             <Control type="ScriptButton" id="inputmode" value="0.0"/>
             <Control type="ScriptSlider" id="Knob180" value="1.0"/>
-            <Control type="ScriptAudioWaveform" id="AudioWaveform3" value="0.0" data="{PROJECT_FOLDER}XP-perc-13.wav"
-                     rangeStart="0" rangeEnd="27648"/>
+            <Control type="ScriptAudioWaveform" id="AudioWaveform3" value="0.0" data=""
+                     rangeStart="0" rangeEnd="0"/>
             <Control type="ScriptButton" id="Button3" value="0.0"/>
             <Control type="ScriptComboBox" id="m16" value="1.0"/>
             <Control type="ScriptSlider" id="Knob96" value="0.4199999868869781"/>
