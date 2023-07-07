@@ -11,25 +11,19 @@
           <Content>
             <Control type="ScriptComboBox" id="m41" value="1.0"/>
             <Control type="ScriptSlider" id="Knob175" value="0.0"/>
-            <Control type="ScriptSlider" id="Knob176" value="224.0200042724609"/>
-            <Control type="ScriptSlider" id="Knob177" value="0.0"/>
-            <Control type="ScriptSlider" id="Knob178" value="0.119999997317791"/>
+            <Control type="ScriptSlider" id="Knob176" value="1.669999957084656"/>
+            <Control type="ScriptSlider" id="Knob177" value="75.0"/>
+            <Control type="ScriptSlider" id="Knob178" value="0.6800000071525574"/>
             <Control type="ScriptSlider" id="Knob63" value="0.8100000023841858"/>
             <Control type="ScriptSlider" id="Knob67" value="0.2000000029802322"/>
             <Control type="ScriptComboBox" id="m18" value="1.0"/>
             <Control type="ScriptSlider" id="Knob102" value="-1.0"/>
             <Control type="ScriptComboBox" id="m29" value="2.0"/>
-            <Control type="ScriptSlider" id="Knob115" value="10.0"/>
-            <Control type="ScriptSlider" id="Knob181" value="-70.0"/>
-            <Control type="ScriptSlider" id="Knob182" value="-50.5"/>
-            <Control type="ScriptSlider" id="Knob183" value="-70.0"/>
-            <Control type="ScriptSlider" id="Knob184" value="-57.09999847412109"/>
-            <Control type="ScriptSlider" id="Knob185" value="-3.799998998641968"/>
-            <Control type="ScriptSlider" id="Knob186" value="-63.29999923706055"/>
-            <Control type="ScriptSlider" id="Knob187" value="-20.89999961853027"/>
-            <Control type="ScriptSlider" id="Knob188" value="-30.19999885559082"/>
-            <Control type="ScriptSlider" id="Knob189" value="-70.0"/>
-            <Control type="ScriptSlider" id="Knob111" value="-3.099998474121094"/>
+            <Control type="ScriptSlider" id="Knob115" value="0.500001072883606"/>
+            <Control type="ScriptSlider" id="Knob184" value="-70.0"/>
+            <Control type="ScriptSlider" id="Knob185" value="-70.0"/>
+            <Control type="ScriptSlider" id="Knob186" value="-69.59999847412109"/>
+            <Control type="ScriptSlider" id="Knob111" value="-23.59999847412109"/>
             <Control type="ScriptSlider" id="Knob78" value="0.0"/>
             <Control type="ScriptSlider" id="Knob80" value="0.0"/>
             <Control type="ScriptComboBox" id="m14" value="1.0"/>
@@ -38,8 +32,8 @@
             <Control type="ScriptSlider" id="Knob104" value="1.0"/>
             <Control type="ScriptButton" id="inputmode" value="0.0"/>
             <Control type="ScriptSlider" id="Knob180" value="1.0"/>
-            <Control type="ScriptAudioWaveform" id="AudioWaveform3" value="0.0" data=""
-                     rangeStart="0" rangeEnd="0"/>
+            <Control type="ScriptAudioWaveform" id="AudioWaveform3" value="0.0" data="{PROJECT_FOLDER}XP-perc-13.wav"
+                     rangeStart="0" rangeEnd="27648"/>
             <Control type="ScriptButton" id="Button3" value="0.0"/>
             <Control type="ScriptComboBox" id="m16" value="1.0"/>
             <Control type="ScriptSlider" id="Knob96" value="0.4199999868869781"/>
@@ -63,6 +57,7 @@
             <Control type="ScriptSlider" id="Knob93" value="0.0"/>
             <Control type="ScriptSlider" id="Knob94" value="10184.0"/>
             <Control type="ScriptSlider" id="Knob95" value="-8.399998664855957"/>
+            <Control type="ScriptSlider" id="Knob181" value="0.2300000041723251"/>
             <Control type="ScriptComboBox" id="m47" value="0.0"/>
             <Control type="ScriptSlider" id="Knob173" value="0.0"/>
             <Control type="ScriptSlider" id="Knob174" value="0.0"/>
@@ -83,16 +78,11 @@
             <Control type="ScriptComboBox" id="m19" value="1.0"/>
             <Control type="ScriptSlider" id="Knob120" value="0.0"/>
             <Control type="ScriptComboBox" id="m30" value="1.0"/>
+            <Control type="ScriptSlider" id="Knob200" value="0.2000000029802322"/>
             <Control type="ScriptSlider" id="Knob121" value="-70.0"/>
-            <Control type="ScriptSlider" id="Knob194" value="-36.0"/>
-            <Control type="ScriptSlider" id="Knob195" value="-70.0"/>
-            <Control type="ScriptSlider" id="Knob196" value="-22.79999923706055"/>
-            <Control type="ScriptSlider" id="Knob197" value="-69.09999847412109"/>
-            <Control type="ScriptSlider" id="Knob198" value="-70.0"/>
-            <Control type="ScriptSlider" id="Knob199" value="-1.799998998641968"/>
-            <Control type="ScriptSlider" id="Knob200" value="-70.0"/>
-            <Control type="ScriptSlider" id="Knob201" value="-14.49999904632568"/>
-            <Control type="ScriptSlider" id="Knob202" value="-70.0"/>
+            <Control type="ScriptSlider" id="Knob187" value="-36.0"/>
+            <Control type="ScriptSlider" id="Knob188" value="-70.0"/>
+            <Control type="ScriptSlider" id="Knob189" value="-22.79999923706055"/>
             <Control type="ScriptSlider" id="Knob122" value="-4.599998474121094"/>
             <Control type="ScriptSlider" id="Knob79" value="0.0"/>
             <Control type="ScriptSlider" id="Knob83" value="0.0"/>
@@ -122,11 +112,11 @@
             <Control type="ScriptSlider" id="Knob166" value="0.6000000238418579"/>
             <Control type="ScriptSlider" id="Knob167" value="0.800000011920929"/>
             <Control type="ScriptComboBox" id="m46" value="0.0"/>
-            <Control type="ScriptSlider" id="Knob168" value="0.0"/>
-            <Control type="ScriptSlider" id="Knob169" value="0.0"/>
-            <Control type="ScriptSlider" id="Knob170" value="0.0"/>
-            <Control type="ScriptSlider" id="Knob171" value="0.0"/>
-            <Control type="ScriptSlider" id="Knob172" value="0.0"/>
+            <Control type="ScriptSlider" id="Knob168" value="1.0"/>
+            <Control type="ScriptSlider" id="Knob169" value="0.3616117537021637"/>
+            <Control type="ScriptSlider" id="Knob170" value="1.0"/>
+            <Control type="ScriptSlider" id="Knob171" value="-0.001374999992549419"/>
+            <Control type="ScriptSlider" id="Knob172" value="1.0"/>
             <Control type="ScriptComboBox" id="m44" value="0.0"/>
             <Control type="ScriptSlider" id="Knob204" value="0.0"/>
             <Control type="ScriptSlider" id="Knob205" value="48.06000137329102"/>
@@ -137,6 +127,11 @@
             <Control type="ScriptComboBox" id="m24" value="0.0"/>
             <Control type="ScriptSlider" id="Knob132" value="0.0"/>
             <Control type="ScriptComboBox" id="m31" value="0.0"/>
+            <Control type="ScriptSlider" id="Knob201" value="0.2000000029802322"/>
+            <Control type="ScriptSlider" id="Knob182" value="-50.90000152587891"/>
+            <Control type="ScriptSlider" id="Knob194" value="-36.0"/>
+            <Control type="ScriptSlider" id="Knob195" value="-70.0"/>
+            <Control type="ScriptSlider" id="Knob196" value="-22.79999923706055"/>
             <Control type="ScriptSlider" id="Knob133" value="-70.0"/>
             <Control type="ScriptSlider" id="Knob208" value="-70.0"/>
             <Control type="ScriptSlider" id="Knob209" value="-70.0"/>
@@ -147,7 +142,7 @@
             <Control type="ScriptSlider" id="Knob214" value="-8.299999237060547"/>
             <Control type="ScriptSlider" id="Knob215" value="-70.0"/>
             <Control type="ScriptSlider" id="Knob216" value="-70.0"/>
-            <Control type="ScriptSlider" id="Knob134" value="-5.199998378753662"/>
+            <Control type="ScriptSlider" id="Knob134" value="-12.39999866485596"/>
             <Control type="ScriptSlider" id="Knob86" value="0.0"/>
             <Control type="ScriptSlider" id="Knob87" value="0.0"/>
             <Control type="ScriptComboBox" id="m25" value="1.0"/>
@@ -171,6 +166,7 @@
             <Control type="ScriptSlider" id="Knob142" value="0.0"/>
             <Control type="ScriptSlider" id="Knob143" value="20000.0"/>
             <Control type="ScriptSlider" id="Knob144" value="-9.79999828338623"/>
+            <Control type="ScriptSlider" id="Knob202" value="2.829999923706055"/>
             <Control type="ScriptComboBox" id="m48" value="0.0"/>
             <Control type="ScriptSlider" id="Knob239" value="0.0"/>
             <Control type="ScriptSlider" id="Knob240" value="0.0"/>
@@ -201,7 +197,12 @@
             <Control type="ScriptSlider" id="Knob228" value="-70.0"/>
             <Control type="ScriptSlider" id="Knob229" value="-1.899999022483826"/>
             <Control type="ScriptSlider" id="Knob230" value="-4.499999046325684"/>
-            <Control type="ScriptSlider" id="Knob71" value="0.8799999952316284"/>
+            <Control type="ScriptSlider" id="Knob248" value="3.830000162124634"/>
+            <Control type="ScriptSlider" id="Knob183" value="-70.0"/>
+            <Control type="ScriptSlider" id="Knob197" value="-70.0"/>
+            <Control type="ScriptSlider" id="Knob198" value="-70.0"/>
+            <Control type="ScriptSlider" id="Knob199" value="-65.40000152587891"/>
+            <Control type="ScriptSlider" id="Knob71" value="0.7400000095367432"/>
             <Control type="ScriptSlider" id="Knob147" value="-23.59999847412109"/>
             <Control type="ScriptSlider" id="Knob90" value="0.0"/>
             <Control type="ScriptSlider" id="Knob148" value="0.0"/>
@@ -301,7 +302,7 @@
             <Control type="ScriptButton" id="modtype9" value="0.0"/>
             <Control type="ScriptComboBox" id="voice" value="1.0"/>
             <Control type="ScriptComboBox" id="MODPAGE" value="3.0"/>
-            <Control type="ScriptSlider" id="Knob152" value="-100.0"/>
+            <Control type="ScriptSlider" id="Knob152" value="-14.79999828338623"/>
             <Control type="ScriptSlider" id="Knob179" value="10.20000171661377"/>
             <Control type="ScriptButton" id="modsyncmode" value="0.0"/>
           </Content>
@@ -333,7 +334,7 @@
             <ContentProperties DeviceType="Desktop"/>
           </UIData>
         </Processor>
-        <Processor Type="SendFX" ID="Send Effect1" Bypassed="0" Gain="-3.099998950958252"
+        <Processor Type="SendFX" ID="Send Effect1" Bypassed="0" Gain="-23.59999847412109"
                    ChannelOffset="0.0" SendIndex="1.0">
           <ChildProcessors>
             <Processor Type="ModulatorChain" ID="Send Modulation" Bypassed="0" Intensity="1.0">
@@ -351,7 +352,7 @@
           </ChildProcessors>
           <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
         </Processor>
-        <Processor Type="SendFX" ID="Send Effect3" Bypassed="0" Gain="-5.199999332427979"
+        <Processor Type="SendFX" ID="Send Effect3" Bypassed="0" Gain="-12.39999866485596"
                    ChannelOffset="0.0" SendIndex="3.0">
           <ChildProcessors>
             <Processor Type="ModulatorChain" ID="Send Modulation" Bypassed="0" Intensity="1.0">
@@ -360,7 +361,7 @@
           </ChildProcessors>
           <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
         </Processor>
-        <Processor Type="SendFX" ID="Send Effect4" Bypassed="0" Gain="0.8799998760223389"
+        <Processor Type="SendFX" ID="Send Effect4" Bypassed="0" Gain="0.740000307559967"
                    ChannelOffset="0.0" SendIndex="4.0">
           <ChildProcessors>
             <Processor Type="ModulatorChain" ID="Send Modulation" Bypassed="0" Intensity="1.0">
@@ -994,11 +995,11 @@
       </ChildProcessors>
       <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
     </Processor>
-    <Processor Type="AudioLooper" ID="Audio Loop Player1" Bypassed="1" Gain="1.0"
+    <Processor Type="AudioLooper" ID="Audio Loop Player1" Bypassed="0" Gain="1.0"
                Balance="0.0" VoiceLimit="256.0" KillFadeTime="20.0" IconColour="0"
-               SyncMode="1.0" PitchTracking="1.0" LoopEnabled="1.0" RootNote="46.0"
-               SampleStartMod="0.0" Reversed="0.0" FileName="" min="0" max="0"
-               loopStart="0" loopEnd="0">
+               SyncMode="1.0" PitchTracking="1.0" LoopEnabled="1.0" RootNote="40.0"
+               SampleStartMod="0.0" Reversed="0.0" FileName="/Users/rick/Library/Application Support/modularsamples/OG2/AudioFiles/Loops/BellWithFreind.wav"
+               min="0" max="768000" loopStart="0" loopEnd="768000">
       <ChildProcessors>
         <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
           <ChildProcessors/>
