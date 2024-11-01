@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/rick/Documents/GitHub/TapeTosser/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/include_hi_dsp_library_01.cpp \
-  /Users/rick/Documents/GitHub/TapeTosser/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/AppConfig.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/include_hi_dsp_library_01.cpp \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/AppConfig.h \
   /Users/rick/Downloads/HISE-develop-2/hi_dsp_library/hi_dsp_library_01.cpp \
   /Users/rick/Downloads/HISE-develop-2/hi_dsp_library/hi_dsp_library.h \
   /Users/rick/Downloads/HISE-develop-2/hi_dsp_library/../hi_tools/hi_tools.h \

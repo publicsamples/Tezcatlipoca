@@ -10,7 +10,7 @@
           <ChildProcessors/>
           <Content>
             <Control type="ScriptSliderPack" id="SliderPack6" value="7.0" data="32.35Qg9zLyL6CWOJvOJb8H+....8ilYl0O...f+....9C"/>
-            <Control type="ScriptSlider" id="record" value="1.0"/>
+            <Control type="ScriptSlider" id="record" value="0.0"/>
             <Control type="ScriptSliderPack" id="SliderPack4" value="7.0" data="32............................................"/>
             <Control type="ScriptTable" id="Table1" value="0.0" data="24...............vO...f+....9Cov02O"/>
             <Control type="ScriptSlider" id="record1" value="1.0"/>
@@ -78,7 +78,7 @@
         </Processor>
         <Processor Type="Hardcoded Master FX" ID="Script FX1" Bypassed="0" Network="stored"
                    sync="1.0" dic="4.0" res="0.0" feed="1.0" Cutoff="1.0" CutMod="2.081668171172169e-17"
-                   Rec="1.0" RecMod="1.0" Pb="0.0" PbMod="1.0" RecTempo="0.0" RecDiv="8.0"
+                   Rec="0.0" RecMod="1.0" Pb="0.0" PbMod="1.0" RecTempo="0.0" RecDiv="8.0"
                    PbTempo="0.0" PbDiv="1.0" dtime="5.0" dtimemod="2.081668171172169e-17"
                    reset="0.0" dmode="1.0" mix="1.0" ExtraTempo="2.0" ExtraDiv="15.0"
                    RecSyncMode="0.0" RecModType="0.0" PbSyncMode="0.0" PbModType="0.0"

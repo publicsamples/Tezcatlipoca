@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/rick/Documents/GitHub/TapeTosser/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/include_juce_gui_basics.mm \
-  /Users/rick/Documents/GitHub/TapeTosser/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/AppConfig.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/include_juce_gui_basics.mm \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/AppConfig.h \
   /Users/rick/Downloads/HISE-develop-2/JUCE/modules/juce_gui_basics/juce_gui_basics.mm \
   /Users/rick/Downloads/HISE-develop-2/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp \
   /Users/rick/Downloads/HISE-develop-2/JUCE/modules/juce_gui_basics/juce_gui_basics.h \

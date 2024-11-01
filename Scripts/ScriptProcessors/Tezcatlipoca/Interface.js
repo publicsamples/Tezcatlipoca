@@ -127,6 +127,12 @@ if(value == 1)
 
 Content.getComponent("PbModMode").setControlCallback(onPbModModeControl);
 
+const var record = Content.getComponent("record");
+const var Playback = Content.getComponent("Playback");
+
+
+record.setRange(0, 1, 0.12);
+Playback.setRange(0, 1, 0.12);
 
 
 function onNoteOn()

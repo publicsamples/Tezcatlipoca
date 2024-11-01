@@ -142,7 +142,8 @@
                tooltip="Record. An xfader sets the input gain of 1-8 delay channels."
                parentComponent="Record" filmstripImage="{PROJECT_FOLDER}aztecknob.png"
                numStrips="125.0" scaleFactor="0.4000000059604645" showTextBox="0"
-               isVertical="0" isPluginParameter="1" pluginParameterName="Record - Record Position"/>
+               isVertical="0" isPluginParameter="1" pluginParameterName="Record - Record Position"
+               stepSize="0.12"/>
     <Component type="ScriptSliderPack" id="SliderPack4" x="55.0" y="247.0" processorId="Script FX1"
                width="100.0" height="30.0" sliderAmount="8.0" SliderPackIndex="1"
                stepSize="1.0" stepSequencerMode="1" parentComponent="Record"
@@ -263,7 +264,7 @@
                parentComponent="PlaybackPanel" filmstripImage="{PROJECT_FOLDER}aztecknob.png"
                numStrips="125.0" scaleFactor="0.4000000059604645" showTextBox="0"
                text="Play" isVertical="0" pluginParameterName="Playback - Play Position"
-               isPluginParameter="1"/>
+               isPluginParameter="1" stepSize="0.12"/>
     <Component type="ScriptSlider" id="Playback Divide" x="71.0" y="154.0" processorId="Script FX1"
                parameterId="PbDiv" width="60.0" height="60.0" middlePosition="8.5"
                min="1.0" max="16.0" stepSize="1.0" showValuePopup="Below" text="div"
@@ -360,7 +361,8 @@
              height="210.0">
     <Component type="ScriptSliderPack" id="SliderPack5" x="19.0" y="29.0" processorId="Script FX1"
                width="220.0" height="100.0" SliderPackIndex="4" sliderAmount="8.0"
-               parentComponent="Mix" itemColour="4294967295" itemColour2="4294967295"/>
+               parentComponent="Mix" itemColour="4294967295" itemColour2="4294967295"
+               defaultValue="0.5"/>
     <Component type="ScriptLabel" id="Label5" x="79.0" y="166.0" width="50.0"
                height="20.0" text="MIX" parentComponent="Mix" fontSize="20.0"
                fontName="Impact" textColour="3768623264" editable="0"/>

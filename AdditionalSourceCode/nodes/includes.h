@@ -17,8 +17,6 @@
 
 // Include compiled network files ------------------
 
-#include "buff.h"
-#include "Buff2_networkdata.h"
 #include "CleanDelay.h"
 #include "stored.h"
 
