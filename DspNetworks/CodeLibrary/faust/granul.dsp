@@ -1,58 +1,56 @@
-declare name "Granulator";
-declare author "Mayank Sanganeria";
-declare version "1.0";
+process = vgroup("Granulator", environment {
+    declare name "Granulator";
+    declare author "Adapted from sfIter by Christophe Lebreton";
 
-SR = 48000;
-maxN = 16;
-delayBufferSize = SR*4;
+    /* =========== DESCRIPTION =============
 
-// Controls
-N = hslider("Density[OWL:PARAMETER_A]", 1, 1, maxN, 1);
-gLength = hslider("Size[OWL:PARAMETER_B]", 0.1, 0.01, 0.5, 0.01);
-dLength = hslider("Delay[OWL:PARAMETER_C]", 4, 0.5, 4, 0.1);
+    - The granulator takes very small parts of a sound, called GRAINS, and plays them at a varying speed
+    - Front = Medium size grains
+    - Back = short grains
+    - Left Slow rhythm
+    - Right = Fast rhythm
+    - Bottom = Regular occurrences
+    - Head = Irregular occurrences 
+    */
 
-// Globals
-counter = +(1)%delayLength~_; // to iterate through the delay line
+    import("stdfaust.lib");
 
-//Granular synth variables
-grainLength = int(SR*gLength);
-delayLength = int(SR*dLength);
+    process = hgroup("Granulator", *(excitation : ampf)), hgroup("Granulator", *(excitation : ampf));
 
-//Noise Generator
+    excitation = noiseburst(gate,P) * (gain);
+    ampf = an.amp_follower_ud(duree_env,duree_env);
 
-S(1,F) = F;
-S(i,F) = F <: S(i-1,F),_ ;
-Divide(n,k) = par(i, n, /(k)) ;
-random = +(12345) : *(1103515245) ;
-RANDMAX = 2^32 - 1 ;
-chain(n) = S(n,random) ~ _;
-NoiseN(n) = chain(n) : Divide(n,RANDMAX);
+    //----------------------- NOISEBURST ------------------------- 
 
-noiser = NoiseN(maxN+1);                          //multi channel noiser
+    noiseburst(gate,P) = no.noise : *(gate : trigger(P))
+        with { 
+            upfront(x) = (x-x') > 0;
+            decay(n,x) = x - (x>0)/n; 
+            release(n) = + ~ decay(n); 
+            trigger(n) = upfront : release(n) : > (0.0);
+        };
 
-NoiseChan(n,0) = noiser:>_,par( j, n-1 , !);
-NoiseChan(n,i) = noiser:>par( j, i , !) , _, par( j, n-i-1,!);
+    //-------------------------------------------------------------
 
-noise(i) = (NoiseChan(maxN+1,i) + 1) / 2; //get nth channel of multi-channel noiser
-//-------------Noise Generator End
+    P = freq; // fundamental period in samples
+    freq = hslider("[1]GrainSize[BELA: ANALOG_0]", 200,5,2205,1);
+    // the frequency gives the white noise band width
+    Pmax = 4096; // maximum P (for de.delay-line allocation)
 
-//Sample & Hold
-SH(trig,x) = (*(1 - trig) + x * trig) ~ _;
+    // PHASOR_BIN //////////////////////////////
+    phasor_bin(init) = (+(float(speed)/float(ma.SR)) : fmod(_,1.0)) ~ *(init);
+    gate = phasor_bin(1) :-(0.001):pulsar;
+    gain = 1;
+                            
+    // PULSAR //////////////////////////////
+    // Pulsar allows to create a more or less random 'pulse'(proba).
 
+    pulsar = _<:((_<(ratio_env)):@(100))*(proba>(_,abs(no.noise):ba.latch)); 
+    speed = hslider ("[2]Speed[BELA: ANALOG_1]", 10,1,20,0.0001):fi.lowpass(1,1);
 
-//Grain Positions
-grainOffset(i) = int(SH(1-1',int(delayLength*noise(i)))) ;
-grainCounterMaster = +(1)%grainLength~_;      // universal counter for all grains
-grainCounter(i) = (grainCounterMaster + grainOffset(i) ) % grainLength;
-grainRandomStartPos(i) = int(SH(int(grainCounter(i)/(grainLength-1)),int(delayLength*noise(i))));
-grainPosition(i) = grainCounter(i) + grainRandomStartPos(i);
+    ratio_env = 0.5;
+    fade = (0.5); // min > 0 to avoid division by 0
 
-//Delay Line
-buffer(write,read,x) = rwtable(delayBufferSize, 0.0, write%delayLength, x, read%delayLength);
-
-//sin wave for windowing
-window(i) = sin(2*3.14159*grainCounter(i)/(grainLength-1));
-
-
-
-process = _<: par(i,maxN,buffer(counter, grainPosition(i))*window(i)*(i<N)/N) :> _,_;
+    proba = hslider ("[3]Probability[BELA: ANALOG_2]", 70,50,100,1) * (0.01):fi.lowpass(1,1);
+    duree_env = 1/(speed: / (ratio_env*(0.25)*fade));
+}.process);

@@ -1,2 +1,6 @@
 
 *.wav
+/Binaries/Builds
+/Binaries
+/DspNetworks/Binaries
+/OLD

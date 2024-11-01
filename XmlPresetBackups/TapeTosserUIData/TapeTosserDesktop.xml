@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentProperties DeviceType="Desktop">
+  <Component type="ScriptSlider" id="record" x="285.0" y="5.0" isMetaParameter="1"
+             processorId="Script FX1" parameterId="Rec" width="120.0" height="40.0"
+             showValuePopup="Below" tooltip="Record. An xfader sets the input gain of 1-8 delay channels."/>
+  <Component type="ScriptSliderPack" id="SliderPack2" x="856.0" y="229.0"
+             processorId="Script FX1" width="90.0" height="30.0" sliderAmount="8.0"
+             SliderPackIndex="3" stepSize="1.0" stepSequencerMode="1"/>
+  <Component type="ScriptSliderPack" id="SliderPack3" x="809.0" y="367.0"
+             processorId="Script FX1" width="250.0" height="90.0" sliderAmount="8.0"
+             SliderPackIndex="2"/>
+  <Component type="ScriptSliderPack" id="SliderPack4" x="334.0" y="239.0"
+             processorId="Script FX1" width="200.0" height="30.0" sliderAmount="8.0"
+             SliderPackIndex="1" stepSize="1.0" stepSequencerMode="1"/>
+  <Component type="ScriptSliderPack" id="SliderPack5" x="285.0" y="551.0"
+             processorId="Script FX1" width="250.0" height="130.0" SliderPackIndex="4"
+             sliderAmount="8.0"/>
+  <Component type="ScriptSliderPack" id="SliderPack6" x="285.0" y="358.0"
+             processorId="Script FX1" width="250.0" height="90.0" sliderAmount="8.0"/>
+  <Component type="ScriptLabel" id="Label1" x="266.0" y="358.0" width="140.0"
+             height="30.0" text="d.time"/>
+  <Component type="ScriptLabel" id="Label2" x="285.0" y="228.0" width="40.0"
+             height="50.0" text="input state"/>
+  <Component type="ScriptLabel" id="Label4" x="809.0" y="229.0" width="50.0"
+             height="30.0" text="reverse"/>
+  <Component type="ScriptLabel" id="Label5" x="273.0" y="549.0" width="140.0"
+             height="30.0" text="pan"/>
+  <Component type="ScriptTable" id="Table1" x="285.0" y="62.0" width="250.0"
+             height="90.0" processorId="Script FX1"/>
+  <Component type="ScriptSlider" id="record1" x="415.0" y="5.0" isMetaParameter="1"
+             processorId="Script FX1" parameterId="RecMod" width="110.0" height="40.0"
+             min="-1.0" middlePosition="0.0" text="record mod" showValuePopup="Below"/>
+  <Component type="ScriptSlider" id="PlaybackMod" x="937.0" y="9.0" isMetaParameter="1"
+             processorId="Script FX1" parameterId="PbMod" width="120.0" height="40.0"
+             min="-1.0" middlePosition="0.0" showValuePopup="Below"/>
+  <Component type="ScriptTable" id="Table2" x="809.0" y="69.0" width="250.0"
+             height="90.0" processorId="Script FX1" tableIndex="1"/>
+  <Component type="ScriptSlider" id="Playback" x="809.0" y="9.0" isMetaParameter="1"
+             processorId="Script FX1" parameterId="Pb" width="120.0" height="40.0"
+             showValuePopup="Below"/>
+  <Component type="ScriptSlider" id="record speed" x="281.0" y="170.0" isMetaParameter="1"
+             processorId="Script FX1" parameterId="RecTempo" width="100.0"
+             height="40.0" mode="TempoSync" max="18.0" stepSize="1.0" middlePosition="9.0"
+             showValuePopup="Below" text="speed"/>
+  <Component type="ScriptSlider" id="record div" x="388.0" y="172.0" isMetaParameter="1"
+             processorId="Script FX1" parameterId="RecDiv" width="90.0" height="40.0"
+             max="16.0" stepSize="1.0" middlePosition="9.0" min="1.0" showValuePopup="Below"
+             text="div"/>
+  <Component type="ScriptSlider" id="Delay Time" x="285.0" y="301.0" isMetaParameter="1"
+             processorId="Script FX1" parameterId="dtime" width="110.0" height="40.0"
+             middlePosition="0.5" showValuePopup="Below"/>
+  <Component type="ScriptSlider" id="Feedback" x="408.0" y="301.0" isMetaParameter="1"
+             processorId="Script FX1" parameterId="feed" width="110.0" height="40.0"
+             middlePosition="0.5" showValuePopup="Below"/>
+  <Component type="ScriptSlider" id="delay time mod" x="285.0" y="465.0" isMetaParameter="1"
+             processorId="Script FX1" parameterId="dtimemod" width="110.0"
+             height="40.0" min="-1.0" middlePosition="0.0" text="d.time mod"
+             showValuePopup="Below"/>
+  <Component type="ScriptSlider" id="Delay Time1" x="423.0" y="468.0" isMetaParameter="1"
+             processorId="Script FX1" parameterId="dic" width="110.0" height="40.0"
+             min="1.0" middlePosition="8.5" text="Divide" max="16.0" stepSize="1.0"
+             showValuePopup="Below"/>
+  <Component type="ScriptSlider" id="mix" x="365.0" y="707.0" isMetaParameter="1"
+             processorId="Script FX1" parameterId="mix" width="120.0" height="40.0"
+             showValuePopup="Below"/>
+  <Component type="ScriptSlider" id="resonance" x="940.0" y="310.0" isMetaParameter="1"
+             processorId="Script FX1" parameterId="res" width="120.0" height="40.0"
+             showValuePopup="Below" max="9.0"/>
+  <Component type="ScriptSlider" id="cutoff" x="809.0" y="310.0" isMetaParameter="1"
+             processorId="Script FX1" parameterId="Cutoff" width="130.0" height="40.0"
+             showValuePopup="Below"/>
+  <Component type="ScriptSlider" id="cut mod" x="809.0" y="477.0" isMetaParameter="1"
+             processorId="Script FX1" parameterId="CutMod" width="250.0" height="40.0"
+             min="-1.0" middlePosition="0.0" showValuePopup="Below"/>
+  <Component type="ScriptSlider" id="Playback Divide" x="914.0" y="170.0"
+             isMetaParameter="1" processorId="Script FX1" parameterId="PbDiv"
+             width="80.0" height="50.0" middlePosition="8.5" min="1.0" max="16.0"
+             stepSize="1.0" showValuePopup="Below" text="div"/>
+  <Component type="ScriptSlider" id="Playback Speed" x="809.0" y="170.0" isMetaParameter="1"
+             processorId="Script FX1" parameterId="PbTempo" width="100.0"
+             height="50.0" mode="TempoSync" max="18.0" stepSize="1.0" middlePosition="9.0"
+             showValuePopup="Below" text="Speed"/>
+  <Component type="ScriptButton" id="RESET" x="971.0" y="231.0" width="70.0"
+             height="30.0" itemColour="4285220117" itemColour2="4225355048"
+             textColour="4278190080" isMomentary="1" processorId="Script FX1"
+             parameterId="reset"/>
+  <Component type="ScriptLabel" id="Label6" x="776.0" y="367.0" width="140.0"
+             height="30.0" text="cutoff"/>
+  <Component type="ScriptButton" id="mode" x="809.0" y="542.0" width="250.0"
+             height="30.0" itemColour="4285220117" itemColour2="4225355048"
+             textColour="4278190080" processorId="Script FX1" parameterId="dmode"
+             text="tape/granular"/>
+  <Component type="ScriptSliderPack" id="SliderPack7" x="809.0" y="581.0"
+             processorId="Script FX1" width="250.0" height="70.0" sliderAmount="8.0"
+             SliderPackIndex="5"/>
+  <Component type="ScriptSliderPack" id="SliderPack8" x="809.0" y="667.0"
+             processorId="Script FX1" width="250.0" height="90.0" sliderAmount="8.0"
+             SliderPackIndex="6"/>
+  <Component type="ScriptLabel" id="Label7" x="787.0" y="581.0" width="140.0"
+             height="30.0" text="g.position"/>
+  <Component type="ScriptLabel" id="Label8" x="787.0" y="667.0" width="140.0"
+             height="30.0" text="g.pitch"/>
+  <Component type="ScriptPanel" id="Panel1" x="33.0" y="13.0" width="240.0"
+             height="250.0">
+    <Component type="ScriptLabel" id="Label16" x="6.0" y="39.0" width="200.0"
+               height="40.0" bgColour="12016218" text="Record. An xfader sets the input gain of 1-8 delay channels."
+               fontSize="15.0" alignment="topLeft" parentComponent="Panel1"/>
+    <Component type="ScriptLabel" id="Label17" x="6.0" y="82.0" width="220.0"
+               height="40.0" bgColour="12016218" text="Record mod. Modulates xfader, &quot;selecting&quot; different portions of the incoming signal."
+               fontSize="15.0" alignment="topLeft" parentComponent="Panel1"/>
+    <Component type="ScriptLabel" id="Label18" x="11.0" y="11.0" width="100.0"
+               height="20.0" bgColour="4294901760" textColour="4278190080" text="1: RECORD"
+               fontSize="15.0" alignment="left" parentComponent="Panel1"/>
+    <Component type="ScriptLabel" id="SPEED" x="6.0" y="130.0" width="210.0"
+               height="20.0" bgColour="12016218" text="Speed. Sets the rate  of record mod."
+               fontSize="15.0" alignment="topLeft" parentComponent="Panel1"/>
+    <Component type="ScriptLabel" id="SPEED1" x="6.0" y="160.0" width="140.0"
+               height="20.0" bgColour="12016218" text="Div: Divides tempo."
+               fontSize="15.0" alignment="topLeft" parentComponent="Panel1"/>
+    <Component type="ScriptLabel" id="SPEED5" x="6.0" y="214.0" width="230.0"
+               height="20.0" bgColour="12016218" text="Input state: on/off switches for input channels"
+               fontSize="15.0" alignment="topLeft" parentComponent="Panel1"/>
+    <Component type="ScriptLabel" id="SPEED6" x="521.0" y="217.0" width="230.0"
+               height="20.0" bgColour="12016218" text="Reset: " fontSize="15.0"
+               alignment="topLeft" parentComponent="Panel1"/>
+    <Component type="ScriptLabel" id="SPEED14" x="4.0" y="187.0" width="180.0"
+               height="20.0" bgColour="12016218" text="Sync: Internal or DAW clock"
+               fontSize="15.0" alignment="topLeft" parentComponent="Panel1"/>
+  </Component>
+  <Component type="ScriptPanel" id="Panel2" x="549.0" y="13.0" width="240.0"
+             height="260.0">
+    <Component type="ScriptLabel" id="Label19" x="6.0" y="39.0" width="200.0"
+               height="40.0" bgColour="12016218" text="Record. A xfader sets the output gain of the 8 channels"
+               fontSize="15.0" alignment="topLeft" parentComponent="Panel2"/>
+    <Component type="ScriptLabel" id="Label20" x="6.0" y="81.0" width="220.0"
+               height="40.0" bgColour="12016218" text="Playback mod. Modulates xfader, &quot;selecting&quot; the contents of the channels"
+               fontSize="15.0" alignment="topLeft" parentComponent="Panel2"/>
+    <Component type="ScriptLabel" id="Label21" x="11.0" y="11.0" width="100.0"
+               height="20.0" bgColour="4294901760" textColour="4278190080" text="2: PLAYBACK"
+               fontSize="15.0" alignment="left" parentComponent="Panel2"/>
+    <Component type="ScriptLabel" id="SPEED2" x="6.0" y="120.0" width="210.0"
+               height="20.0" bgColour="12016218" text="Speed. Sets the rate  of playback mod."
+               fontSize="15.0" alignment="topLeft" parentComponent="Panel2"/>
+    <Component type="ScriptLabel" id="SPEED3" x="6.0" y="146.0" width="140.0"
+               height="20.0" bgColour="12016218" text="Div: Divides tempo."
+               fontSize="15.0" alignment="topLeft" parentComponent="Panel2"/>
+    <Component type="ScriptLabel" id="SPEED4" x="6.0" y="200.0" width="230.0"
+               height="20.0" bgColour="12016218" text="Reverse: 8 switches tun on reverse playback"
+               fontSize="15.0" alignment="topLeft" parentComponent="Panel2"/>
+    <Component type="ScriptLabel" id="SPEED7" x="5.0" y="227.0" width="230.0"
+               height="20.0" bgColour="12016218" text="Reset: Clears feedback networks"
+               fontSize="15.0" alignment="topLeft" parentComponent="Panel2"/>
+    <Component type="ScriptLabel" id="SPEED18" x="7.0" y="173.0" width="190.0"
+               height="20.0" bgColour="12016218" text="Sync: Internal or DAW clock"
+               fontSize="15.0" alignment="topLeft" parentComponent="Panel2"/>
+  </Component>
+  <Component type="ScriptPanel" id="Panel3" x="33.0" y="298.0" width="240.0"
+             height="220.0">
+    <Component type="ScriptLabel" id="Label22" x="6.0" y="39.0" width="200.0"
+               height="40.0" bgColour="12016218" text="Delay time: Sets playback rate"
+               fontSize="15.0" alignment="topLeft" parentComponent="Panel3"/>
+    <Component type="ScriptLabel" id="Label23" x="6.0" y="82.0" width="220.0"
+               height="40.0" bgColour="12016218" text="Feedback: sets no. repeats"
+               fontSize="15.0" alignment="topLeft" parentComponent="Panel3"/>
+    <Component type="ScriptLabel" id="Label24" x="11.0" y="11.0" width="100.0"
+               height="20.0" bgColour="4294901760" textColour="4278190080" text="3: DELAY"
+               fontSize="15.0" alignment="left" parentComponent="Panel3"/>
+    <Component type="ScriptLabel" id="SPEED8" x="6.0" y="123.0" width="210.0"
+               height="20.0" bgColour="12016218" text="Delay time mod: modulates delay time"
+               fontSize="15.0" alignment="topLeft" parentComponent="Panel3"/>
+    <Component type="ScriptLabel" id="SPEED9" x="6.0" y="172.0" width="140.0"
+               height="20.0" bgColour="12016218" text="Div: Divides playback rate."
+               fontSize="15.0" alignment="topLeft" parentComponent="Panel3"/>
+    <Component type="ScriptLabel" id="SPEED11" x="521.0" y="217.0" width="230.0"
+               height="20.0" bgColour="12016218" text="Reset: " fontSize="15.0"
+               alignment="topLeft" parentComponent="Panel3"/>
+  </Component>
+  <Component type="ScriptPanel" id="Panel4" x="549.0" y="298.0" width="240.0"
+             height="220.0">
+    <Component type="ScriptLabel" id="Label27" x="11.0" y="11.0" width="100.0"
+               height="20.0" bgColour="4294901760" textColour="4278190080" text="3: FILTER"
+               fontSize="15.0" alignment="left" parentComponent="Panel4"/>
+    <Component type="ScriptLabel" id="SPEED12" x="45.0" y="81.0" width="150.0"
+               height="70.0" bgColour="12016218" text="Just a multi-stage filter with resonance and mod control. "
+               fontSize="15.0" alignment="topLeft" parentComponent="Panel4"/>
+    <Component type="ScriptLabel" id="SPEED13" x="521.0" y="217.0" width="230.0"
+               height="20.0" bgColour="12016218" text="Reset: " fontSize="15.0"
+               alignment="topLeft" parentComponent="Panel4"/>
+  </Component>
+  <Component type="ScriptPanel" id="Panel5" x="33.0" y="535.0" width="240.0"
+             height="220.0">
+    <Component type="ScriptLabel" id="Label26" x="43.0" y="98.0" width="160.0"
+               height="30.0" bgColour="12016218" text="Pan and mix controls"
+               fontSize="15.0" alignment="topLeft" parentComponent="Panel5"/>
+    <Component type="ScriptLabel" id="Label28" x="11.0" y="11.0" width="100.0"
+               height="20.0" bgColour="4294901760" textColour="4278190080" text="6: PAN"
+               fontSize="15.0" alignment="left" parentComponent="Panel5"/>
+    <Component type="ScriptLabel" id="SPEED15" x="521.0" y="217.0" width="230.0"
+               height="20.0" bgColour="12016218" text="Reset: " fontSize="15.0"
+               alignment="topLeft" parentComponent="Panel5"/>
+  </Component>
+  <Component type="ScriptPanel" id="Panel6" x="549.0" y="536.0" width="240.0"
+             height="220.0">
+    <Component type="ScriptLabel" id="Label25" x="28.0" y="61.0" width="200.0"
+               height="40.0" bgColour="12016218" text="Tape/Granular: switches between tape and granular delays"
+               fontSize="15.0" alignment="topLeft" parentComponent="Panel6"/>
+    <Component type="ScriptLabel" id="Label29" x="28.0" y="104.0" width="220.0"
+               height="40.0" bgColour="12016218" text="Position: sets the grain position"
+               fontSize="15.0" alignment="topLeft" parentComponent="Panel6"/>
+    <Component type="ScriptLabel" id="Label30" x="11.0" y="11.0" width="100.0"
+               height="20.0" bgColour="4294901760" textColour="4278190080" text="7: Granular"
+               fontSize="15.0" alignment="left" parentComponent="Panel6"/>
+    <Component type="ScriptLabel" id="SPEED10" x="28.0" y="145.0" width="210.0"
+               height="20.0" bgColour="12016218" text="pitch: Granular mode speed"
+               fontSize="15.0" alignment="topLeft" parentComponent="Panel6"/>
+    <Component type="ScriptLabel" id="SPEED16" x="521.0" y="217.0" width="230.0"
+               height="20.0" bgColour="12016218" text="Reset: " fontSize="15.0"
+               alignment="topLeft" parentComponent="Panel6"/>
+  </Component>
+  <Component type="ScriptSlider" id="Playback Speed1" x="583.0" y="806.0"
+             isMetaParameter="1" processorId="Script FX1" parameterId="ExtraTempo"
+             width="170.0" height="50.0" mode="TempoSync" max="18.0" stepSize="1.0"
+             middlePosition="9.0" showValuePopup="Below"/>
+  <Component type="ScriptSlider" id="Playback Divide1" x="844.0" y="801.0"
+             isMetaParameter="1" processorId="Script FX1" parameterId="ExtraDiv"
+             width="180.0" height="50.0" middlePosition="8.5" min="1.0" max="16.0"
+             stepSize="1.0" showValuePopup="Below"/>
+  <Component type="ScriptTable" id="Table3" x="285.0" y="788.0" width="250.0"
+             height="90.0" processorId="Script FX1" tableIndex="2"/>
+  <Component type="ScriptPanel" id="Panel7" x="33.0" y="771.0" width="240.0"
+             height="120.0">
+    <Component type="ScriptLabel" id="Label31" x="33.0" y="52.0" width="190.0"
+               height="30.0" bgColour="12016218" text="Modulator for delay time and filter."
+               fontSize="15.0" alignment="topLeft" parentComponent="Panel7"/>
+    <Component type="ScriptLabel" id="Label32" x="11.0" y="11.0" width="100.0"
+               height="20.0" bgColour="4294901760" textColour="4278190080" text="8: EXTRA MOD"
+               fontSize="15.0" alignment="left" parentComponent="Panel7"/>
+    <Component type="ScriptLabel" id="SPEED17" x="521.0" y="217.0" width="230.0"
+               height="20.0" bgColour="12016218" text="Reset: " fontSize="15.0"
+               alignment="topLeft" parentComponent="Panel7"/>
+  </Component>
+  <Component type="ScriptButton" id="SyncMode" x="487.0" y="176.0" width="60.0"
+             height="40.0" text="Sync" processorId="Script FX1" parameterId="RecSyncMode"/>
+  <Component type="ScriptButton" id="SyncMode1" x="1008.0" y="174.0" width="60.0"
+             height="40.0" text="Sync" processorId="Script FX1" parameterId="PbSyncMode"/>
+</ContentProperties>

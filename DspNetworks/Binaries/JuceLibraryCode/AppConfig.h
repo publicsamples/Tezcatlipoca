@@ -76,6 +76,10 @@
  #define   IS_STATIC_DSP_LIBRARY 0
 #endif
 
+#ifndef    HISE_LOG_FILTER_FREQMOD
+ //#define HISE_LOG_FILTER_FREQMOD 0
+#endif
+
 //==============================================================================
 // hi_faust flags:
 
@@ -117,8 +121,8 @@
  //#define HISE_INCLUDE_PITCH_DETECTION 1
 #endif
 
-#ifndef    HISE_ENABLE_LORIS_ON_FRONTEND
- //#define HISE_ENABLE_LORIS_ON_FRONTEND 0
+#ifndef    HISE_INCLUDE_RT_NEURAL
+ //#define HISE_INCLUDE_RT_NEURAL 1
 #endif
 
 #ifndef    HISE_USE_EXTENDED_TEMPO_VALUES

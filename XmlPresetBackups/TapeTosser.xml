@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Processor Type="SynthChain" ID="TapeTosser" Bypassed="0" Gain="1.0" Balance="0.0"
+           VoiceLimit="64.0" KillFadeTime="20.0" IconColour="0" packageName=""
+           BuildVersion="650">
+  <ChildProcessors>
+    <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
+      <ChildProcessors>
+        <Processor Type="ScriptProcessor" ID="Interface" Bypassed="0">
+          <ChildProcessors/>
+          <Content>
+            <Control type="ScriptSlider" id="record" value="0.0"/>
+            <Control type="ScriptSliderPack" id="SliderPack2" value="6.0" data="32............................................"/>
+            <Control type="ScriptSliderPack" id="SliderPack3" value="6.0" data="32....f+....9C...3O...f+....9C...3O...f+....9C"/>
+            <Control type="ScriptSliderPack" id="SliderPack4" value="0.0" data="32............................................"/>
+            <Control type="ScriptSliderPack" id="SliderPack5" value="6.0" data="32......jBWO3S35QoO1iB29T35Q7yiBWyO1iBW+....9C"/>
+            <Control type="ScriptSliderPack" id="SliderPack6" value="0.0" data="32....f+b8nv6C6QgqOw0ih9vdT33C6QgaO..........."/>
+            <Control type="ScriptTable" id="Table1" value="0.0" data=""/>
+            <Control type="ScriptSlider" id="record1" value="1.0"/>
+            <Control type="ScriptSlider" id="PlaybackMod" value="1.0"/>
+            <Control type="ScriptTable" id="Table2" value="0.0" data="48...............vOuIwf6.........vO....+....9C...vO...f+.....fsfsvO"/>
+            <Control type="ScriptSlider" id="Playback" value="0.0"/>
+            <Control type="ScriptSlider" id="record speed" value="0.0"/>
+            <Control type="ScriptSlider" id="record div" value="2.0"/>
+            <Control type="ScriptSlider" id="Delay Time" value="1.0"/>
+            <Control type="ScriptSlider" id="Feedback" value="1.0"/>
+            <Control type="ScriptSlider" id="delay time mod" value="2.081668171172169e-17"/>
+            <Control type="ScriptSlider" id="Delay Time1" value="16.0"/>
+            <Control type="ScriptSlider" id="mix" value="1.0"/>
+            <Control type="ScriptSlider" id="resonance" value="9.0"/>
+            <Control type="ScriptSlider" id="cutoff" value="1.0"/>
+            <Control type="ScriptSlider" id="cut mod" value="2.081668171172169e-17"/>
+            <Control type="ScriptSlider" id="Playback Divide" value="2.0"/>
+            <Control type="ScriptSlider" id="Playback Speed" value="0.0"/>
+            <Control type="ScriptButton" id="RESET" value="0.0"/>
+            <Control type="ScriptButton" id="mode" value="0.0"/>
+            <Control type="ScriptSliderPack" id="SliderPack7" value="4.0" data="32....f+....9C...3O...f+....9C...3O...f+....9C"/>
+            <Control type="ScriptSliderPack" id="SliderPack8" value="6.0" data="32....f+XOJb8C6QgyOgqGE+b8nv6Cov0qOb8nP9......"/>
+            <Control type="ScriptSlider" id="Playback Speed1" value="2.0"/>
+            <Control type="ScriptSlider" id="Playback Divide1" value="15.0"/>
+            <Control type="ScriptTable" id="Table3" value="0.0" data="36...............vOVNzB+....9C...vO...f+.........vO"/>
+            <Control type="ScriptButton" id="SyncMode" value="1.0"/>
+            <Control type="ScriptButton" id="SyncMode1" value="1.0"/>
+          </Content>
+          <UIData Source="TapeTosserUIData"/>
+        </Processor>
+      </ChildProcessors>
+    </Processor>
+    <Processor Type="ModulatorChain" ID="GainModulation" Bypassed="0" Intensity="1.0">
+      <ChildProcessors/>
+    </Processor>
+    <Processor Type="ModulatorChain" ID="PitchModulation" Bypassed="1" Intensity="0.0">
+      <ChildProcessors/>
+    </Processor>
+    <Processor Type="EffectChain" ID="FX" Bypassed="0">
+      <ChildProcessors>
+        <Processor Type="Hardcoded Master FX" ID="Script FX1" Bypassed="0" Network="stored"
+                   sync="1.0" dic="16.0" res="9.0" feed="1.0" Cutoff="1.0" CutMod="2.081668171172169e-17"
+                   Rec="0.0" RecMod="1.0" Pb="0.0" PbMod="1.0" RecTempo="0.0" RecDiv="2.0"
+                   PbTempo="0.0" PbDiv="2.0" dtime="1.0" dtimemod="2.081668171172169e-17"
+                   reset="0.0" dmode="0.0" mix="1.0" ExtraTempo="2.0" ExtraDiv="15.0"
+                   RecSyncMode="1.0" RecModType="0.0" PbSyncMode="1.0" PbModType="0.0"
+                   ExtraSyncMode="0.0" ExtraModType="0.0">
+          <ChildProcessors/>
+          <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+          <Tables>
+            <Table EmbeddedData=""/>
+            <Table EmbeddedData="48...............vOuIwf6.........vO....+....9C...vO...f+.....fsfsvO"/>
+            <Table EmbeddedData="36...............vOVNzB+....9C...vO...f+.........vO"/>
+          </Tables>
+          <SliderPacks>
+            <SliderPack EmbeddedData="32....f+b8nv6C6QgqOw0ih9vdT33C6QgaO..........."/>
+            <SliderPack EmbeddedData="32............................................"/>
+            <SliderPack EmbeddedData="32....f+....9C...3O...f+....9C...3O...f+....9C"/>
+            <SliderPack EmbeddedData="32............................................"/>
+            <SliderPack EmbeddedData="32......jBWO3S35QoO1iB29T35Q7yiBWyO1iBW+....9C"/>
+            <SliderPack EmbeddedData="32....f+....9C...3O...f+....9C...3O...f+....9C"/>
+            <SliderPack EmbeddedData="32....f+XOJb8C6QgyOgqGE+b8nv6Cov0qOb8nP9......"/>
+            <SliderPack EmbeddedData="64....f+....9C...3O...f+....9C...3O...f+....9C...3O...f+....9C...3O...f+....9C...3O...f+."/>
+            <SliderPack EmbeddedData="64....f+....9C...3O...f+....9C...3O...f+....9C...3O...f+....9C...3O...f+....9C...3O...f+."/>
+            <SliderPack EmbeddedData="64....f+....9C...3O...f+....9C...3O...f+....9C...3O...f+....9C...3O...f+....9C...3O...f+."/>
+          </SliderPacks>
+        </Processor>
+      </ChildProcessors>
+    </Processor>
+    <Processor Type="AudioLooper" ID="Audio Loop Player1" Bypassed="0" Gain="1.0"
+               Balance="0.0" VoiceLimit="256.0" KillFadeTime="20.0" IconColour="0"
+               SyncMode="1.0" PitchTracking="0.0" LoopEnabled="1.0" RootNote="64.0"
+               SampleStartMod="0.0" Reversed="0.0" FileName="/Library/Application Support/modularsamples/oi grandadxxx/AudioFiles/Loops/STBELL-130-01.wav"
+               min="0" max="325662" loopStart="0" loopEnd="325662">
+      <ChildProcessors>
+        <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
+          <ChildProcessors/>
+        </Processor>
+        <Processor Type="ModulatorChain" ID="GainModulation" Bypassed="0" Intensity="1.0">
+          <ChildProcessors>
+            <Processor Type="SimpleEnvelope" ID="DefaultEnvelope1" Bypassed="0" Monophonic="0.0"
+                       Retrigger="1.0" Intensity="1.0" Attack="5.0" Release="10.0" LinearMode="1.0">
+              <ChildProcessors>
+                <Processor Type="ModulatorChain" ID="Attack Time Modulation" Bypassed="0"
+                           Intensity="1.0">
+                  <ChildProcessors/>
+                </Processor>
+              </ChildProcessors>
+            </Processor>
+          </ChildProcessors>
+        </Processor>
+        <Processor Type="ModulatorChain" ID="PitchModulation" Bypassed="0" Intensity="0.0">
+          <ChildProcessors/>
+        </Processor>
+        <Processor Type="EffectChain" ID="FX" Bypassed="0">
+          <ChildProcessors/>
+        </Processor>
+      </ChildProcessors>
+      <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+    </Processor>
+  </ChildProcessors>
+  <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+  <macro_controls>
+    <macro name="Macro 1" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 2" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 3" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 4" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 5" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 6" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 7" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 8" value="0.0" midi_cc="-1"/>
+  </macro_controls>
+  <MidiAutomation/>
+  <MPEData Enabled="0"/>
+</Processor>

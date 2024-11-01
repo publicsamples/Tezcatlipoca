@@ -9,11 +9,16 @@
 
 // Include third party header files ----------------
 
-#include "filterBank.h"
+#include "g.h"
+#include "granular.h"
+#include "klp.h"
+#include "klp2.h"
+#include "RevDel.h"
 
 // Include compiled network files ------------------
 
-#include "geq.h"
+#include "CleanDelay.h"
+#include "stored.h"
 
 #if (defined (_WIN32) || defined (_WIN64))
 #pragma warning( pop )
