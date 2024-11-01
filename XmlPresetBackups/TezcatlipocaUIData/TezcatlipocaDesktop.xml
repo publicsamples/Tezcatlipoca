@@ -294,10 +294,10 @@
                fontSize="20.0" textColour="3768623264" editable="0"/>
     <Component type="ScriptLabel" id="Label33" x="18.0" y="210.0" width="60.0"
                height="20.0" text="TEMPO" parentComponent="PlaybackPanel" fontName="Impact"
-               fontSize="20.0" textColour="3768623264"/>
+               fontSize="20.0" textColour="3768623264" editable="0"/>
     <Component type="ScriptLabel" id="Label34" x="75.0" y="210.0" width="60.0"
                height="20.0" text="DIV" parentComponent="PlaybackPanel" fontName="Impact"
-               fontSize="20.0" textColour="3768623264"/>
+               fontSize="20.0" textColour="3768623264" editable="0"/>
     <Component type="ScriptLabel" id="Label35" x="280.0" y="63.0" width="60.0"
                height="30.0" text="TIME" parentComponent="PlaybackPanel" fontName="Impact"
                fontSize="20.0" textColour="3768623264" editable="0"/>
@@ -322,10 +322,10 @@
                height="30.0" text="Sync" parentComponent="PlaybackPanel"/>
     <Component type="ScriptLabel" id="Label48" x="137.0" y="191.0" width="50.0"
                height="50.0" text="TABLE /STEP" parentComponent="PlaybackPanel"
-               fontName="Impact" fontSize="20.0" textColour="3768623264"/>
+               fontName="Impact" fontSize="20.0" textColour="3768623264" editable="0"/>
     <Component type="ScriptLabel" id="Label49" x="199.0" y="192.0" width="50.0"
                height="50.0" text="SYNC" parentComponent="PlaybackPanel" fontName="Impact"
-               fontSize="20.0" textColour="3768623264"/>
+               fontSize="20.0" textColour="3768623264" editable="0"/>
     <Component type="ScriptSliderPack" id="ScriptSliderPack2" x="10.0" y="74.0"
                width="250.0" height="80.0" parentComponent="PlaybackPanel" SliderPackIndex="8"
                itemColour2="16777215" itemColour="3282634503" textColour="4278190080"
@@ -372,24 +372,42 @@
     <Component type="ScriptLabel" id="Label41" x="166.0" y="158.0" width="70.0"
                height="30.0" text="THE END" parentComponent="Mix" fontSize="30.0"
                fontName="Impact" textColour="3768623264" editable="0"/>
-    <Component type="ScriptLabel" id="Label45" x="14.0" y="8.0" width="50.0"
+    <Component type="ScriptLabel" id="Label45" x="9.0" y="8.0" width="50.0"
                height="20.0" text="PAN" parentComponent="Mix" fontSize="20.0"
                fontName="Impact" textColour="3768623264" editable="0"/>
   </Component>
-  <Component type="ScriptPanel" id="Panel8" x="580.0" y="315.0" width="230.0"
-             height="200.0" itemColour="4278190080">
-    <Component type="ScriptLabel" id="Label43" x="19.0" y="161.0" width="190.0"
-               height="30.0" text="TEZCATLIPOCA" parentComponent="Panel8" fontSize="40.0"
+  <Component type="ScriptPanel" id="Panel8" x="580.0" y="314.0" width="230"
+             height="210" itemColour="4278190080">
+    <Component type="ScriptSlider" id="mix1" x="110.0" y="158" processorId="Simple Gain1"
+               parameterId="Gain" width="40" height="40" showValuePopup="Below"
+               parentComponent="Panel8" filmstripImage="{PROJECT_FOLDER}aztecknob.png"
+               numStrips="125.0" scaleFactor="0.2" showTextBox="0" isVertical="0"
+               isPluginParameter="1" pluginParameterName="Mix" mode="Decibel"
+               min="-100.0" max="12.0" stepSize="0.1" suffix=" dB" middlePosition="0.0"/>
+    <Component type="ScriptLabel" id="Label43" x="0.0" y="173.0" width="110"
+               height="30" text="TEZCATLIPOCA" parentComponent="Panel8" fontSize="20.0"
                fontName="Impact" textColour="3768623264" editable="0"/>
-    <Component type="ScriptPanel" id="Waveform1" x="75.0" y="49.0" width="80.0"
-               height="70.0" parentComponent="Panel8"/>
-    <Component type="ScriptImage" id="Image2" x="46.0" y="12.0" fileName="{PROJECT_FOLDER}eye.png"
+    <Component type="ScriptPanel" id="Waveform1" x="80.0" y="45.0" width="80.0"
+               height="75.0" parentComponent="Panel8"/>
+    <Component type="ScriptImage" id="Image2" x="47.0" y="11.0" fileName="{PROJECT_FOLDER}eye.png"
                width="140.0" height="150.0" parentComponent="Panel8" alpha="0.4300000071525574"/>
-    <Component type="ScriptButton" id="Presets" x="196.0" y="8.0" width="20.0"
+    <Component type="ScriptButton" id="Presets" x="193.0" y="168.0" width="20.0"
                height="20.0" parentComponent="Panel8" bgColour="4289267463"
                itemColour="4289267463" itemColour2="4289267463"/>
-    <Component type="ScriptLabel" id="Label44" x="186.0" y="32.0" width="40.0"
+    <Component type="ScriptLabel" id="Label44" x="183.0" y="197.0" width="40.0"
                height="10.0" text="PRESETS" parentComponent="Panel8" fontSize="12.0"
+               fontName="Impact" textColour="3768623264" editable="0"/>
+    <Component type="ScriptSlider" id="mix2" x="145.0" y="158" processorId="Simple Gain2"
+               parameterId="Gain" width="40" height="40" showValuePopup="Below"
+               parentComponent="Panel8" filmstripImage="{PROJECT_FOLDER}aztecknob.png"
+               numStrips="125.0" scaleFactor="0.2" showTextBox="0" isVertical="0"
+               isPluginParameter="1" pluginParameterName="Mix" mode="Decibel"
+               min="-100.0" max="12.0" stepSize="0.1" suffix=" dB" middlePosition="0.0"/>
+    <Component type="ScriptLabel" id="Label50" x="105.0" y="197.0" width="50"
+               height="10" text="INPUT" parentComponent="Panel8" fontSize="12.0"
+               fontName="Impact" textColour="3768623264" editable="0"/>
+    <Component type="ScriptLabel" id="Label51" x="142.0" y="197.0" width="50"
+               height="10" text="OUTPUT" parentComponent="Panel8" fontSize="12.0"
                fontName="Impact" textColour="3768623264" editable="0"/>
   </Component>
   <Component type="ScriptFloatingTile" id="FloatingTile1" x="10.0" y="10.0"

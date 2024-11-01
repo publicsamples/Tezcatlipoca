@@ -42,7 +42,9 @@
             <Control type="ScriptSlider" id="cutoff" value="1.0"/>
             <Control type="ScriptSliderPack" id="SliderPack5" value="7.0" data="32.EtdD+DWOJ7CEtdvOT35A+PgqG7SyLyvO1iBG+rGEt7C"/>
             <Control type="ScriptSlider" id="mix" value="1.0"/>
+            <Control type="ScriptSlider" id="mix1" value="0.0"/>
             <Control type="ScriptButton" id="Presets" value="0.0"/>
+            <Control type="ScriptSlider" id="mix2" value="0.0"/>
           </Content>
           <UIData Source="TezcatlipocaUIData"/>
         </Processor>
@@ -56,6 +58,24 @@
     </Processor>
     <Processor Type="EffectChain" ID="FX" Bypassed="0">
       <ChildProcessors>
+        <Processor Type="SimpleGain" ID="Simple Gain1" Bypassed="0" Gain="0.0" Delay="0.0"
+                   Width="100.0" Balance="0.0" InvertPolarity="0.0">
+          <ChildProcessors>
+            <Processor Type="ModulatorChain" ID="Gain Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="Delay Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="Width Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="Pan Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+          </ChildProcessors>
+          <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+        </Processor>
         <Processor Type="Hardcoded Master FX" ID="Script FX1" Bypassed="0" Network="stored"
                    sync="1.0" dic="4.0" res="0.0" feed="1.0" Cutoff="1.0" CutMod="2.081668171172169e-17"
                    Rec="1.0" RecMod="1.0" Pb="0.0" PbMod="1.0" RecTempo="0.0" RecDiv="8.0"
@@ -82,6 +102,24 @@
             <SliderPack EmbeddedData="64......zLyL0iqGEdOJb8H9ziBW4ilYloOyLyr9zLyL6y0iBuOT35A+nYlY7yv0ixOOJbM+v0iB8i8nv0O...f+."/>
             <SliderPack EmbeddedData="64....f+....9C...3O...f+....9C...3O...f+....9C...3O...f+....9C...3O...f+....9C...3O...f+."/>
           </SliderPacks>
+        </Processor>
+        <Processor Type="SimpleGain" ID="Simple Gain2" Bypassed="0" Gain="0.0" Delay="0.0"
+                   Width="100.0" Balance="0.0" InvertPolarity="0.0">
+          <ChildProcessors>
+            <Processor Type="ModulatorChain" ID="Gain Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="Delay Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="Width Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="Pan Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+          </ChildProcessors>
+          <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
         </Processor>
       </ChildProcessors>
     </Processor>
