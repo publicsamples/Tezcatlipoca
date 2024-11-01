@@ -9,4 +9,4 @@ Tezcatlipoca is built with [HISE](http://hise.audio).
 - 3 Delay modes. Clean, tape and granular
 -  Multi-stage filter and pan
 
-![Quetzalcoatl](https://raw.githubusercontent.com/publicsamples/Quetzalcoatl/main/Quetzalcoatl.png)
+![Quetzalcoatl](https://raw.githubusercontent.com/publicsamples/Tezcatlipoca/main/Tezcatlipoca.png)
