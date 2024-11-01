@@ -10,3 +10,7 @@ Tezcatlipoca is built with [HISE](http://hise.audio).
 -  Multi-stage filter and pan
 
 ![Quetzalcoatl](https://raw.githubusercontent.com/publicsamples/Tezcatlipoca/main/Tezcatlipoca.png)
+
+# Simplified signal chain 
+
+![Signal Chain](https://raw.githubusercontent.com/publicsamples/Tezcatlipoca/main/Infographic.png)
