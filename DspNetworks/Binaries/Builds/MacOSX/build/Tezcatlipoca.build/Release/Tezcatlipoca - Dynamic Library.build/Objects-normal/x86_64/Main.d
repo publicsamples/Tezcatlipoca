@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/rick/Documents/GitHub/TapeTosser/Tezcatlipoca/DspNetworks/Binaries/Source/Main.cpp \
-  /Users/rick/Documents/GitHub/TapeTosser/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/AppConfig.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/Source/Main.cpp \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/AppConfig.h \
   /Users/rick/Downloads/HISE-develop-2/hi_dsp_library/hi_dsp_library.h \
   /Users/rick/Downloads/HISE-develop-2/hi_dsp_library/../hi_tools/hi_tools.h \
   /Users/rick/Downloads/HISE-develop-2/hi_dsp_library/../hi_tools/../JUCE/modules/juce_core/juce_core.h \
@@ -682,25 +682,26 @@ dependencies: \
   /Users/rick/Downloads/HISE-develop-2/hi_faust/FaustUI.h \
   /Users/rick/Downloads/HISE-develop-2/hi_faust/FaustWrapper.h \
   /Users/rick/Downloads/HISE-develop-2/hi_faust/FaustStaticWrapper.h \
-  /Users/rick/Documents/GitHub/TapeTosser/Tezcatlipoca/DspNetworks/Binaries/Source/includes.h \
-  /Users/rick/Documents/GitHub/TapeTosser/Tezcatlipoca/DspNetworks/Binaries/Source/g.h \
-  /Users/rick/Documents/GitHub/TapeTosser/Tezcatlipoca/DspNetworks/Binaries/Source/../../ThirdParty/g.h \
-  /Users/rick/Documents/GitHub/TapeTosser/Tezcatlipoca/DspNetworks/Binaries/Source/../../ThirdParty/src/g.cpp \
-  /Users/rick/Documents/GitHub/TapeTosser/Tezcatlipoca/DspNetworks/Binaries/Source/granular.h \
-  /Users/rick/Documents/GitHub/TapeTosser/Tezcatlipoca/DspNetworks/Binaries/Source/../../ThirdParty/granular.h \
-  /Users/rick/Documents/GitHub/TapeTosser/Tezcatlipoca/DspNetworks/Binaries/Source/../../ThirdParty/src/granular.cpp \
-  /Users/rick/Documents/GitHub/TapeTosser/Tezcatlipoca/DspNetworks/Binaries/Source/klp.h \
-  /Users/rick/Documents/GitHub/TapeTosser/Tezcatlipoca/DspNetworks/Binaries/Source/../../ThirdParty/klp.h \
-  /Users/rick/Documents/GitHub/TapeTosser/Tezcatlipoca/DspNetworks/Binaries/Source/../../ThirdParty/src/klp.cpp \
-  /Users/rick/Documents/GitHub/TapeTosser/Tezcatlipoca/DspNetworks/Binaries/Source/klp2.h \
-  /Users/rick/Documents/GitHub/TapeTosser/Tezcatlipoca/DspNetworks/Binaries/Source/../../ThirdParty/klp2.h \
-  /Users/rick/Documents/GitHub/TapeTosser/Tezcatlipoca/DspNetworks/Binaries/Source/../../ThirdParty/src/klp2.cpp \
-  /Users/rick/Documents/GitHub/TapeTosser/Tezcatlipoca/DspNetworks/Binaries/Source/RevDel.h \
-  /Users/rick/Documents/GitHub/TapeTosser/Tezcatlipoca/DspNetworks/Binaries/Source/../../ThirdParty/RevDel.h \
-  /Users/rick/Documents/GitHub/TapeTosser/Tezcatlipoca/DspNetworks/Binaries/Source/../../ThirdParty/src/RevDel.cpp \
-  /Users/rick/Documents/GitHub/TapeTosser/Tezcatlipoca/DspNetworks/Binaries/Source/CleanDelay.h \
-  /Users/rick/Documents/GitHub/TapeTosser/Tezcatlipoca/DspNetworks/Binaries/Source/stored.h \
-  /Users/rick/Documents/GitHub/TapeTosser/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/JuceHeader.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/Source/includes.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/Source/g.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/Source/../../ThirdParty/g.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/Source/../../ThirdParty/src/g.cpp \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/Source/granular.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/Source/../../ThirdParty/granular.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/Source/../../ThirdParty/src/granular.cpp \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/Source/klp.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/Source/../../ThirdParty/klp.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/Source/../../ThirdParty/src/klp.cpp \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/Source/klp2.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/Source/../../ThirdParty/klp2.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/Source/../../ThirdParty/src/klp2.cpp \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/Source/RevDel.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/Source/../../ThirdParty/RevDel.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/Source/../../ThirdParty/src/RevDel.cpp \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/Source/buff.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/Source/CleanDelay.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/Source/stored.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/JuceHeader.h \
   /Users/rick/Downloads/HISE-develop-2/hi_faust_types/hi_faust_types.h \
   /Users/rick/Downloads/HISE-develop-2/hi_tools/hi_tools.h \
   /Users/rick/Downloads/HISE-develop-2/JUCE/modules/juce_dsp/juce_dsp.h

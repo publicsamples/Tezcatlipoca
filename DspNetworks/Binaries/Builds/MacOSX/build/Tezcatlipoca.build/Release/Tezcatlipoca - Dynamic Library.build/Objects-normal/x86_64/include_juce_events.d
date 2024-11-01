@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/rick/Documents/GitHub/TapeTosser/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/include_juce_events.mm \
-  /Users/rick/Documents/GitHub/TapeTosser/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/AppConfig.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/include_juce_events.mm \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/AppConfig.h \
   /Users/rick/Downloads/HISE-develop-2/JUCE/modules/juce_events/juce_events.mm \
   /Users/rick/Downloads/HISE-develop-2/JUCE/modules/juce_events/juce_events.cpp \
   /Users/rick/Downloads/HISE-develop-2/JUCE/modules/juce_events/juce_events.h \

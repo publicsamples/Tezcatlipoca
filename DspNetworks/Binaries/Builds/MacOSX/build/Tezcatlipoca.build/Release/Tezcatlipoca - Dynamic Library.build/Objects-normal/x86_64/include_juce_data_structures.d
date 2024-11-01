@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/rick/Documents/GitHub/TapeTosser/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/include_juce_data_structures.mm \
-  /Users/rick/Documents/GitHub/TapeTosser/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/AppConfig.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/include_juce_data_structures.mm \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/AppConfig.h \
   /Users/rick/Downloads/HISE-develop-2/JUCE/modules/juce_data_structures/juce_data_structures.mm \
   /Users/rick/Downloads/HISE-develop-2/JUCE/modules/juce_data_structures/juce_data_structures.cpp \
   /Users/rick/Downloads/HISE-develop-2/JUCE/modules/juce_data_structures/juce_data_structures.h \

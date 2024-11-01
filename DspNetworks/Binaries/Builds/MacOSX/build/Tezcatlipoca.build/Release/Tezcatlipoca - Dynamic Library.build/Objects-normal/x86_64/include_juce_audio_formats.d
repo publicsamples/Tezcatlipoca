@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/rick/Documents/GitHub/TapeTosser/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/include_juce_audio_formats.mm \
-  /Users/rick/Documents/GitHub/TapeTosser/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/AppConfig.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/include_juce_audio_formats.mm \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/Tezcatlipoca/DspNetworks/Binaries/JuceLibraryCode/AppConfig.h \
   /Users/rick/Downloads/HISE-develop-2/JUCE/modules/juce_audio_formats/juce_audio_formats.mm \
   /Users/rick/Downloads/HISE-develop-2/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp \
   /Users/rick/Downloads/HISE-develop-2/JUCE/modules/juce_audio_formats/juce_audio_formats.h \

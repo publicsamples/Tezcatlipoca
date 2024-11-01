@@ -32,6 +32,7 @@ struct Factory: public scriptnode::dll::StaticLibraryHostFactory
 		registerPolyNode<project::klp<1>, wrap::illegal_poly<project::klp<1>>>();
 		registerPolyNode<project::granular<1>, wrap::illegal_poly<project::granular<1>>>();
 		registerPolyNode<project::g<1>, wrap::illegal_poly<project::g<1>>>();
+		registerPolyNode<project::buff<1>, wrap::illegal_poly<project::buff<1>>>();
 		registerNode<project::CleanDelay>();
 		registerPolyNode<project::stored<1>, wrap::illegal_poly<project::stored<1>>>();
 	}
@@ -74,8 +75,9 @@ DLL_EXPORT void initOpaqueNode(scriptnode::OpaqueNode* n, int index, bool polyIf
 DLL_EXPORT int getHash(int index)
 {
 	static const int thirdPartyOffset = 5;
-	static const int hashIndexes[2] =
+	static const int hashIndexes[3] =
 	{
+		2126521593,
 		913633681,
 		1873770219
 	};
