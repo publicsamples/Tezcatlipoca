@@ -1,7 +1,7 @@
 /* ------------------------------------------------------------
 author: "Eric Tarr"
 name: "korg35LPF"
-Code generated with Faust 2.75.7 (https://faust.grame.fr)
+Code generated with Faust 2.81.2 (https://faust.grame.fr)
 Compilation options: -lang cpp -rui -nvi -ct 1 -cn _klp -scn ::faust::dsp -es 1 -mcd 16 -mdd 1024 -mdy 33 -uim -single -ftz 0
 ------------------------------------------------------------ */
 
@@ -43,12 +43,12 @@ struct _klp final : public ::faust::dsp {
 	float fConst3;
 	float fRec4[2];
 	FAUSTFLOAT fHslider1;
-	float fRec0[2];
 	float fRec1[2];
 	float fRec2[2];
-	float fRec5[2];
+	float fRec3[2];
 	float fRec6[2];
 	float fRec7[2];
+	float fRec8[2];
 	
 	_klp() {
 	}
@@ -62,7 +62,7 @@ struct _klp final : public ::faust::dsp {
 		m->declare("maths.lib/copyright", "GRAME");
 		m->declare("maths.lib/license", "LGPL with exception");
 		m->declare("maths.lib/name", "Faust Math Library");
-		m->declare("maths.lib/version", "2.8.0");
+		m->declare("maths.lib/version", "2.8.1");
 		m->declare("name", "korg35LPF");
 		m->declare("platform.lib/name", "Generic Platform Library");
 		m->declare("platform.lib/version", "1.3.0");
@@ -71,7 +71,7 @@ struct _klp final : public ::faust::dsp {
 		m->declare("vaeffects.lib/korg35LPF:author", "Eric Tarr");
 		m->declare("vaeffects.lib/korg35LPF:license", "MIT-style STK-4.3 license");
 		m->declare("vaeffects.lib/name", "Faust Virtual Analog Filter Effect Library");
-		m->declare("vaeffects.lib/version", "1.2.1");
+		m->declare("vaeffects.lib/version", "1.4.0");
 	}
 
 	static constexpr int getStaticNumInputs() {
@@ -108,22 +108,22 @@ struct _klp final : public ::faust::dsp {
 			fRec4[l0] = 0.0f;
 		}
 		for (int l1 = 0; l1 < 2; l1 = l1 + 1) {
-			fRec0[l1] = 0.0f;
+			fRec1[l1] = 0.0f;
 		}
 		for (int l2 = 0; l2 < 2; l2 = l2 + 1) {
-			fRec1[l2] = 0.0f;
+			fRec2[l2] = 0.0f;
 		}
 		for (int l3 = 0; l3 < 2; l3 = l3 + 1) {
-			fRec2[l3] = 0.0f;
+			fRec3[l3] = 0.0f;
 		}
 		for (int l4 = 0; l4 < 2; l4 = l4 + 1) {
-			fRec5[l4] = 0.0f;
+			fRec6[l4] = 0.0f;
 		}
 		for (int l5 = 0; l5 < 2; l5 = l5 + 1) {
-			fRec6[l5] = 0.0f;
+			fRec7[l5] = 0.0f;
 		}
 		for (int l6 = 0; l6 < 2; l6 = l6 + 1) {
-			fRec7[l6] = 0.0f;
+			fRec8[l6] = 0.0f;
 		}
 	}
 	
@@ -163,32 +163,32 @@ struct _klp final : public ::faust::dsp {
 		for (int i0 = 0; i0 < count; i0 = i0 + 1) {
 			fRec4[0] = fSlow0 + fConst3 * fRec4[1];
 			float fTemp0 = std::tan(fConst1 * std::pow(1e+01f, 3.0f * fRec4[0] + 1.0f));
-			float fTemp1 = (float(input0[i0]) - fRec2[1]) * fTemp0;
+			float fTemp1 = (float(input0[i0]) - fRec3[1]) * fTemp0;
 			float fTemp2 = fTemp0 + 1.0f;
 			float fTemp3 = 1.0f - fTemp0 / fTemp2;
 			float fTemp4 = 1.0f - fSlow1 * (fTemp0 * fTemp3 / fTemp2);
-			float fTemp5 = fTemp0 * ((fRec2[1] + (fTemp1 + fSlow1 * fRec0[1] * fTemp3 - fRec1[1]) / fTemp2) / fTemp4 - fRec0[1]) / fTemp2;
-			fRec0[0] = fRec0[1] + 2.0f * fTemp5;
-			float fTemp6 = fRec0[1] + fTemp5;
-			fRec1[0] = fRec1[1] + 2.0f * (fTemp0 * (fSlow1 * fTemp6 - fRec1[1]) / fTemp2);
-			fRec2[0] = fRec2[1] + 2.0f * (fTemp1 / fTemp2);
-			float fRec3 = fTemp6;
-			output0[i0] = FAUSTFLOAT(fRec3);
-			float fTemp7 = (float(input1[i0]) - fRec7[1]) * fTemp0;
-			float fTemp8 = ((fRec7[1] + (fTemp7 + fSlow1 * fRec5[1] * fTemp3 - fRec6[1]) / fTemp2) / fTemp4 - fRec5[1]) * fTemp0 / fTemp2;
-			fRec5[0] = fRec5[1] + 2.0f * fTemp8;
-			float fTemp9 = fRec5[1] + fTemp8;
-			fRec6[0] = fRec6[1] + 2.0f * ((fSlow1 * fTemp9 - fRec6[1]) * fTemp0 / fTemp2);
-			fRec7[0] = fRec7[1] + 2.0f * (fTemp7 / fTemp2);
-			float fRec8 = fTemp9;
-			output1[i0] = FAUSTFLOAT(fRec8);
+			float fTemp5 = fTemp0 * ((fRec3[1] + (fTemp1 + fSlow1 * fRec1[1] * fTemp3 - fRec2[1]) / fTemp2) / fTemp4 - fRec1[1]) / fTemp2;
+			float fTemp6 = fRec1[1] + fTemp5;
+			float fRec0 = fTemp6;
+			fRec1[0] = fRec1[1] + 2.0f * fTemp5;
+			fRec2[0] = fRec2[1] + 2.0f * (fTemp0 * (fSlow1 * fTemp6 - fRec2[1]) / fTemp2);
+			fRec3[0] = fRec3[1] + 2.0f * (fTemp1 / fTemp2);
+			output0[i0] = FAUSTFLOAT(fRec0);
+			float fTemp7 = fTemp0 * (float(input1[i0]) - fRec8[1]);
+			float fTemp8 = fTemp0 * ((fRec8[1] + (fTemp7 + fSlow1 * fTemp3 * fRec6[1] - fRec7[1]) / fTemp2) / fTemp4 - fRec6[1]) / fTemp2;
+			float fTemp9 = fRec6[1] + fTemp8;
+			float fRec5 = fTemp9;
+			fRec6[0] = fRec6[1] + 2.0f * fTemp8;
+			fRec7[0] = fRec7[1] + 2.0f * (fTemp0 * (fSlow1 * fTemp9 - fRec7[1]) / fTemp2);
+			fRec8[0] = fRec8[1] + 2.0f * (fTemp7 / fTemp2);
+			output1[i0] = FAUSTFLOAT(fRec5);
 			fRec4[1] = fRec4[0];
-			fRec0[1] = fRec0[0];
 			fRec1[1] = fRec1[0];
 			fRec2[1] = fRec2[0];
-			fRec5[1] = fRec5[0];
+			fRec3[1] = fRec3[0];
 			fRec6[1] = fRec6[0];
 			fRec7[1] = fRec7[0];
+			fRec8[1] = fRec8[0];
 		}
 	}
 

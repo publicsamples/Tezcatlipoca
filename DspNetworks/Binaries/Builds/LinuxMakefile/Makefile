@@ -35,7 +35,7 @@ ifeq ($(CONFIG),Debug)
     TARGET_ARCH := 
   endif
 
-  JUCE_CPPFLAGS := $(DEPFLAGS) "-DLINUX=1" "-DDEBUG=1" "-D_DEBUG=1" "-D%USE_IPP_LINUX%" "-DJUCER_LINUX_MAKE_6D53C8B4=1" "-DJUCE_APP_VERSION=1.0.0" "-DJUCE_APP_VERSION_HEX=0x10000" $(shell pkg-config --cflags freetype2 x11 xinerama xext) -pthread -I../../JuceLibraryCode -I/Users/rick/Downloads/HISE-develop-2 -I/Users/rick/Downloads/HISE-develop-2/JUCE/modules -I/Users/rick/Downloads/HISE-develop-2/tools/faust/include $(CPPFLAGS)
+  JUCE_CPPFLAGS := $(DEPFLAGS) "-DLINUX=1" "-DDEBUG=1" "-D_DEBUG=1" "-D%USE_IPP_LINUX%" "-DJUCER_LINUX_MAKE_6D53C8B4=1" "-DJUCE_APP_VERSION=1.0.0" "-DJUCE_APP_VERSION_HEX=0x10000" $(shell pkg-config --cflags freetype2 x11 xinerama xext) -pthread -I../../JuceLibraryCode -I/Users/rick/Documents/HISE\ OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71 -I/Users/rick/Documents/HISE\ OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/JUCE/modules -I/Users/rick/Documents/HISE\ OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/tools/faust/include $(CPPFLAGS)
   JUCE_CPPFLAGS_DYNAMIC_LIBRARY :=  "-DJucePlugin_Build_VST=0" "-DJucePlugin_Build_VST3=0" "-DJucePlugin_Build_AU=0" "-DJucePlugin_Build_AUv3=0" "-DJucePlugin_Build_RTAS=0" "-DJucePlugin_Build_AAX=0" "-DJucePlugin_Build_Standalone=0" "-DJucePlugin_Build_Unity=0"
   JUCE_CFLAGS_DYNAMIC_LIBRARY := -fPIC -fvisibility=hidden
   JUCE_LDFLAGS_DYNAMIC_LIBRARY := -shared
@@ -58,7 +58,7 @@ ifeq ($(CONFIG),Release)
     TARGET_ARCH := 
   endif
 
-  JUCE_CPPFLAGS := $(DEPFLAGS) "-DLINUX=1" "-DNDEBUG=1" "-D%USE_IPP_LINUX%" "-DJUCER_LINUX_MAKE_6D53C8B4=1" "-DJUCE_APP_VERSION=1.0.0" "-DJUCE_APP_VERSION_HEX=0x10000" $(shell pkg-config --cflags freetype2 x11 xinerama xext) -pthread -I../../JuceLibraryCode -I/Users/rick/Downloads/HISE-develop-2 -I/Users/rick/Downloads/HISE-develop-2/JUCE/modules -I/Users/rick/Downloads/HISE-develop-2/tools/faust/include $(CPPFLAGS)
+  JUCE_CPPFLAGS := $(DEPFLAGS) "-DLINUX=1" "-DNDEBUG=1" "-D%USE_IPP_LINUX%" "-DJUCER_LINUX_MAKE_6D53C8B4=1" "-DJUCE_APP_VERSION=1.0.0" "-DJUCE_APP_VERSION_HEX=0x10000" $(shell pkg-config --cflags freetype2 x11 xinerama xext) -pthread -I../../JuceLibraryCode -I/Users/rick/Documents/HISE\ OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71 -I/Users/rick/Documents/HISE\ OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/JUCE/modules -I/Users/rick/Documents/HISE\ OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/tools/faust/include $(CPPFLAGS)
   JUCE_CPPFLAGS_DYNAMIC_LIBRARY :=  "-DJucePlugin_Build_VST=0" "-DJucePlugin_Build_VST3=0" "-DJucePlugin_Build_AU=0" "-DJucePlugin_Build_AUv3=0" "-DJucePlugin_Build_RTAS=0" "-DJucePlugin_Build_AAX=0" "-DJucePlugin_Build_Standalone=0" "-DJucePlugin_Build_Unity=0"
   JUCE_CFLAGS_DYNAMIC_LIBRARY := -fPIC -fvisibility=hidden
   JUCE_LDFLAGS_DYNAMIC_LIBRARY := -shared
@@ -78,6 +78,7 @@ OBJECTS_DYNAMIC_LIBRARY := \
   $(JUCE_OBJDIR)/include_hi_dsp_library_02_61324ec.o \
   $(JUCE_OBJDIR)/include_hi_tools_01_aabcc84d.o \
   $(JUCE_OBJDIR)/include_hi_tools_02_aacadfce.o \
+  $(JUCE_OBJDIR)/include_hi_tools_03_aad8f74f.o \
   $(JUCE_OBJDIR)/include_juce_audio_basics_8a4e984a.o \
   $(JUCE_OBJDIR)/include_juce_audio_formats_15f82001.o \
   $(JUCE_OBJDIR)/include_juce_core_f26d17db.o \
@@ -128,6 +129,11 @@ $(JUCE_OBJDIR)/include_hi_tools_01_aabcc84d.o: ../../JuceLibraryCode/include_hi_
 $(JUCE_OBJDIR)/include_hi_tools_02_aacadfce.o: ../../JuceLibraryCode/include_hi_tools_02.cpp
 	-$(V_AT)mkdir -p $(JUCE_OBJDIR)
 	@echo "Compiling include_hi_tools_02.cpp"
+	$(V_AT)$(CXX) $(JUCE_CXXFLAGS) $(JUCE_CPPFLAGS_DYNAMIC_LIBRARY) $(JUCE_CFLAGS_DYNAMIC_LIBRARY) -o "$@" -c "$<"
+
+$(JUCE_OBJDIR)/include_hi_tools_03_aad8f74f.o: ../../JuceLibraryCode/include_hi_tools_03.cpp
+	-$(V_AT)mkdir -p $(JUCE_OBJDIR)
+	@echo "Compiling include_hi_tools_03.cpp"
 	$(V_AT)$(CXX) $(JUCE_CXXFLAGS) $(JUCE_CPPFLAGS_DYNAMIC_LIBRARY) $(JUCE_CFLAGS_DYNAMIC_LIBRARY) -o "$@" -c "$<"
 
 $(JUCE_OBJDIR)/include_juce_audio_basics_8a4e984a.o: ../../JuceLibraryCode/include_juce_audio_basics.cpp

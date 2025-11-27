@@ -143,7 +143,7 @@
                parentComponent="Record" filmstripImage="{PROJECT_FOLDER}aztecknob.png"
                numStrips="125.0" scaleFactor="0.4000000059604645" showTextBox="0"
                isVertical="0" isPluginParameter="1" pluginParameterName="Record - Record Position"
-               stepSize="0.12"/>
+               stepSize="1.0" min="1.0" max="8.0" middlePosition="4.5"/>
     <Component type="ScriptSliderPack" id="SliderPack4" x="55.0" y="247.0" processorId="Script FX1"
                width="100.0" height="30.0" sliderAmount="8.0" SliderPackIndex="1"
                stepSize="1.0" stepSequencerMode="1" parentComponent="Record"
@@ -206,26 +206,26 @@
   </Component>
   <Component type="ScriptPanel" id="PlaybackPanel" x="310.0" y="11.0" width="500.0"
              height="290.0">
-    <Component type="ScriptPanel" id="Granular" x="290.0" y="219.0" width="200.0"
+    <Component type="ScriptPanel" id="Granular" x="290.0" y="225.0" width="200.0"
                height="60.0" parentComponent="PlaybackPanel" visible="0">
       <Component type="ScriptSliderPack" id="SliderPack8" x="119.0" y="16.0" processorId="Script FX1"
                  width="70.0" height="40.0" sliderAmount="8.0" SliderPackIndex="6"
                  parentComponent="Granular"/>
       <Component type="ScriptLabel" id="Label8" x="119.0" y="3.0" width="70.0"
-                 height="10.0" text="g.pitch" parentComponent="Granular"/>
+                 height="10.0" text="g.pitch" parentComponent="Granular" editable="0"/>
       <Component type="ScriptSliderPack" id="SliderPack7" x="20.0" y="15.0" processorId="Script FX1"
                  width="70.0" height="40.0" sliderAmount="8.0" SliderPackIndex="5"
                  parentComponent="Granular"/>
       <Component type="ScriptLabel" id="Label7" x="20.0" y="5.0" width="70.0"
-                 height="10.0" text="g.position" parentComponent="Granular"/>
+                 height="10.0" text="g.position" parentComponent="Granular" editable="0"/>
     </Component>
-    <Component type="ScriptSlider" id="Delay Time" x="280.0" y="8.0" processorId="Script FX1"
+    <Component type="ScriptSlider" id="Delay Time" x="280.0" y="19.0" processorId="Script FX1"
                parameterId="dtime" width="60.0" height="60.0" middlePosition="9.0"
                showValuePopup="Below" mode="TempoSync" max="18.0" stepSize="1.0"
                parentComponent="PlaybackPanel" text="Time" filmstripImage="{PROJECT_FOLDER}aztecknob.png"
                numStrips="125.0" scaleFactor="0.300000011920929" showTextBox="0"
                isVertical="0" pluginParameterName="Playback - Delay Time" isPluginParameter="1"/>
-    <Component type="ScriptSlider" id="Feedback" x="280.0" y="89.0" processorId="Script FX1"
+    <Component type="ScriptSlider" id="Feedback" x="280.0" y="137.0" processorId="Script FX1"
                parameterId="feed" width="60.0" height="60.0" middlePosition="0.5"
                showValuePopup="Below" parentComponent="PlaybackPanel" filmstripImage="{PROJECT_FOLDER}aztecknob.png"
                numStrips="125.0" scaleFactor="0.300000011920929" showTextBox="0"
@@ -236,7 +236,7 @@
                parentComponent="PlaybackPanel" filmstripImage="{PROJECT_FOLDER}aztecknob.png"
                numStrips="125.0" scaleFactor="0.300000011920929" showTextBox="0"
                isVertical="0" visible="0"/>
-    <Component type="ScriptSlider" id="Delay Time1" x="385.0" y="89.0" processorId="Script FX1"
+    <Component type="ScriptSlider" id="Delay Time1" x="385.0" y="137.0" processorId="Script FX1"
                parameterId="dic" width="60.0" height="60.0" min="1.0" middlePosition="8.5"
                text="Divide" max="16.0" stepSize="1.0" showValuePopup="Below"
                parentComponent="PlaybackPanel" filmstripImage="{PROJECT_FOLDER}aztecknob.png"
@@ -264,7 +264,7 @@
                parentComponent="PlaybackPanel" filmstripImage="{PROJECT_FOLDER}aztecknob.png"
                numStrips="125.0" scaleFactor="0.4000000059604645" showTextBox="0"
                text="Play" isVertical="0" pluginParameterName="Playback - Play Position"
-               isPluginParameter="1" stepSize="0.12"/>
+               isPluginParameter="1" stepSize="1.0" min="1.0" max="8.0" middlePosition="4.5"/>
     <Component type="ScriptSlider" id="Playback Divide" x="71.0" y="154.0" processorId="Script FX1"
                parameterId="PbDiv" width="60.0" height="60.0" middlePosition="8.5"
                min="1.0" max="16.0" stepSize="1.0" showValuePopup="Below" text="div"
@@ -285,7 +285,7 @@
                height="30.0" text="Sync" processorId="Script FX1" parameterId="PbSyncMode"
                parentComponent="PlaybackPanel"/>
     <Component type="ScriptSliderPack" id="SliderPack9" x="340.0" y="17.0" processorId="Script FX1"
-               width="140.0" height="70.0" sliderAmount="8.0" parentComponent="PlaybackPanel"
+               width="140" height="120" sliderAmount="8.0" parentComponent="PlaybackPanel"
                itemColour="4294967295" itemColour2="4294967295"/>
     <Component type="ScriptLabel" id="Label10" x="80.0" y="6.0" width="60.0"
                height="60.0" text="PLAY POSITION" parentComponent="PlaybackPanel"
@@ -299,25 +299,25 @@
     <Component type="ScriptLabel" id="Label34" x="75.0" y="210.0" width="60.0"
                height="20.0" text="DIV" parentComponent="PlaybackPanel" fontName="Impact"
                fontSize="20.0" textColour="3768623264" editable="0"/>
-    <Component type="ScriptLabel" id="Label35" x="280.0" y="63.0" width="60.0"
+    <Component type="ScriptLabel" id="Label35" x="280.0" y="89.0" width="60.0"
                height="30.0" text="TIME" parentComponent="PlaybackPanel" fontName="Impact"
                fontSize="20.0" textColour="3768623264" editable="0"/>
-    <Component type="ScriptLabel" id="Label36" x="331.0" y="105.0" width="60.0"
+    <Component type="ScriptLabel" id="Label36" x="331.0" y="153.0" width="60.0"
                height="30.0" text="FEED" parentComponent="PlaybackPanel" fontName="Impact"
                fontSize="20.0" textColour="3768623264" editable="0"/>
-    <Component type="ScriptLabel" id="Label37" x="434.0" y="105.0" width="60.0"
+    <Component type="ScriptLabel" id="Label37" x="434.0" y="153.0" width="60.0"
                height="30.0" text="DIVIDE" parentComponent="PlaybackPanel" fontName="Impact"
                fontSize="20.0" textColour="3768623264" editable="0"/>
     <Component type="ScriptLabel" id="Label38" x="335.0" y="171.0" width="60.0"
                height="30.0" text="MOD" parentComponent="PlaybackPanel" fontName="Impact"
                fontSize="20.0" visible="0"/>
-    <Component type="ScriptLabel" id="Label42" x="313.0" y="224.0" width="170.0"
+    <Component type="ScriptLabel" id="Label42" x="313.0" y="236.0" width="170.0"
                height="50.0" text="PLAYBACK" parentComponent="PlaybackPanel"
                fontName="Impact" fontSize="30.0" textColour="3768623264" editable="0"/>
-    <Component type="ScriptComboBox" id="Mode" x="308.0" y="158.0" width="100.0"
-               height="40.0" max="3" parentComponent="PlaybackPanel" items="CLEAN&#10;TAPE&#10;GRANULAR&#10;"/>
-    <Component type="ScriptLabel" id="Label39" x="414.0" y="162.0" width="60.0"
-               height="30.0" text="MODE" parentComponent="PlaybackPanel" fontName="Impact"
+    <Component type="ScriptComboBox" id="Mode" x="308.0" y="199.0" width="100"
+               height="20" max="3" parentComponent="PlaybackPanel" items="CLEAN&#10;TAPE&#10;GRANULAR&#10;"/>
+    <Component type="ScriptLabel" id="Label39" x="414.0" y="201.0" width="60"
+               height="15.0" text="MODE" parentComponent="PlaybackPanel" fontName="Impact"
                fontSize="20.0" textColour="3768623264" editable="0"/>
     <Component type="ScriptButton" id="PbModMode" x="147.0" y="165.0" width="30.0"
                height="30.0" text="Sync" parentComponent="PlaybackPanel"/>
@@ -378,16 +378,17 @@
                height="20.0" text="PAN" parentComponent="Mix" fontSize="20.0"
                fontName="Impact" textColour="3768623264" editable="0"/>
   </Component>
-  <Component type="ScriptPanel" id="Panel8" x="580.0" y="314.0" width="230"
-             height="210" itemColour="4278190080">
-    <Component type="ScriptSlider" id="mix1" x="110.0" y="158" processorId="Simple Gain1"
-               parameterId="Gain" width="40" height="40" showValuePopup="Below"
+  <Component type="ScriptPanel" id="Panel8" x="580.0" y="314.0" width="230.0"
+             height="210.0" itemColour="4278190080">
+    <Component type="ScriptSlider" id="mix1" x="110.0" y="158.0" processorId="Simple Gain1"
+               parameterId="Gain" width="40.0" height="40.0" showValuePopup="Below"
                parentComponent="Panel8" filmstripImage="{PROJECT_FOLDER}aztecknob.png"
-               numStrips="125.0" scaleFactor="0.2" showTextBox="0" isVertical="0"
-               isPluginParameter="1" pluginParameterName="Mix" mode="Decibel"
-               min="-100.0" max="12.0" stepSize="0.1" suffix=" dB" middlePosition="0.0"/>
-    <Component type="ScriptLabel" id="Label43" x="0.0" y="173.0" width="110"
-               height="30" text="TEZCATLIPOCA" parentComponent="Panel8" fontSize="20.0"
+               numStrips="125.0" scaleFactor="0.2000000029802322" showTextBox="0"
+               isVertical="0" isPluginParameter="1" pluginParameterName="Mix"
+               mode="Decibel" min="-100.0" max="12.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="0.0"/>
+    <Component type="ScriptLabel" id="Label43" x="0.0" y="173.0" width="110.0"
+               height="30.0" text="TEZCATLIPOCA" parentComponent="Panel8" fontSize="20.0"
                fontName="Impact" textColour="3768623264" editable="0"/>
     <Component type="ScriptPanel" id="Waveform1" x="80.0" y="45.0" width="80.0"
                height="75.0" parentComponent="Panel8"/>
@@ -399,17 +400,18 @@
     <Component type="ScriptLabel" id="Label44" x="183.0" y="197.0" width="40.0"
                height="10.0" text="PRESETS" parentComponent="Panel8" fontSize="12.0"
                fontName="Impact" textColour="3768623264" editable="0"/>
-    <Component type="ScriptSlider" id="mix2" x="145.0" y="158" processorId="Simple Gain2"
-               parameterId="Gain" width="40" height="40" showValuePopup="Below"
+    <Component type="ScriptSlider" id="mix2" x="145.0" y="158.0" processorId="Simple Gain2"
+               parameterId="Gain" width="40.0" height="40.0" showValuePopup="Below"
                parentComponent="Panel8" filmstripImage="{PROJECT_FOLDER}aztecknob.png"
-               numStrips="125.0" scaleFactor="0.2" showTextBox="0" isVertical="0"
-               isPluginParameter="1" pluginParameterName="Mix" mode="Decibel"
-               min="-100.0" max="12.0" stepSize="0.1" suffix=" dB" middlePosition="0.0"/>
-    <Component type="ScriptLabel" id="Label50" x="105.0" y="197.0" width="50"
-               height="10" text="INPUT" parentComponent="Panel8" fontSize="12.0"
+               numStrips="125.0" scaleFactor="0.2000000029802322" showTextBox="0"
+               isVertical="0" isPluginParameter="1" pluginParameterName="Mix"
+               mode="Decibel" min="-100.0" max="12.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="0.0"/>
+    <Component type="ScriptLabel" id="Label50" x="105.0" y="197.0" width="50.0"
+               height="10.0" text="INPUT" parentComponent="Panel8" fontSize="12.0"
                fontName="Impact" textColour="3768623264" editable="0"/>
-    <Component type="ScriptLabel" id="Label51" x="142.0" y="197.0" width="50"
-               height="10" text="OUTPUT" parentComponent="Panel8" fontSize="12.0"
+    <Component type="ScriptLabel" id="Label51" x="142.0" y="197.0" width="50.0"
+               height="10.0" text="OUTPUT" parentComponent="Panel8" fontSize="12.0"
                fontName="Impact" textColour="3768623264" editable="0"/>
   </Component>
   <Component type="ScriptFloatingTile" id="FloatingTile1" x="10.0" y="10.0"

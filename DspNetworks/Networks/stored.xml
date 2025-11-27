@@ -2650,7 +2650,7 @@
           <Connection NodeId="pma4" ParameterId="Multiply"/>
         </Connections>
       </Parameter>
-      <Parameter ID="Rec" MinValue="0.0" MaxValue="1.0" Value="0.0" DefaultValue="1.0">
+      <Parameter ID="Rec" MinValue="1.0" MaxValue="8.0" Value="1.0">
         <Connections>
           <Connection NodeId="pma" ParameterId="Add"/>
         </Connections>
@@ -2660,7 +2660,7 @@
           <Connection NodeId="pma" ParameterId="Multiply"/>
         </Connections>
       </Parameter>
-      <Parameter ID="Pb" MinValue="0.0" MaxValue="1.0" Value="0.0" DefaultValue="1.0">
+      <Parameter ID="Pb" MinValue="1.0" MaxValue="8.0" Value="1.0">
         <Connections>
           <Connection NodeId="pma5" ParameterId="Add"/>
         </Connections>

@@ -15,56 +15,57 @@
             extraDefs="NOMINMAX=1&#10;&#10;WIN32_LEAN_AND_MEAN=1">
       <CONFIGURATIONS>
         <CONFIGURATION isDebug="1" name="Debug" binaryPath="dll" targetName="Tezcatlipoca_debug"
-                       headerPath="/Users/rick/Downloads/HISE-develop-2/tools/faust/include"
+                       headerPath="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/tools/faust/include"
                        useRuntimeLibDLL="0"/>
-        <CONFIGURATION isDebug="0" name="CI" targetName="Tezcatlipoca_ci" headerPath="/Users/rick/Downloads/HISE-develop-2/tools/faust/include"
+        <CONFIGURATION isDebug="0" name="CI" targetName="Tezcatlipoca_ci" headerPath="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/tools/faust/include"
                        binaryPath="dll" alwaysGenerateDebugSymbols="0" optimisation="2"
                        linkTimeOptimisation="0" useRuntimeLibDLL="0"/>
-        <CONFIGURATION isDebug="0" name="Release" targetName="Tezcatlipoca" headerPath="/Users/rick/Downloads/HISE-develop-2/tools/faust/include"
-                       binaryPath="dll" alwaysGenerateDebugSymbols="1" useRuntimeLibDLL="0"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Tezcatlipoca" headerPath="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/tools/faust/include"
+                       binaryPath="dll" alwaysGenerateDebugSymbols="1" linkTimeOptimisation="0"
+                       useRuntimeLibDLL="0"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
-        <MODULEPATH id="juce_audio_basics" path="/Users/rick/Downloads/HISE-develop-2/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_formats" path="/Users/rick/Downloads/HISE-develop-2/JUCE/modules"/>
-        <MODULEPATH id="juce_core" path="/Users/rick/Downloads/HISE-develop-2/JUCE/modules"/>
-        <MODULEPATH id="juce_data_structures" path="/Users/rick/Downloads/HISE-develop-2/JUCE/modules"/>
-        <MODULEPATH id="juce_events" path="/Users/rick/Downloads/HISE-develop-2/JUCE/modules"/>
-        <MODULEPATH id="hi_tools" path="/Users/rick/Downloads/HISE-develop-2"/>
-        <MODULEPATH id="hi_dsp_library" path="/Users/rick/Downloads/HISE-develop-2"/>
-        <MODULEPATH id="hi_faust" path="/Users/rick/Downloads/HISE-develop-2"/>
-        <MODULEPATH id="hi_faust_types" path="/Users/rick/Downloads/HISE-develop-2"/>
-        <MODULEPATH id="juce_dsp" path="/Users/rick/Downloads/HISE-develop-2/JUCE/modules"/>
-        <MODULEPATH id="juce_graphics" path="/Users/rick/Downloads/HISE-develop-2/JUCE/modules"/>
-        <MODULEPATH id="juce_gui_basics" path="/Users/rick/Downloads/HISE-develop-2/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/JUCE/modules"/>
+        <MODULEPATH id="hi_tools" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71"/>
+        <MODULEPATH id="hi_dsp_library" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71"/>
+        <MODULEPATH id="hi_faust" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71"/>
+        <MODULEPATH id="hi_faust_types" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71"/>
+        <MODULEPATH id="juce_dsp" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/JUCE/modules"/>
       </MODULEPATHS>
     </VS2017>
     <XCODE_MAC targetFolder="Builds/MacOSX" extraDefs="&#10;" extraLinkerFlags=""
-               extraCompilerFlags="-Wno-reorder -Wno-inconsistent-missing-override -fno-aligned-allocation"
+               extraCompilerFlags="-Wno-reorder -Wno-inconsistent-missing-override -fno-aligned-allocation -ffp-contract=off"
                xcodeValidArchs="arm64,arm64e,x86_64">
       <CONFIGURATIONS>
-        <CONFIGURATION isDebug="1" name="Debug" osxArchitecture="64BitIntel" headerPath="/Users/rick/Downloads/HISE-develop-2/tools/faust/include"
+        <CONFIGURATION isDebug="1" name="Debug" osxArchitecture="64BitIntel" headerPath="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/tools/faust/include"
                        libraryPath="" binaryPath="dll" targetName="Tezcatlipoca_debug"
                        customXcodeFlags="CODE_SIGNING_ALLOWED=NO"/>
-        <CONFIGURATION isDebug="0" name="CI" osxArchitecture="64BitIntel" headerPath="/Users/rick/Downloads/HISE-develop-2/tools/faust/include"
+        <CONFIGURATION isDebug="0" name="CI" osxArchitecture="64BitIntel" headerPath="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/tools/faust/include"
                        libraryPath="" binaryPath="dll" optimisation="4" linkTimeOptimisation="0"
                        customXcodeFlags="CODE_SIGNING_ALLOWED=NO" targetName="Tezcatlipoca_ci"/>
-        <CONFIGURATION isDebug="0" name="Release" osxArchitecture="64BitIntel" headerPath="/Users/rick/Downloads/HISE-develop-2/tools/faust/include"
+        <CONFIGURATION isDebug="0" name="Release" osxArchitecture="64BitIntel" headerPath="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/tools/faust/include"
                        libraryPath="" binaryPath="dll" customXcodeFlags="CODE_SIGNING_ALLOWED=NO"
                        targetName="Tezcatlipoca"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
-        <MODULEPATH id="juce_gui_basics" path="/Users/rick/Downloads/HISE-develop-2/JUCE/modules"/>
-        <MODULEPATH id="juce_graphics" path="/Users/rick/Downloads/HISE-develop-2/JUCE/modules"/>
-        <MODULEPATH id="juce_events" path="/Users/rick/Downloads/HISE-develop-2/JUCE/modules"/>
-        <MODULEPATH id="juce_dsp" path="/Users/rick/Downloads/HISE-develop-2/JUCE/modules"/>
-        <MODULEPATH id="juce_data_structures" path="/Users/rick/Downloads/HISE-develop-2/JUCE/modules"/>
-        <MODULEPATH id="juce_core" path="/Users/rick/Downloads/HISE-develop-2/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_formats" path="/Users/rick/Downloads/HISE-develop-2/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_basics" path="/Users/rick/Downloads/HISE-develop-2/JUCE/modules"/>
-        <MODULEPATH id="hi_tools" path="/Users/rick/Downloads/HISE-develop-2"/>
-        <MODULEPATH id="hi_faust_types" path="/Users/rick/Downloads/HISE-develop-2"/>
-        <MODULEPATH id="hi_dsp_library" path="/Users/rick/Downloads/HISE-develop-2"/>
-        <MODULEPATH id="hi_faust" path="/Users/rick/Downloads/HISE-develop-2"/>
+        <MODULEPATH id="juce_gui_basics" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/JUCE/modules"/>
+        <MODULEPATH id="hi_tools" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71"/>
+        <MODULEPATH id="hi_faust_types" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71"/>
+        <MODULEPATH id="hi_dsp_library" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71"/>
+        <MODULEPATH id="hi_faust" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71"/>
       </MODULEPATHS>
     </XCODE_MAC>
     <LINUX_MAKE targetFolder="Builds/LinuxMakefile" extraDefs="%USE_IPP_LINUX%&#10;"
@@ -72,23 +73,23 @@
                 linuxExtraPkgConfig="x11 xinerama xext">
       <CONFIGURATIONS>
         <CONFIGURATION isDebug="1" name="Debug" binaryPath="dll" targetName="Tezcatlipoca_debug"
-                       headerPath="/Users/rick/Downloads/HISE-develop-2/tools/faust/include"/>
+                       headerPath="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/tools/faust/include"/>
         <CONFIGURATION isDebug="0" name="Release" binaryPath="dll" targetName="Tezcatlipoca"
-                       headerPath="/Users/rick/Downloads/HISE-develop-2/tools/faust/include"/>
+                       headerPath="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/tools/faust/include"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
-        <MODULEPATH id="juce_gui_basics" path="/Users/rick/Downloads/HISE-develop-2/JUCE/modules"/>
-        <MODULEPATH id="juce_graphics" path="/Users/rick/Downloads/HISE-develop-2/JUCE/modules"/>
-        <MODULEPATH id="juce_events" path="/Users/rick/Downloads/HISE-develop-2/JUCE/modules"/>
-        <MODULEPATH id="juce_dsp" path="/Users/rick/Downloads/HISE-develop-2/JUCE/modules"/>
-        <MODULEPATH id="juce_data_structures" path="/Users/rick/Downloads/HISE-develop-2/JUCE/modules"/>
-        <MODULEPATH id="juce_core" path="/Users/rick/Downloads/HISE-develop-2/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_formats" path="/Users/rick/Downloads/HISE-develop-2/JUCE/modules"/>
-        <MODULEPATH id="juce_audio_basics" path="/Users/rick/Downloads/HISE-develop-2/JUCE/modules"/>
-        <MODULEPATH id="hi_tools" path="/Users/rick/Downloads/HISE-develop-2"/>
-        <MODULEPATH id="hi_dsp_library" path="/Users/rick/Downloads/HISE-develop-2"/>
-        <MODULEPATH id="hi_faust" path="/Users/rick/Downloads/HISE-develop-2"/>
-        <MODULEPATH id="hi_faust_types" path="/Users/rick/Downloads/HISE-develop-2"/>
+        <MODULEPATH id="juce_gui_basics" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71/JUCE/modules"/>
+        <MODULEPATH id="hi_tools" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71"/>
+        <MODULEPATH id="hi_dsp_library" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71"/>
+        <MODULEPATH id="hi_faust" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71"/>
+        <MODULEPATH id="hi_faust_types" path="/Users/rick/Documents/HISE OLD/HISE-a20873ea7a8c00b251ddae7df8d6e3007f8c5f71"/>
       </MODULEPATHS>
     </LINUX_MAKE>
   </EXPORTFORMATS>

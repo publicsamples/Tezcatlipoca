@@ -1160,15 +1160,27 @@ using Cutoff = parameter::from0To1<stored_impl::pma4_t<NV>,
                                    2, 
                                    CutoffRange>;
 
+DECLARE_PARAMETER_RANGE(Rec_InputRange, 
+                        1., 
+                        8.);
 template <int NV>
-using Rec = parameter::from0To1<stored_impl::pma_t<NV>, 
-                                2, 
-                                CutoffRange>;
+using Rec_0 = parameter::from0To1<stored_impl::pma_t<NV>, 
+                                  2, 
+                                  CutoffRange>;
 
 template <int NV>
-using Pb = parameter::from0To1<stored_impl::pma5_t<NV>, 
-                               2, 
-                               CutoffRange>;
+using Rec = parameter::chain<Rec_InputRange, Rec_0<NV>>;
+
+DECLARE_PARAMETER_RANGE(Pb_InputRange, 
+                        1., 
+                        8.);
+template <int NV>
+using Pb_0 = parameter::from0To1<stored_impl::pma5_t<NV>, 
+                                 2, 
+                                 CutoffRange>;
+
+template <int NV>
+using Pb = parameter::chain<Pb_InputRange, Pb_0<NV>>;
 
 template <int NV>
 using RecTempo = parameter::chain<ranges::Identity, 
@@ -1320,11 +1332,11 @@ template <int NV> struct instance: public stored_impl::stored_t_<NV>
             0x3F80, 0x0000, 0x0000, 0x055B, 0x0000, 0x4300, 0x7475, 0x6F4D, 
             0x0064, 0x0000, 0xBF80, 0x0000, 0x3F80, 0x0000, 0x23C0, 0x0000, 
             0x3F80, 0x0000, 0x0000, 0x065B, 0x0000, 0x5200, 0x6365, 0x0000, 
-            0x0000, 0x0000, 0x8000, 0x003F, 0x0000, 0x0000, 0x8000, 0x003F, 
+            0x8000, 0x003F, 0x0000, 0x0041, 0x8000, 0x003F, 0x8000, 0x003F, 
             0x0000, 0x5B00, 0x0007, 0x0000, 0x6552, 0x4D63, 0x646F, 0x0000, 
             0x8000, 0x00BF, 0x8000, 0x003F, 0x8000, 0x003F, 0x8000, 0x003F, 
-            0x0000, 0x5B00, 0x0008, 0x0000, 0x6250, 0x0000, 0x0000, 0x0000, 
-            0x8000, 0x003F, 0x0000, 0x0000, 0x8000, 0x003F, 0x0000, 0x5B00, 
+            0x0000, 0x5B00, 0x0008, 0x0000, 0x6250, 0x0000, 0x8000, 0x003F, 
+            0x0000, 0x0041, 0x8000, 0x003F, 0x8000, 0x003F, 0x0000, 0x5B00, 
             0x0009, 0x0000, 0x6250, 0x6F4D, 0x0064, 0x0000, 0xBF80, 0x0000, 
             0x3F80, 0x0000, 0x3F80, 0x0000, 0x3F80, 0x0000, 0x0000, 0x0A5B, 
             0x0000, 0x5200, 0x6365, 0x6554, 0x706D, 0x006F, 0x0000, 0x0000, 
@@ -2751,9 +2763,9 @@ template <int NV> struct instance: public stored_impl::stored_t_<NV>
 		this->setParameterT(3, 1);
 		this->setParameterT(4, 1.);
 		this->setParameterT(5, 2.08167e-17);
-		this->setParameterT(6, 0.);
+		this->setParameterT(6, 1.);
 		this->setParameterT(7, 1.);
-		this->setParameterT(8, 0.);
+		this->setParameterT(8, 1.);
 		this->setParameterT(9, 1.);
 		this->setParameterT(10, 8.);
 		this->setParameterT(11, 16.);
