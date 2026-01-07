@@ -693,6 +693,12 @@ dependencies: \
   /Users/rick/Documents/GitHub/Tezcatlipoca/DspNetworks/Binaries/Source/granular.h \
   /Users/rick/Documents/GitHub/Tezcatlipoca/DspNetworks/Binaries/Source/../../ThirdParty/granular.h \
   /Users/rick/Documents/GitHub/Tezcatlipoca/DspNetworks/Binaries/Source/../../ThirdParty/src/granular.cpp \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/DspNetworks/Binaries/Source/khp.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/DspNetworks/Binaries/Source/../../ThirdParty/khp.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/DspNetworks/Binaries/Source/../../ThirdParty/src/khp.cpp \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/DspNetworks/Binaries/Source/khp2.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/DspNetworks/Binaries/Source/../../ThirdParty/khp2.h \
+  /Users/rick/Documents/GitHub/Tezcatlipoca/DspNetworks/Binaries/Source/../../ThirdParty/src/khp2.cpp \
   /Users/rick/Documents/GitHub/Tezcatlipoca/DspNetworks/Binaries/Source/klp.h \
   /Users/rick/Documents/GitHub/Tezcatlipoca/DspNetworks/Binaries/Source/../../ThirdParty/klp.h \
   /Users/rick/Documents/GitHub/Tezcatlipoca/DspNetworks/Binaries/Source/../../ThirdParty/src/klp.cpp \

@@ -11,6 +11,8 @@
 
 #include "g.h"
 #include "granular.h"
+#include "khp.h"
+#include "khp2.h"
 #include "klp.h"
 #include "klp2.h"
 #include "RevDel.h"

@@ -89,24 +89,7 @@ const var Table2 = Content.getComponent("Table2");
 const var ScriptSliderPack1 = Content.getComponent("ScriptSliderPack1");
 const var ScriptSliderPack2 = Content.getComponent("ScriptSliderPack2");
 
-inline function onModModeControl(component, value)
-{
-if(value == 0)
-	    	{
-	Table1.showControl(1);
-	ScriptSliderPack1.showControl(0);
-	ScriptFX1.setAttribute(ScriptFX1.RecModType, 0);
-	}
-if(value == 1)
-	    	{
-	Table1.showControl(0);
-	ScriptSliderPack1.showControl(1);
-	ScriptFX1.setAttribute(ScriptFX1.RecModType, 1);
-	}
 
-};
-
-Content.getComponent("ModMode").setControlCallback(onModModeControl);
 
 
 inline function onPbModModeControl(component, value)

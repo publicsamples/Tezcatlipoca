@@ -144,13 +144,6 @@
                numStrips="125.0" scaleFactor="0.4000000059604645" showTextBox="0"
                isVertical="0" isPluginParameter="1" pluginParameterName="Record - Record Position"
                stepSize="1.0" min="1.0" max="8.0" middlePosition="4.5"/>
-    <Component type="ScriptSliderPack" id="SliderPack4" x="55.0" y="247.0" processorId="Script FX1"
-               width="100.0" height="30.0" sliderAmount="8.0" SliderPackIndex="1"
-               stepSize="1.0" stepSequencerMode="1" parentComponent="Record"
-               itemColour="4294967295" itemColour2="4294967295"/>
-    <Component type="ScriptLabel" id="Label2" x="8.0" y="236.0" width="40.0"
-               height="50.0" text="input state" parentComponent="Record" fontName="Impact"
-               fontSize="20.0" textColour="3768623264" editable="0"/>
     <Component type="ScriptTable" id="Table1" x="16.0" y="75.0" width="260.0"
                height="80.0" processorId="Script FX1" parentComponent="Record"
                itemColour="4289267463" itemColour2="4294967295" bgColour="16777215"
@@ -161,19 +154,19 @@
                filmstripImage="{PROJECT_FOLDER}aztecknob.png" numStrips="125.0"
                scaleFactor="0.4000000059604645" showTextBox="0" isVertical="0"
                isPluginParameter="1" pluginParameterName="Record - Mod"/>
-    <Component type="ScriptSlider" id="record speed" x="14.0" y="156.0" processorId="Script FX1"
+    <Component type="ScriptSlider" id="record speed" x="8.0" y="207.0" processorId="Script FX1"
                parameterId="RecTempo" width="60.0" height="60.0" mode="TempoSync"
                max="18.0" stepSize="1.0" middlePosition="9.0" showValuePopup="Below"
                text="speed" parentComponent="Record" filmstripImage="{PROJECT_FOLDER}aztecknob.png"
                numStrips="125.0" scaleFactor="0.300000011920929" showTextBox="0"
                isVertical="0" isPluginParameter="1" pluginParameterName="Record - Tempo"/>
-    <Component type="ScriptSlider" id="record div" x="77.0" y="156.0" processorId="Script FX1"
+    <Component type="ScriptSlider" id="record div" x="59.0" y="210.0" processorId="Script FX1"
                parameterId="RecDiv" width="60.0" height="60.0" max="16.0" stepSize="1.0"
                middlePosition="9.0" min="1.0" showValuePopup="Below" text="div"
                parentComponent="Record" filmstripImage="{PROJECT_FOLDER}aztecknob.png"
                numStrips="125.0" scaleFactor="0.300000011920929" showTextBox="0"
                isVertical="0" isPluginParameter="1" pluginParameterName="Record - Divide"/>
-    <Component type="ScriptButton" id="SyncMode" x="229.0" y="165.0" width="30.0"
+    <Component type="ScriptButton" id="SyncMode" x="118.0" y="225.0" width="30.0"
                height="30.0" text="Sync" processorId="Script FX1" parameterId="RecSyncMode"
                parentComponent="Record"/>
     <Component type="ScriptLabel" id="Label3" x="88.0" y="9.0" width="60.0"
@@ -182,30 +175,143 @@
     <Component type="ScriptLabel" id="Label9" x="217.0" y="11.0" width="60.0"
                height="50.0" text="MOD" parentComponent="Record" fontName="Impact"
                fontSize="20.0" textColour="3768623264" editable="0"/>
-    <Component type="ScriptLabel" id="Label13" x="15.0" y="215.0" width="60.0"
+    <Component type="ScriptLabel" id="Label13" x="9.0" y="263.0" width="60.0"
                height="20.0" text="TEMPO" parentComponent="Record" fontName="Impact"
                fontSize="20.0" textColour="3768623264" editable="0"/>
-    <Component type="ScriptLabel" id="Label14" x="76.0" y="216.0" width="60.0"
+    <Component type="ScriptLabel" id="Label14" x="59.0" y="264.0" width="60.0"
                height="20.0" text="DIV" parentComponent="Record" fontName="Impact"
                fontSize="20.0" textColour="3768623264" editable="0"/>
-    <Component type="ScriptLabel" id="Label15" x="160.0" y="242.0" width="120.0"
-               height="39.0" text="RECORDER" parentComponent="Record" fontSize="40.0"
+    <Component type="ScriptLabel" id="Label15" x="158.0" y="252.0" width="120.0"
+               height="39.0" text="RECORDER" parentComponent="Record" fontSize="30.0"
                fontName="Impact" textColour="3768623264" editable="0"/>
     <Component type="ScriptSliderPack" id="ScriptSliderPack1" x="16.0" y="75.0"
                width="260.0" height="80.0" parentComponent="Record" processorId="Script FX1"
                SliderPackIndex="7" itemColour2="16777215" itemColour="3282634503"
                textColour="4278190080" visible="0"/>
-    <Component type="ScriptButton" id="ModMode" x="163.0" y="164.0" width="30.0"
-               height="30.0" parentComponent="Record"/>
-    <Component type="ScriptLabel" id="Label46" x="151.0" y="193.0" width="50.0"
-               height="50.0" text="TABLE /STEP" parentComponent="Record" fontName="Impact"
+    <Component type="ScriptLabel" id="Label47" x="108.0" y="259.0" width="50.0"
+               height="30.0" text="SYNC" parentComponent="Record" fontName="Impact"
                fontSize="20.0" textColour="3768623264" editable="0"/>
-    <Component type="ScriptLabel" id="Label47" x="219.0" y="196.0" width="50.0"
-               height="50.0" text="SYNC" parentComponent="Record" fontName="Impact"
+    <Component type="ScriptButton" id="SyncMode2" x="12.0" y="159.0" width="30.0"
+               height="30.0" text="Sync" processorId="Script FX1" parameterId="R1"
+               parentComponent="Record" bgColour="16777215" itemColour2="1118481"
+               itemColour="3355443"/>
+    <Component type="ScriptLabel" id="Label46" x="12.0" y="191.0" width="30.0"
+               height="20.0" text="rec 1" parentComponent="Record" fontName="Impact"
+               fontSize="15.0" textColour="3768623264" editable="0"/>
+    <Component type="ScriptLabel" id="Label48" x="46.0" y="191.0" width="30.0"
+               height="20.0" text="rec 2" parentComponent="Record" fontName="Impact"
+               fontSize="15.0" textColour="3768623264" editable="0"/>
+    <Component type="ScriptButton" id="SyncMode3" x="46.0" y="159.0" width="30.0"
+               height="30.0" text="Sync" processorId="Script FX1" parameterId="r2"
+               parentComponent="Record" bgColour="16777215" itemColour2="1118481"
+               itemColour="3355443"/>
+    <Component type="ScriptLabel" id="Label52" x="113.0" y="191.0" width="30.0"
+               height="20.0" text="rec 4" parentComponent="Record" fontName="Impact"
+               fontSize="15.0" textColour="3768623264" editable="0"/>
+    <Component type="ScriptButton" id="SyncMode4" x="113.0" y="159.0" width="30.0"
+               height="30.0" text="Sync" processorId="Script FX1" parameterId="r4"
+               parentComponent="Record" bgColour="16777215" itemColour2="1118481"
+               itemColour="3355443"/>
+    <Component type="ScriptButton" id="SyncMode5" x="80.0" y="159.0" width="30.0"
+               height="30.0" text="Sync" processorId="Script FX1" parameterId="r3"
+               parentComponent="Record" bgColour="16777215" itemColour2="1118481"
+               itemColour="3355443"/>
+    <Component type="ScriptLabel" id="Label53" x="80.0" y="191.0" width="30.0"
+               height="20.0" text="rec 3" parentComponent="Record" fontName="Impact"
+               fontSize="15.0" textColour="3768623264" editable="0"/>
+    <Component type="ScriptLabel" id="Label54" x="248.0" y="191.0" width="30.0"
+               height="20.0" text="rec 8" parentComponent="Record" fontName="Impact"
+               fontSize="15.0" textColour="3768623264" editable="0"/>
+    <Component type="ScriptButton" id="SyncMode6" x="248.0" y="159.0" width="30.0"
+               height="30.0" text="Sync" processorId="Script FX1" parameterId="r8"
+               parentComponent="Record" bgColour="16777215" itemColour2="1118481"
+               itemColour="3355443"/>
+    <Component type="ScriptButton" id="SyncMode7" x="214.0" y="159.0" width="30.0"
+               height="30.0" text="Sync" processorId="Script FX1" parameterId="r7"
+               parentComponent="Record" bgColour="16777215" itemColour2="1118481"
+               itemColour="3355443"/>
+    <Component type="ScriptLabel" id="Label55" x="214.0" y="191.0" width="30.0"
+               height="20.0" text="rec 7" parentComponent="Record" fontName="Impact"
+               fontSize="15.0" textColour="3768623264" editable="0"/>
+    <Component type="ScriptLabel" id="Label56" x="180.0" y="191.0" width="30.0"
+               height="20.0" text="rec 6" parentComponent="Record" fontName="Impact"
+               fontSize="15.0" textColour="3768623264" editable="0"/>
+    <Component type="ScriptButton" id="SyncMode8" x="180.0" y="159.0" width="30.0"
+               height="30.0" text="Sync" processorId="Script FX1" parameterId="r6"
+               parentComponent="Record" bgColour="16777215" itemColour2="1118481"
+               itemColour="3355443"/>
+    <Component type="ScriptButton" id="SyncMode9" x="147.0" y="159.0" width="30.0"
+               height="30.0" text="Sync" processorId="Script FX1" parameterId="r5"
+               parentComponent="Record" bgColour="16777215" itemColour2="1118481"
+               itemColour="3355443"/>
+    <Component type="ScriptLabel" id="Label57" x="147.0" y="191.0" width="30.0"
+               height="20.0" text="rec 5" parentComponent="Record" fontName="Impact"
+               fontSize="15.0" textColour="3768623264" editable="0"/>
+    <Component type="ScriptButton" id="recLoop" x="232.0" y="219.0" width="30.0"
+               height="30.0" text="Sync" processorId="Script FX1" parameterId="RecLoop"
+               parentComponent="Record"/>
+    <Component type="ScriptLabel" id="Label67" x="172.0" y="219.0" width="50.0"
+               height="30.0" text="LOOP" parentComponent="Record" fontName="Impact"
                fontSize="20.0" textColour="3768623264" editable="0"/>
   </Component>
   <Component type="ScriptPanel" id="PlaybackPanel" x="310.0" y="11.0" width="500.0"
              height="290.0">
+    <Component type="ScriptLabel" id="Label58" x="143.0" y="191.0" width="30.0"
+               height="20.0" text="rev 5" parentComponent="PlaybackPanel" fontName="Impact"
+               fontSize="15.0" textColour="3768623264" editable="0"/>
+    <Component type="ScriptButton" id="SyncMode10" x="142.0" y="159.0" width="30.0"
+               height="30.0" text="Sync" processorId="Script FX1" parameterId="rv5"
+               parentComponent="PlaybackPanel" bgColour="16777215" itemColour2="1118481"
+               itemColour="3355443"/>
+    <Component type="ScriptButton" id="SyncMode11" x="176.0" y="159.0" width="30.0"
+               height="30.0" text="Sync" processorId="Script FX1" parameterId="rv6"
+               parentComponent="PlaybackPanel" bgColour="16777215" itemColour2="1118481"
+               itemColour="3355443"/>
+    <Component type="ScriptLabel" id="Label59" x="176.0" y="191.0" width="30.0"
+               height="20.0" text="rev 6" parentComponent="PlaybackPanel" fontName="Impact"
+               fontSize="15.0" textColour="3768623264" editable="0"/>
+    <Component type="ScriptLabel" id="Label60" x="210.0" y="191.0" width="30.0"
+               height="20.0" text="rev 7" parentComponent="PlaybackPanel" fontName="Impact"
+               fontSize="15.0" textColour="3768623264" editable="0"/>
+    <Component type="ScriptButton" id="SyncMode12" x="210.0" y="159.0" width="30.0"
+               height="30.0" text="Sync" processorId="Script FX1" parameterId="rv7"
+               parentComponent="PlaybackPanel" bgColour="16777215" itemColour2="1118481"
+               itemColour="3355443"/>
+    <Component type="ScriptButton" id="SyncMode13" x="244.0" y="159.0" width="30.0"
+               height="30.0" text="Sync" processorId="Script FX1" parameterId="rv8"
+               parentComponent="PlaybackPanel" bgColour="16777215" itemColour2="1118481"
+               itemColour="3355443"/>
+    <Component type="ScriptLabel" id="Label61" x="244.0" y="191.0" width="30.0"
+               height="20.0" text="rev 8" parentComponent="PlaybackPanel" fontName="Impact"
+               fontSize="15.0" textColour="3768623264" editable="0"/>
+    <Component type="ScriptLabel" id="Label62" x="76.0" y="191.0" width="30.0"
+               height="20.0" text="rev 3" parentComponent="PlaybackPanel" fontName="Impact"
+               fontSize="15.0" textColour="3768623264" editable="0"/>
+    <Component type="ScriptButton" id="SyncMode14" x="75.0" y="159.0" width="30.0"
+               height="30.0" text="Sync" processorId="Script FX1" parameterId="rv3"
+               parentComponent="PlaybackPanel" bgColour="16777215" itemColour2="1118481"
+               itemColour="3355443"/>
+    <Component type="ScriptButton" id="SyncMode15" x="109.0" y="159.0" width="30.0"
+               height="30.0" text="Sync" processorId="Script FX1" parameterId="rv4"
+               parentComponent="PlaybackPanel" bgColour="16777215" itemColour2="1118481"
+               itemColour="3355443"/>
+    <Component type="ScriptLabel" id="Label63" x="109.0" y="191.0" width="30.0"
+               height="20.0" text="rev 4" parentComponent="PlaybackPanel" fontName="Impact"
+               fontSize="15.0" textColour="3768623264" editable="0"/>
+    <Component type="ScriptButton" id="SyncMode16" x="41.0" y="159.0" width="30.0"
+               height="30.0" text="Sync" processorId="Script FX1" parameterId="rv2"
+               parentComponent="PlaybackPanel" bgColour="16777215" itemColour2="1118481"
+               itemColour="3355443"/>
+    <Component type="ScriptLabel" id="Label64" x="42.0" y="191.0" width="30.0"
+               height="20.0" text="rev 2" parentComponent="PlaybackPanel" fontName="Impact"
+               fontSize="15.0" textColour="3768623264" editable="0"/>
+    <Component type="ScriptLabel" id="Label65" x="8.0" y="191.0" width="30.0"
+               height="20.0" text="rev 1" parentComponent="PlaybackPanel" fontName="Impact"
+               fontSize="15.0" textColour="3768623264" editable="0"/>
+    <Component type="ScriptButton" id="SyncMode17" x="8.0" y="159.0" width="30.0"
+               height="30.0" text="Sync" processorId="Script FX1" parameterId="rv1"
+               parentComponent="PlaybackPanel" bgColour="16777215" itemColour2="1118481"
+               itemColour="3355443"/>
     <Component type="ScriptPanel" id="Granular" x="290.0" y="225.0" width="200.0"
                height="60.0" parentComponent="PlaybackPanel" visible="0">
       <Component type="ScriptSliderPack" id="SliderPack8" x="119.0" y="16.0" processorId="Script FX1"
@@ -242,20 +348,12 @@
                parentComponent="PlaybackPanel" filmstripImage="{PROJECT_FOLDER}aztecknob.png"
                numStrips="125.0" scaleFactor="0.300000011920929" showTextBox="0"
                isVertical="0" pluginParameterName="Playback - Divide" isPluginParameter="1"/>
-    <Component type="ScriptSliderPack" id="SliderPack2" x="79.0" y="247.0" processorId="Script FX1"
-               width="90.0" height="30.0" sliderAmount="8.0" SliderPackIndex="3"
-               stepSize="1.0" stepSequencerMode="1" parentComponent="PlaybackPanel"
-               itemColour="4294967295" itemColour2="4294967295"/>
-    <Component type="ScriptLabel" id="Label4" x="17.0" y="245.0" width="60.0"
-               height="40.0" text="REVERSE" parentComponent="PlaybackPanel"
-               fontName="Impact" textColour="4288188817" fontSize="15.0" editable="0"/>
     <Component type="ScriptSlider" id="PlaybackMod" x="138.0" y="-3.0" processorId="Script FX1"
                parameterId="PbMod" width="70.0" height="70.0" min="-1.0" middlePosition="0.0"
                showValuePopup="Below" parentComponent="PlaybackPanel" filmstripImage="{PROJECT_FOLDER}aztecknob.png"
                numStrips="125.0" scaleFactor="0.4000000059604645" showTextBox="0"
-               isVertical="0" pluginParameterName="Playback - Play Position"
-               isPluginParameter="1"/>
-    <Component type="ScriptTable" id="Table2" x="10.0" y="74.0" width="250.0"
+               isVertical="0" pluginParameterName="Playback - Mod" isPluginParameter="1"/>
+    <Component type="ScriptTable" id="Table2" x="10.0" y="74.0" width="260.0"
                height="80.0" processorId="Script FX1" tableIndex="1" parentComponent="PlaybackPanel"
                itemColour="4289267463" itemColour2="4294967295" bgColour="16777215"
                customColours="1"/>
@@ -265,27 +363,27 @@
                numStrips="125.0" scaleFactor="0.4000000059604645" showTextBox="0"
                text="Play" isVertical="0" pluginParameterName="Playback - Play Position"
                isPluginParameter="1" stepSize="1.0" min="1.0" max="8.0" middlePosition="4.5"/>
-    <Component type="ScriptSlider" id="Playback Divide" x="71.0" y="154.0" processorId="Script FX1"
+    <Component type="ScriptSlider" id="Playback Divide" x="71.0" y="208.0" processorId="Script FX1"
                parameterId="PbDiv" width="60.0" height="60.0" middlePosition="8.5"
                min="1.0" max="16.0" stepSize="1.0" showValuePopup="Below" text="div"
                parentComponent="PlaybackPanel" filmstripImage="{PROJECT_FOLDER}aztecknob.png"
                numStrips="125.0" scaleFactor="0.300000011920929" showTextBox="0"
                isVertical="0" pluginParameterName="Playback - Divide" isPluginParameter="1"/>
-    <Component type="ScriptSlider" id="Playback Speed" x="15.0" y="154.0" processorId="Script FX1"
+    <Component type="ScriptSlider" id="Playback Speed" x="15.0" y="208.0" processorId="Script FX1"
                parameterId="PbTempo" width="60.0" height="60.0" mode="TempoSync"
                max="18.0" stepSize="1.0" middlePosition="9.0" showValuePopup="Below"
                text="Speed" parentComponent="PlaybackPanel" filmstripImage="{PROJECT_FOLDER}aztecknob.png"
                numStrips="125.0" scaleFactor="0.300000011920929" showTextBox="0"
                isVertical="0" pluginParameterName="Playback - Tempo" isPluginParameter="1"/>
-    <Component type="ScriptButton" id="RESET" x="185.0" y="247.0" width="70.0"
+    <Component type="ScriptButton" id="RESET" x="233.0" y="223.0" width="30.0"
                height="30.0" itemColour="4289267463" itemColour2="4289267463"
                textColour="4278190080" isMomentary="1" processorId="Script FX1"
                parameterId="reset" parentComponent="PlaybackPanel" bgColour="4289267463"/>
-    <Component type="ScriptButton" id="SyncMode1" x="210.0" y="165.0" width="30.0"
+    <Component type="ScriptButton" id="SyncMode1" x="134.0" y="223.0" width="30.0"
                height="30.0" text="Sync" processorId="Script FX1" parameterId="PbSyncMode"
                parentComponent="PlaybackPanel"/>
     <Component type="ScriptSliderPack" id="SliderPack9" x="340.0" y="17.0" processorId="Script FX1"
-               width="140" height="120" sliderAmount="8.0" parentComponent="PlaybackPanel"
+               width="140.0" height="120.0" sliderAmount="8.0" parentComponent="PlaybackPanel"
                itemColour="4294967295" itemColour2="4294967295"/>
     <Component type="ScriptLabel" id="Label10" x="80.0" y="6.0" width="60.0"
                height="60.0" text="PLAY POSITION" parentComponent="PlaybackPanel"
@@ -293,10 +391,10 @@
     <Component type="ScriptLabel" id="Label11" x="209.0" y="23.0" width="60.0"
                height="30.0" text="MOD" parentComponent="PlaybackPanel" fontName="Impact"
                fontSize="20.0" textColour="3768623264" editable="0"/>
-    <Component type="ScriptLabel" id="Label33" x="18.0" y="210.0" width="60.0"
+    <Component type="ScriptLabel" id="Label33" x="18.0" y="260.0" width="60.0"
                height="20.0" text="TEMPO" parentComponent="PlaybackPanel" fontName="Impact"
                fontSize="20.0" textColour="3768623264" editable="0"/>
-    <Component type="ScriptLabel" id="Label34" x="75.0" y="210.0" width="60.0"
+    <Component type="ScriptLabel" id="Label34" x="72.0" y="260.0" width="60.0"
                height="20.0" text="DIV" parentComponent="PlaybackPanel" fontName="Impact"
                fontSize="20.0" textColour="3768623264" editable="0"/>
     <Component type="ScriptLabel" id="Label35" x="280.0" y="89.0" width="60.0"
@@ -314,23 +412,26 @@
     <Component type="ScriptLabel" id="Label42" x="313.0" y="236.0" width="170.0"
                height="50.0" text="PLAYBACK" parentComponent="PlaybackPanel"
                fontName="Impact" fontSize="30.0" textColour="3768623264" editable="0"/>
-    <Component type="ScriptComboBox" id="Mode" x="308.0" y="199.0" width="100"
-               height="20" max="3" parentComponent="PlaybackPanel" items="CLEAN&#10;TAPE&#10;GRANULAR&#10;"/>
-    <Component type="ScriptLabel" id="Label39" x="414.0" y="201.0" width="60"
+    <Component type="ScriptComboBox" id="Mode" x="308.0" y="199.0" width="100.0"
+               height="20.0" max="3" parentComponent="PlaybackPanel" items="CLEAN&#10;TAPE&#10;GRANULAR&#10;"/>
+    <Component type="ScriptLabel" id="Label39" x="414.0" y="201.0" width="60.0"
                height="15.0" text="MODE" parentComponent="PlaybackPanel" fontName="Impact"
                fontSize="20.0" textColour="3768623264" editable="0"/>
-    <Component type="ScriptButton" id="PbModMode" x="147.0" y="165.0" width="30.0"
-               height="30.0" text="Sync" parentComponent="PlaybackPanel"/>
-    <Component type="ScriptLabel" id="Label48" x="137.0" y="191.0" width="50.0"
-               height="50.0" text="TABLE /STEP" parentComponent="PlaybackPanel"
-               fontName="Impact" fontSize="20.0" textColour="3768623264" editable="0"/>
-    <Component type="ScriptLabel" id="Label49" x="199.0" y="192.0" width="50.0"
-               height="50.0" text="SYNC" parentComponent="PlaybackPanel" fontName="Impact"
+    <Component type="ScriptLabel" id="Label49" x="123.0" y="259.0" width="50.0"
+               height="20.0" text="SYNC" parentComponent="PlaybackPanel" fontName="Impact"
                fontSize="20.0" textColour="3768623264" editable="0"/>
     <Component type="ScriptSliderPack" id="ScriptSliderPack2" x="10.0" y="74.0"
-               width="250.0" height="80.0" parentComponent="PlaybackPanel" SliderPackIndex="8"
+               width="260.0" height="80.0" parentComponent="PlaybackPanel" SliderPackIndex="8"
                itemColour2="16777215" itemColour="3282634503" textColour="4278190080"
-               processorId="Script FX1" visible="0"/>
+               processorId="Script FX1" sliderAmount="8.0" visible="0"/>
+    <Component type="ScriptLabel" id="Label66" x="224.0" y="259.0" width="50.0"
+               height="20.0" text="RESET" parentComponent="PlaybackPanel" fontName="Impact"
+               fontSize="20.0" textColour="3768623264" editable="0"/>
+    <Component type="ScriptLabel" id="Label68" x="173.0" y="259.0" width="50.0"
+               height="20.0" text="MODE" parentComponent="PlaybackPanel" fontName="Impact"
+               fontSize="20.0" textColour="3768623264" editable="0"/>
+    <Component type="ScriptButton" id="PbModMode" x="183.0" y="223.0" width="30.0"
+               height="30.0" text="Sync" parentComponent="PlaybackPanel"/>
   </Component>
   <Component type="ScriptPanel" id="Filter" x="22.0" y="320.0" width="270.0"
              height="200.0">
@@ -384,9 +485,8 @@
                parameterId="Gain" width="40.0" height="40.0" showValuePopup="Below"
                parentComponent="Panel8" filmstripImage="{PROJECT_FOLDER}aztecknob.png"
                numStrips="125.0" scaleFactor="0.2000000029802322" showTextBox="0"
-               isVertical="0" isPluginParameter="1" pluginParameterName="Mix"
-               mode="Decibel" min="-100.0" max="12.0" stepSize="0.1000000014901161"
-               suffix=" dB" middlePosition="0.0"/>
+               isVertical="0" pluginParameterName="Mix" mode="Decibel" min="-100.0"
+               max="12.0" stepSize="0.1000000014901161" suffix=" dB" middlePosition="0.0"/>
     <Component type="ScriptLabel" id="Label43" x="0.0" y="173.0" width="110.0"
                height="30.0" text="TEZCATLIPOCA" parentComponent="Panel8" fontSize="20.0"
                fontName="Impact" textColour="3768623264" editable="0"/>
@@ -404,9 +504,8 @@
                parameterId="Gain" width="40.0" height="40.0" showValuePopup="Below"
                parentComponent="Panel8" filmstripImage="{PROJECT_FOLDER}aztecknob.png"
                numStrips="125.0" scaleFactor="0.2000000029802322" showTextBox="0"
-               isVertical="0" isPluginParameter="1" pluginParameterName="Mix"
-               mode="Decibel" min="-100.0" max="12.0" stepSize="0.1000000014901161"
-               suffix=" dB" middlePosition="0.0"/>
+               isVertical="0" pluginParameterName="Mix" mode="Decibel" min="-100.0"
+               max="12.0" stepSize="0.1000000014901161" suffix=" dB" middlePosition="0.0"/>
     <Component type="ScriptLabel" id="Label50" x="105.0" y="197.0" width="50.0"
                height="10.0" text="INPUT" parentComponent="Panel8" fontSize="12.0"
                fontName="Impact" textColour="3768623264" editable="0"/>
